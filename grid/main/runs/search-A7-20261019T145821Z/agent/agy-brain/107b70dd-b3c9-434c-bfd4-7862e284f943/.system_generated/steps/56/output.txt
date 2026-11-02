@@ -1,0 +1,8 @@
+{
+  "battery": {
+    "percent": 50.0,
+    "charging": false
+  },
+  "text": "I have reached the red ball and stopped facing it. Resting now.",
+  "result": "speaking"
+}

@@ -1,0 +1,86 @@
+{
+  "run_id": "corridor_complex-A3-20261024T113703Z",
+  "phase": "main",
+  "task": "Complex corridor",
+  "task_key": "corridor_complex",
+  "agent": "A3",
+  "run_order": {
+    "file": "~/.naoqi-pilot/grid/main/orders/corridor_complex.json",
+    "seed": 15144545324380934974,
+    "position": 26,
+    "block": 4,
+    "attempt": 1
+  },
+  "agent_config": {
+    "harness": "claude-code",
+    "image": "naoqi-pilot/claude",
+    "llm": "Claude Sonnet 5.5",
+    "model": "claude-sonnet-5-5",
+    "model_id_confirmed": true,
+    "access_route": "Claude subscription login (claude setup-token, CLAUDE_CODE_OAUTH_TOKEN), no API key; shared by A1, A3 and A5, and so are its usage limits",
+    "reasoning": "--effort medium (sent as output_config.effort = medium)",
+    "proxy_allow": [
+      "^api\\.anthropic\\.com$"
+    ],
+    "deviations_ref": "claude-code",
+    "model_id_source": "confirmed by the author 2026-10-15; listed by the Claude subscription's /v1/models and OpenRouter's catalogue"
+  },
+  "deviations": [
+    {
+      "what": "--tools \"\": all built-in tools off; in this mode Claude Code offers no end-conversation tool"
+    },
+    {
+      "what": "--strict-mcp-config with the naoqi server as the only MCP server; its tools pre-approved (permissions.allow mcp__naoqi)"
+    },
+    {
+      "what": "Auto-updater off (DISABLE_AUTOUPDATER=1)"
+    },
+    {
+      "what": "Network: only api.anthropic.com reachable; all other hosts (e.g. telemetry) blocked"
+    },
+    {
+      "what": "Claude Code 2.1.295 (the version on the author's Mac on 2026-10-15) instead of 2.1.280: 2.1.280 does not know Claude Haiku 5.5 and reports its cost at Sonnet's price",
+      "approved": "2026-10-15"
+    }
+  ],
+  "harness_version": "2.1.295",
+  "system_commit": "8633fd55652811c1d82f24301eb5597977d51f24",
+  "system_uncommitted_changes": false,
+  "runner_code": {
+    "commit_at_start": "8633fd55652811c1d82f24301eb5597977d51f24",
+    "uncommitted_changes_at_start": false,
+    "changed_since_start": []
+  },
+  "world_file": "webots/worlds/corridor_complex.wbt",
+  "world_sha256": "e7e5734d4b9a492c3cdd6b45f36efdc675943823cac42387992b6aedf5229d66",
+  "prompt": "Use the naoqi MCP server. You control a robot at the start of a corridor with several corners. Follow the corridor to its end, which is marked by a red wall, and stop in front of the wall. When the robot is there, call rest.",
+  "caps": {
+    "wall_clock_s": 3416,
+    "tool_calls": 144
+  },
+  "grace_period_s": 30,
+  "protocol_values_decided": {
+    "prompts": true,
+    "caps": true,
+    "grace_period_s": true,
+    "invalid_if": true,
+    "min_real_time_factor": true,
+    "search": true
+  },
+  "test": null,
+  "image": {
+    "name": "naoqi-pilot/claude",
+    "id": "sha256:c2a7c916bb94c781108424ea4aebd49db5c34e498b9a7d069c0ab53e103af1b8"
+  },
+  "end_condition": "stop_signal",
+  "invalid_reason": null,
+  "harness_exited_in_grace_period": true,
+  "harness_exit_code": "0",
+  "runner_times_mac_clock": {
+    "container_started": "2026-10-24T11:37:15.296+00:00",
+    "t0_seen": "2026-10-24T11:37:15.296+00:00",
+    "end_detected": "2026-10-24T11:44:09.645+00:00",
+    "harness_stopped": "2026-10-24T11:44:12.699+00:00",
+    "runner_started": "2026-10-24T11:37:03.595+00:00"
+  }
+}

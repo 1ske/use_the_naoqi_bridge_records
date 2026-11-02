@@ -1,0 +1,27 @@
+{
+  "agent": "A7",
+  "harness": "agy",
+  "transcript_files": [
+    "agy-brain/cac9641b-f3e7-4e5f-bc05-58b81f17213f/.system_generated/logs/transcript_full.jsonl"
+  ],
+  "transcript_found": true,
+  "unreadable_lines": 0,
+  "nao_tool_calls": 18,
+  "nao_tool_calls_by_tool": {
+    "get_state": 1,
+    "stand": 1,
+    "say": 3,
+    "go": 9,
+    "look_around": 2,
+    "walk_to": 1,
+    "rest": 1
+  },
+  "exempt_calls": {
+    "list_resources": 0,
+    "manage_task": 0,
+    "read_resource": 0,
+    "view_file": 13
+  },
+  "violating_calls": {},
+  "protocol_violation": false
+}

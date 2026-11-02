@@ -1,0 +1,63 @@
+{
+  "phase": "pilot",
+  "task_key": "search",
+  "agents": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8"
+  ],
+  "blocks": 1,
+  "seed": 106262119188060080,
+  "seed_source": "secrets.randbits(64)",
+  "method": "randomized complete blocks: per block, random.Random(seed).sample of the block's agents not yet placed; blocks drawn one after the other from the same generator",
+  "python": "3.12.14",
+  "created": "2026-10-15T12:36:16+00:00",
+  "system_commit": "2cf49592057227d816d725115c4516574b8c1e06",
+  "order": [
+    {
+      "position": 1,
+      "block": 1,
+      "agent": "A1"
+    },
+    {
+      "position": 2,
+      "block": 1,
+      "agent": "A2"
+    },
+    {
+      "position": 3,
+      "block": 1,
+      "agent": "A8"
+    },
+    {
+      "position": 4,
+      "block": 1,
+      "agent": "A6"
+    },
+    {
+      "position": 5,
+      "block": 1,
+      "agent": "A4"
+    },
+    {
+      "position": 6,
+      "block": 1,
+      "agent": "A3"
+    },
+    {
+      "position": 7,
+      "block": 1,
+      "agent": "A5"
+    },
+    {
+      "position": 8,
+      "block": 1,
+      "agent": "A7"
+    }
+  ]
+}

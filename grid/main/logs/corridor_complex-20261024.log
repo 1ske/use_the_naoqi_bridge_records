@@ -1,0 +1,1175 @@
+10:03:30 position 1 (block 1), A6, attempt 1
+10:03:30 run corridor_complex-A6-20261024T080330Z
+10:03:30 stopping the bridge (it rests the robot)
+10:03:31 reloading the world
+10:03:36 starting a fresh naoqisim
+10:03:41 starting the ground-truth supervisor
+10:03:42 starting a fresh bridge
+10:03:44 starting the agent
+10:03:49 t0: prompt submitted
+10:09:26 end: stop_signal
+10:09:26 grace period: up to 30 s for the harness to finish
+10:09:33 OpenRouter cost: settling in the background (only A6's next run waits for it)
+10:09:34 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A6-20261024T080330Z
+10:09:34 position 2 (block 1), A7, attempt 1
+10:09:34 run corridor_complex-A7-20261024T080934Z
+10:09:39 stopping the bridge (it rests the robot)
+10:09:40 reloading the world
+10:09:44 starting a fresh naoqisim
+10:09:49 starting the ground-truth supervisor
+10:09:49 starting a fresh bridge
+10:09:52 starting the agent
+10:09:52 t0: prompt submitted
+10:20:39 corridor_complex-A6-20261024T080330Z: OpenRouter cost settled after 665 s
+10:25:06 end: stop_signal
+10:25:06 grace period: up to 30 s for the harness to finish
+10:25:13 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A7-20261024T080934Z
+10:25:13 position 3 (block 1), A8, attempt 1
+10:25:13 run corridor_complex-A8-20261024T082513Z
+10:25:13 stopping the bridge (it rests the robot)
+10:25:14 reloading the world
+10:25:18 starting a fresh naoqisim
+10:25:22 starting the ground-truth supervisor
+10:25:23 starting a fresh bridge
+10:25:27 starting the agent
+10:25:29 t0: prompt submitted
+10:37:30 end: stop_signal
+10:37:30 grace period: up to 30 s for the harness to finish
+10:37:37 OpenRouter cost: settling in the background (only A8's next run waits for it)
+10:37:37 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A8-20261024T082513Z
+10:37:37 position 4 (block 1), A3, attempt 1
+10:37:37 run corridor_complex-A3-20261024T083737Z
+10:37:37 stopping the bridge (it rests the robot)
+10:37:38 reloading the world
+10:37:42 starting a fresh naoqisim
+10:37:47 starting the ground-truth supervisor
+10:37:47 starting a fresh bridge
+10:37:49 starting the agent
+10:37:49 t0: prompt submitted
+10:42:54 end: stop_signal
+10:42:54 grace period: up to 30 s for the harness to finish
+10:42:57 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A3-20261024T083737Z
+10:42:57 position 5 (block 1), A2, attempt 1
+10:42:57 run corridor_complex-A2-20261024T084257Z
+10:42:57 stopping the bridge (it rests the robot)
+10:42:57 reloading the world
+10:43:01 starting a fresh naoqisim
+10:48:02 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A2-20261024T084257Z
+Traceback (most recent call last):
+  File "~/Documents/GitHub/use_the_naoqi_bridge/pilot/run.py", line 714, in <module>
+    for path in run_next(args.phase, args.task, args.fake_llm, args.count, args.stop_after_invalid):
+                ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/Documents/GitHub/use_the_naoqi_bridge/pilot/run.py", line 671, in run_next
+    run_dir = run(slot["agent"], task, phase, slot, fake_script, defer_cost=True)
+  File "~/Documents/GitHub/use_the_naoqi_bridge/pilot/run.py", line 554, in run
+    supervisor = reset(run_id, world)
+  File "~/Documents/GitHub/use_the_naoqi_bridge/pilot/run.py", line 186, in reset
+    wait_for("NAOqi is ready", lambda: "NAOqi is ready" in compose(NAOQISIM_DIR, "logs", "naoqisim", check=False),
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+             300, period=2)
+             ^^^^^^^^^^^^^^
+  File "~/Documents/GitHub/use_the_naoqi_bridge/pilot/run.py", line 130, in wait_for
+    raise RuntimeError("timed out after %d s waiting for %s" % (timeout, what))
+RuntimeError: timed out after 300 s waiting for NAOqi is ready
+10:48:40 corridor_complex-A8-20261024T082513Z: OpenRouter cost settled after 663 s
+--- restart 10:49:00 after naoqisim exit 139 at position 5 ---
+10:49:00 position 5 (block 1), A2, attempt 2
+10:49:00 run corridor_complex-A2-20261024T084900Z
+10:49:00 stopping the bridge (it rests the robot)
+10:49:01 reloading the world
+10:49:06 starting a fresh naoqisim
+10:49:10 starting the ground-truth supervisor
+10:49:11 starting a fresh bridge
+10:49:14 starting the agent
+10:49:16 t0: prompt submitted
+10:57:24 end: stop_signal
+10:57:24 grace period: up to 30 s for the harness to finish
+10:57:32 OpenRouter cost: settling in the background (only A2's next run waits for it)
+10:57:33 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A2-20261024T084900Z
+10:57:33 position 6 (block 1), A1, attempt 1
+10:57:33 run corridor_complex-A1-20261024T085733Z
+10:57:33 stopping the bridge (it rests the robot)
+10:57:34 reloading the world
+10:57:37 starting a fresh naoqisim
+10:57:42 starting the ground-truth supervisor
+10:57:42 starting a fresh bridge
+10:57:45 starting the agent
+10:57:45 t0: prompt submitted
+11:01:50 end: stop_signal
+11:01:50 grace period: up to 30 s for the harness to finish
+11:01:58 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A1-20261024T085733Z
+11:01:58 position 7 (block 1), A5, attempt 1
+11:01:58 run corridor_complex-A5-20261024T090158Z
+11:01:58 stopping the bridge (it rests the robot)
+11:01:58 reloading the world
+11:02:01 starting a fresh naoqisim
+11:02:04 starting the ground-truth supervisor
+11:02:04 starting a fresh bridge
+11:02:07 starting the agent
+11:02:07 t0: prompt submitted
+11:05:43 end: stop_signal
+11:05:43 grace period: up to 30 s for the harness to finish
+11:05:48 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A5-20261024T090158Z
+11:05:48 position 8 (block 1), A4, attempt 1
+11:05:48 run corridor_complex-A4-20261024T090548Z
+11:05:48 stopping the bridge (it rests the robot)
+11:05:48 reloading the world
+11:05:52 starting a fresh naoqisim
+11:05:56 starting the ground-truth supervisor
+11:05:57 starting a fresh bridge
+11:05:59 starting the agent
+11:06:02 t0: prompt submitted
+11:08:36 corridor_complex-A2-20261024T084900Z: OpenRouter cost settled after 663 s
+11:14:17 end: stop_signal
+11:14:17 grace period: up to 30 s for the harness to finish
+11:14:24 OpenRouter cost: settling in the background (only A4's next run waits for it)
+11:14:25 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A4-20261024T090548Z
+11:14:25 position 9 (block 2), A1, attempt 1
+11:14:25 run corridor_complex-A1-20261024T091425Z
+11:14:25 stopping the bridge (it rests the robot)
+11:14:25 reloading the world
+11:14:29 starting a fresh naoqisim
+11:14:34 starting the ground-truth supervisor
+11:14:35 starting a fresh bridge
+11:14:37 starting the agent
+11:14:37 t0: prompt submitted
+11:17:44 end: stop_signal
+11:17:44 grace period: up to 30 s for the harness to finish
+11:17:53 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A1-20261024T091425Z
+11:17:53 position 10 (block 2), A2, attempt 1
+11:17:53 run corridor_complex-A2-20261024T091753Z
+11:17:53 stopping the bridge (it rests the robot)
+11:17:54 reloading the world
+11:17:57 starting a fresh naoqisim
+11:18:00 starting the ground-truth supervisor
+11:18:00 starting a fresh bridge
+11:18:03 starting the agent
+11:18:05 t0: prompt submitted
+11:24:38 end: stop_signal
+11:24:38 grace period: up to 30 s for the harness to finish
+11:24:48 OpenRouter cost: settling in the background (only A2's next run waits for it)
+11:24:48 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A2-20261024T091753Z
+11:24:49 position 11 (block 2), A8, attempt 1
+11:24:49 run corridor_complex-A8-20261024T092449Z
+11:24:49 stopping the bridge (it rests the robot)
+11:24:49 reloading the world
+11:24:53 starting a fresh naoqisim
+11:24:58 starting the ground-truth supervisor
+11:24:59 starting a fresh bridge
+11:25:02 starting the agent
+11:25:04 t0: prompt submitted
+11:25:28 corridor_complex-A4-20261024T090548Z: OpenRouter cost settled after 664 s
+11:32:33 end: stop_signal
+11:32:33 grace period: up to 30 s for the harness to finish
+11:32:38 OpenRouter cost: settling in the background (only A8's next run waits for it)
+11:32:39 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A8-20261024T092449Z
+11:32:39 position 12 (block 2), A3, attempt 1
+11:32:39 run corridor_complex-A3-20261024T093239Z
+11:32:39 stopping the bridge (it rests the robot)
+11:32:39 reloading the world
+11:32:43 starting a fresh naoqisim
+11:32:48 starting the ground-truth supervisor
+11:32:49 starting a fresh bridge
+11:32:51 starting the agent
+11:32:51 t0: prompt submitted
+11:35:51 corridor_complex-A2-20261024T091753Z: OpenRouter cost settled after 663 s
+11:37:31 end: stop_signal
+11:37:31 grace period: up to 30 s for the harness to finish
+11:37:34 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A3-20261024T093239Z
+11:37:35 position 13 (block 2), A7, attempt 1
+11:37:35 run corridor_complex-A7-20261024T093735Z
+11:37:40 stopping the bridge (it rests the robot)
+11:37:41 reloading the world
+11:37:45 starting a fresh naoqisim
+11:37:49 starting the ground-truth supervisor
+11:37:50 starting a fresh bridge
+11:37:52 starting the agent
+11:37:53 t0: prompt submitted
+11:43:42 corridor_complex-A8-20261024T092449Z: OpenRouter cost settled after 663 s
+11:49:23 end: stop_signal
+11:49:23 grace period: up to 30 s for the harness to finish
+11:49:29 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A7-20261024T093735Z
+11:49:29 position 14 (block 2), A5, attempt 1
+11:49:29 run corridor_complex-A5-20261024T094929Z
+11:49:29 stopping the bridge (it rests the robot)
+11:49:30 reloading the world
+11:49:34 starting a fresh naoqisim
+11:49:38 starting the ground-truth supervisor
+11:49:39 starting a fresh bridge
+11:49:41 starting the agent
+11:49:42 t0: prompt submitted
+11:56:36 end: stop_signal
+11:56:36 grace period: up to 30 s for the harness to finish
+11:56:39 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A5-20261024T094929Z
+11:56:39 position 15 (block 2), A6, attempt 1
+11:56:39 run corridor_complex-A6-20261024T095639Z
+11:56:39 stopping the bridge (it rests the robot)
+11:56:40 reloading the world
+11:56:44 starting a fresh naoqisim
+11:56:49 starting the ground-truth supervisor
+11:56:49 starting a fresh bridge
+11:56:52 starting the agent
+11:56:56 t0: prompt submitted
+12:03:52 end: stop_signal
+12:03:52 grace period: up to 30 s for the harness to finish
+12:03:58 OpenRouter cost: settling in the background (only A6's next run waits for it)
+12:03:58 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A6-20261024T095639Z
+12:03:58 position 16 (block 2), A4, attempt 1
+12:03:59 run corridor_complex-A4-20261024T100359Z
+12:03:59 stopping the bridge (it rests the robot)
+12:03:59 reloading the world
+12:04:03 starting a fresh naoqisim
+12:04:08 starting the ground-truth supervisor
+12:04:09 starting a fresh bridge
+12:04:11 starting the agent
+12:04:14 t0: prompt submitted
+12:15:02 corridor_complex-A6-20261024T095639Z: OpenRouter cost settled after 664 s
+12:17:28 end: stop_signal
+12:17:28 grace period: up to 30 s for the harness to finish
+12:17:35 OpenRouter cost: settling in the background (only A4's next run waits for it)
+12:17:35 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A4-20261024T100359Z
+12:17:36 position 17 (block 3), A8, attempt 1
+12:17:36 run corridor_complex-A8-20261024T101736Z
+12:17:36 stopping the bridge (it rests the robot)
+12:17:37 reloading the world
+12:17:41 starting a fresh naoqisim
+12:17:46 starting the ground-truth supervisor
+12:17:46 starting a fresh bridge
+12:17:49 starting the agent
+12:17:52 t0: prompt submitted
+12:28:41 corridor_complex-A4-20261024T100359Z: OpenRouter cost settled after 665 s
+12:29:31 end: stop_signal
+12:29:31 grace period: up to 30 s for the harness to finish
+12:29:37 OpenRouter cost: settling in the background (only A8's next run waits for it)
+12:29:38 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A8-20261024T101736Z
+12:29:38 position 18 (block 3), A5, attempt 1
+12:29:38 run corridor_complex-A5-20261024T102938Z
+12:29:38 stopping the bridge (it rests the robot)
+12:29:39 reloading the world
+12:29:43 starting a fresh naoqisim
+12:29:47 starting the ground-truth supervisor
+12:29:48 starting a fresh bridge
+12:29:50 starting the agent
+12:29:50 t0: prompt submitted
+12:36:23 end: stop_signal
+12:36:23 grace period: up to 30 s for the harness to finish
+12:36:26 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A5-20261024T102938Z
+12:36:26 position 19 (block 3), A7, attempt 1
+12:36:27 run corridor_complex-A7-20261024T103626Z
+12:36:31 stopping the bridge (it rests the robot)
+12:36:32 reloading the world
+12:36:35 starting a fresh naoqisim
+12:36:40 starting the ground-truth supervisor
+12:36:41 starting a fresh bridge
+12:36:43 starting the agent
+12:36:44 t0: prompt submitted
+12:40:41 corridor_complex-A8-20261024T101736Z: OpenRouter cost settled after 664 s
+12:53:28 end: stop_signal
+12:53:28 grace period: up to 30 s for the harness to finish
+12:53:35 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A7-20261024T103626Z
+12:53:36 position 20 (block 3), A1, attempt 1
+12:53:36 run corridor_complex-A1-20261024T105336Z
+12:53:36 stopping the bridge (it rests the robot)
+12:53:36 reloading the world
+12:53:40 starting a fresh naoqisim
+12:53:45 starting the ground-truth supervisor
+12:53:46 starting a fresh bridge
+12:53:48 starting the agent
+12:53:48 t0: prompt submitted
+12:59:30 end: stop_signal
+12:59:30 grace period: up to 30 s for the harness to finish
+12:59:35 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A1-20261024T105336Z
+12:59:35 position 21 (block 3), A4, attempt 1
+12:59:35 run corridor_complex-A4-20261024T105935Z
+12:59:35 stopping the bridge (it rests the robot)
+12:59:36 reloading the world
+12:59:40 starting a fresh naoqisim
+12:59:43 starting the ground-truth supervisor
+12:59:43 starting a fresh bridge
+12:59:46 starting the agent
+12:59:49 t0: prompt submitted
+13:06:01 end: stop_signal
+13:06:01 grace period: up to 30 s for the harness to finish
+13:06:07 OpenRouter cost: settling in the background (only A4's next run waits for it)
+13:06:07 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A4-20261024T105935Z
+13:06:08 position 22 (block 3), A2, attempt 1
+13:06:08 run corridor_complex-A2-20261024T110608Z
+13:06:08 stopping the bridge (it rests the robot)
+13:06:09 reloading the world
+13:06:13 starting a fresh naoqisim
+13:11:15 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A2-20261024T110608Z
+Traceback (most recent call last):
+  File "~/Documents/GitHub/use_the_naoqi_bridge/pilot/run.py", line 714, in <module>
+    for path in run_next(args.phase, args.task, args.fake_llm, args.count, args.stop_after_invalid):
+                ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/Documents/GitHub/use_the_naoqi_bridge/pilot/run.py", line 671, in run_next
+    run_dir = run(slot["agent"], task, phase, slot, fake_script, defer_cost=True)
+  File "~/Documents/GitHub/use_the_naoqi_bridge/pilot/run.py", line 554, in run
+    supervisor = reset(run_id, world)
+  File "~/Documents/GitHub/use_the_naoqi_bridge/pilot/run.py", line 186, in reset
+    wait_for("NAOqi is ready", lambda: "NAOqi is ready" in compose(NAOQISIM_DIR, "logs", "naoqisim", check=False),
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+             300, period=2)
+             ^^^^^^^^^^^^^^
+  File "~/Documents/GitHub/use_the_naoqi_bridge/pilot/run.py", line 130, in wait_for
+    raise RuntimeError("timed out after %d s waiting for %s" % (timeout, what))
+RuntimeError: timed out after 300 s waiting for NAOqi is ready
+--- restart 13:11:21 after naoqisim exit 139 at position 22 ---
+13:11:22 position 22 (block 3), A2, attempt 2
+13:11:22 run corridor_complex-A2-20261024T111122Z
+13:11:22 stopping the bridge (it rests the robot)
+13:11:22 reloading the world
+13:11:27 starting a fresh naoqisim
+13:11:32 starting the ground-truth supervisor
+13:11:32 starting a fresh bridge
+13:11:35 starting the agent
+13:11:39 t0: prompt submitted
+13:18:41 corridor_complex-A4-20261024T105935Z: OpenRouter cost settled after 754 s
+13:18:48 end: stop_signal
+13:18:48 grace period: up to 30 s for the harness to finish
+13:18:56 OpenRouter cost: settling in the background (only A2's next run waits for it)
+13:18:57 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A2-20261024T111122Z
+13:18:57 position 23 (block 3), A6, attempt 1
+13:18:57 run corridor_complex-A6-20261024T111857Z
+13:18:57 stopping the bridge (it rests the robot)
+13:18:58 reloading the world
+13:19:02 starting a fresh naoqisim
+13:19:07 starting the ground-truth supervisor
+13:19:07 starting a fresh bridge
+13:19:10 starting the agent
+13:19:13 t0: prompt submitted
+13:24:32 end: stop_signal
+13:24:32 grace period: up to 30 s for the harness to finish
+13:24:39 OpenRouter cost: settling in the background (only A6's next run waits for it)
+13:24:39 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A6-20261024T111857Z
+13:24:40 position 24 (block 3), A3, attempt 1
+13:24:40 run corridor_complex-A3-20261024T112440Z
+13:24:40 stopping the bridge (it rests the robot)
+13:24:41 reloading the world
+13:24:44 starting a fresh naoqisim
+13:24:49 starting the ground-truth supervisor
+13:24:50 starting a fresh bridge
+13:24:52 starting the agent
+13:24:52 t0: prompt submitted
+13:30:01 corridor_complex-A2-20261024T111122Z: OpenRouter cost settled after 665 s
+13:31:06 end: stop_signal
+13:31:06 grace period: up to 30 s for the harness to finish
+13:31:09 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A3-20261024T112440Z
+13:31:10 position 25 (block 4), A4, attempt 1
+13:31:10 run corridor_complex-A4-20261024T113110Z
+13:31:10 stopping the bridge (it rests the robot)
+13:31:10 reloading the world
+13:31:14 starting a fresh naoqisim
+13:31:19 starting the ground-truth supervisor
+13:31:20 starting a fresh bridge
+13:31:22 starting the agent
+13:31:25 t0: prompt submitted
+13:35:44 corridor_complex-A6-20261024T111857Z: OpenRouter cost settled after 665 s
+13:36:56 end: stop_signal
+13:36:56 grace period: up to 30 s for the harness to finish
+13:37:02 OpenRouter cost: settling in the background (only A4's next run waits for it)
+13:37:03 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A4-20261024T113110Z
+13:37:03 position 26 (block 4), A3, attempt 1
+13:37:03 run corridor_complex-A3-20261024T113703Z
+13:37:03 stopping the bridge (it rests the robot)
+13:37:04 reloading the world
+13:37:07 starting a fresh naoqisim
+13:37:12 starting the ground-truth supervisor
+13:37:12 starting a fresh bridge
+13:37:15 starting the agent
+13:37:15 t0: prompt submitted
+13:44:09 end: stop_signal
+13:44:09 grace period: up to 30 s for the harness to finish
+13:44:13 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A3-20261024T113703Z
+13:44:13 position 27 (block 4), A8, attempt 1
+13:44:13 run corridor_complex-A8-20261024T114413Z
+13:44:13 stopping the bridge (it rests the robot)
+13:44:14 reloading the world
+13:44:18 starting a fresh naoqisim
+13:44:23 starting the ground-truth supervisor
+13:44:23 starting a fresh bridge
+13:44:26 starting the agent
+13:44:29 t0: prompt submitted
+13:48:07 corridor_complex-A4-20261024T113110Z: OpenRouter cost settled after 665 s
+13:53:50 end: stop_signal
+13:53:50 grace period: up to 30 s for the harness to finish
+13:53:55 OpenRouter cost: settling in the background (only A8's next run waits for it)
+13:53:56 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A8-20261024T114413Z
+13:53:56 position 28 (block 4), A2, attempt 1
+13:53:56 run corridor_complex-A2-20261024T115356Z
+13:53:56 stopping the bridge (it rests the robot)
+13:53:57 reloading the world
+13:54:01 starting a fresh naoqisim
+13:54:06 starting the ground-truth supervisor
+13:54:06 starting a fresh bridge
+13:54:09 starting the agent
+13:54:11 t0: prompt submitted
+13:59:44 end: stop_signal
+13:59:44 grace period: up to 30 s for the harness to finish
+13:59:51 OpenRouter cost: settling in the background (only A2's next run waits for it)
+13:59:51 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A2-20261024T115356Z
+13:59:52 position 29 (block 4), A7, attempt 1
+13:59:52 run corridor_complex-A7-20261024T115952Z
+13:59:57 stopping the bridge (it rests the robot)
+13:59:58 reloading the world
+14:00:02 starting a fresh naoqisim
+14:00:04 starting the ground-truth supervisor
+14:00:05 starting a fresh bridge
+14:00:07 starting the agent
+14:00:08 t0: prompt submitted
+14:05:02 corridor_complex-A8-20261024T114413Z: OpenRouter cost settled after 666 s
+14:10:56 corridor_complex-A2-20261024T115356Z: OpenRouter cost settled after 665 s
+14:14:44 end: stop_signal
+14:14:44 grace period: up to 30 s for the harness to finish
+14:14:51 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A7-20261024T115952Z
+14:14:51 position 30 (block 4), A5, attempt 1
+14:14:51 run corridor_complex-A5-20261024T121451Z
+14:14:51 stopping the bridge (it rests the robot)
+14:14:52 reloading the world
+14:14:56 starting a fresh naoqisim
+14:15:00 starting the ground-truth supervisor
+14:15:01 starting a fresh bridge
+14:15:03 starting the agent
+14:15:03 t0: prompt submitted
+14:21:53 end: stop_signal
+14:21:53 grace period: up to 30 s for the harness to finish
+14:21:56 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A5-20261024T121451Z
+14:21:57 position 31 (block 4), A6, attempt 1
+14:21:57 run corridor_complex-A6-20261024T122157Z
+14:21:57 stopping the bridge (it rests the robot)
+14:21:58 reloading the world
+14:22:02 starting a fresh naoqisim
+14:22:06 starting the ground-truth supervisor
+14:22:07 starting a fresh bridge
+14:22:10 starting the agent
+14:22:12 t0: prompt submitted
+14:25:32 end: stop_signal
+14:25:32 grace period: up to 30 s for the harness to finish
+14:25:39 OpenRouter cost: settling in the background (only A6's next run waits for it)
+14:25:39 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A6-20261024T122157Z
+14:25:40 position 32 (block 4), A1, attempt 1
+14:25:40 run corridor_complex-A1-20261024T122540Z
+14:25:40 stopping the bridge (it rests the robot)
+14:25:41 reloading the world
+14:25:44 starting a fresh naoqisim
+14:25:48 starting the ground-truth supervisor
+14:25:49 starting a fresh bridge
+14:25:51 starting the agent
+14:25:51 t0: prompt submitted
+14:32:22 end: stop_signal
+14:32:22 grace period: up to 30 s for the harness to finish
+14:32:26 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A1-20261024T122540Z
+14:32:26 position 33 (block 5), A3, attempt 1
+14:32:26 run corridor_complex-A3-20261024T123226Z
+14:32:27 stopping the bridge (it rests the robot)
+14:32:27 reloading the world
+14:32:31 starting a fresh naoqisim
+14:32:36 starting the ground-truth supervisor
+14:32:36 starting a fresh bridge
+14:32:39 starting the agent
+14:32:39 t0: prompt submitted
+14:36:43 corridor_complex-A6-20261024T122157Z: OpenRouter cost settled after 664 s
+14:38:27 end: stop_signal
+14:38:27 grace period: up to 30 s for the harness to finish
+14:38:31 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A3-20261024T123226Z
+14:38:31 position 34 (block 5), A7, attempt 1
+14:38:31 run corridor_complex-A7-20261024T123831Z
+14:38:35 stopping the bridge (it rests the robot)
+14:38:36 reloading the world
+14:38:39 starting a fresh naoqisim
+14:38:44 starting the ground-truth supervisor
+14:38:45 starting a fresh bridge
+14:38:47 starting the agent
+14:38:48 t0: prompt submitted
+14:53:55 end: stop_signal
+14:53:55 grace period: up to 30 s for the harness to finish
+14:54:09 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A7-20261024T123831Z
+14:54:10 position 35 (block 5), A4, attempt 1
+14:54:10 run corridor_complex-A4-20261024T125410Z
+14:54:10 stopping the bridge (it rests the robot)
+14:54:10 reloading the world
+14:54:14 starting a fresh naoqisim
+14:54:19 starting the ground-truth supervisor
+14:54:20 starting a fresh bridge
+14:54:22 starting the agent
+14:54:25 t0: prompt submitted
+15:03:26 end: stop_signal
+15:03:26 grace period: up to 30 s for the harness to finish
+15:03:42 OpenRouter cost: settling in the background (only A4's next run waits for it)
+15:03:42 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A4-20261024T125410Z
+15:03:43 position 36 (block 5), A1, attempt 1
+15:03:43 run corridor_complex-A1-20261024T130343Z
+15:03:43 stopping the bridge (it rests the robot)
+15:03:44 reloading the world
+15:03:48 starting a fresh naoqisim
+15:03:52 starting the ground-truth supervisor
+15:03:53 starting a fresh bridge
+15:03:55 starting the agent
+15:03:55 t0: prompt submitted
+15:11:25 end: stop_signal
+15:11:25 grace period: up to 30 s for the harness to finish
+15:11:31 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A1-20261024T130343Z
+15:11:31 position 37 (block 5), A2, attempt 1
+15:11:31 run corridor_complex-A2-20261024T131131Z
+15:11:31 stopping the bridge (it rests the robot)
+15:11:32 reloading the world
+15:11:36 starting a fresh naoqisim
+15:11:41 starting the ground-truth supervisor
+15:11:41 starting a fresh bridge
+15:11:44 starting the agent
+15:11:47 t0: prompt submitted
+15:14:46 corridor_complex-A4-20261024T125410Z: OpenRouter cost settled after 664 s
+15:19:54 end: stop_signal
+15:19:54 grace period: up to 30 s for the harness to finish
+15:20:05 OpenRouter cost: settling in the background (only A2's next run waits for it)
+15:20:05 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A2-20261024T131131Z
+15:20:06 position 38 (block 5), A6, attempt 1
+15:20:06 run corridor_complex-A6-20261024T132006Z
+15:20:06 stopping the bridge (it rests the robot)
+15:20:07 reloading the world
+15:20:10 starting a fresh naoqisim
+15:20:15 starting the ground-truth supervisor
+15:20:16 starting a fresh bridge
+15:20:18 starting the agent
+15:20:21 t0: prompt submitted
+15:31:11 corridor_complex-A2-20261024T131131Z: OpenRouter cost settled after 665 s
+15:32:01 end: stop_signal
+15:32:01 grace period: up to 30 s for the harness to finish
+15:32:16 OpenRouter cost: settling in the background (only A6's next run waits for it)
+15:32:16 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A6-20261024T132006Z
+15:32:17 position 39 (block 5), A8, attempt 1
+15:32:17 run corridor_complex-A8-20261024T133217Z
+15:32:17 stopping the bridge (it rests the robot)
+15:32:18 reloading the world
+15:32:22 starting a fresh naoqisim
+15:32:25 starting the ground-truth supervisor
+15:32:25 starting a fresh bridge
+15:32:28 starting the agent
+15:32:30 t0: prompt submitted
+15:43:22 corridor_complex-A6-20261024T132006Z: OpenRouter cost settled after 665 s
+15:43:48 end: stop_signal
+15:43:48 grace period: up to 30 s for the harness to finish
+15:43:54 OpenRouter cost: settling in the background (only A8's next run waits for it)
+15:43:55 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A8-20261024T133217Z
+15:43:56 position 40 (block 5), A5, attempt 1
+15:43:56 run corridor_complex-A5-20261024T134356Z
+15:43:56 stopping the bridge (it rests the robot)
+15:43:57 reloading the world
+15:44:01 starting a fresh naoqisim
+15:44:03 starting the ground-truth supervisor
+15:44:04 starting a fresh bridge
+15:44:06 starting the agent
+15:44:06 t0: prompt submitted
+15:49:18 end: stop_signal
+15:49:18 grace period: up to 30 s for the harness to finish
+15:49:23 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A5-20261024T134356Z
+15:49:23 position 41 (block 6), A3, attempt 1
+15:49:23 run corridor_complex-A3-20261024T134923Z
+15:49:23 stopping the bridge (it rests the robot)
+15:49:24 reloading the world
+15:49:28 starting a fresh naoqisim
+15:49:31 starting the ground-truth supervisor
+15:49:31 starting a fresh bridge
+15:49:33 starting the agent
+15:49:33 t0: prompt submitted
+15:54:45 end: stop_signal
+15:54:45 grace period: up to 30 s for the harness to finish
+15:54:48 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A3-20261024T134923Z
+15:54:49 position 42 (block 6), A6, attempt 1
+15:54:49 run corridor_complex-A6-20261024T135449Z
+15:54:49 stopping the bridge (it rests the robot)
+15:54:49 reloading the world
+15:54:53 starting a fresh naoqisim
+15:54:58 starting the ground-truth supervisor
+15:54:58 starting a fresh bridge
+15:55:01 corridor_complex-A8-20261024T133217Z: OpenRouter cost settled after 666 s
+15:55:01 starting the agent
+15:55:04 t0: prompt submitted
+16:00:31 end: stop_signal
+16:00:31 grace period: up to 30 s for the harness to finish
+16:00:36 OpenRouter cost: settling in the background (only A6's next run waits for it)
+16:00:37 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A6-20261024T135449Z
+16:00:38 position 43 (block 6), A1, attempt 1
+16:00:38 run corridor_complex-A1-20261024T140038Z
+16:00:38 stopping the bridge (it rests the robot)
+16:00:39 reloading the world
+16:00:43 starting a fresh naoqisim
+16:00:45 starting the ground-truth supervisor
+16:00:46 starting a fresh bridge
+16:00:48 starting the agent
+16:00:48 t0: prompt submitted
+16:07:26 end: stop_signal
+16:07:26 grace period: up to 30 s for the harness to finish
+16:07:31 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A1-20261024T140038Z
+16:07:31 position 44 (block 6), A7, attempt 1
+16:07:31 run corridor_complex-A7-20261024T140731Z
+16:07:36 stopping the bridge (it rests the robot)
+16:07:37 reloading the world
+16:07:41 starting a fresh naoqisim
+16:07:46 starting the ground-truth supervisor
+16:07:46 starting a fresh bridge
+16:07:48 starting the agent
+16:07:49 t0: prompt submitted
+16:11:42 corridor_complex-A6-20261024T135449Z: OpenRouter cost settled after 665 s
+16:24:24 end: stop_signal
+16:24:24 grace period: up to 30 s for the harness to finish
+16:24:32 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A7-20261024T140731Z
+16:24:32 position 45 (block 6), A4, attempt 1
+16:24:32 run corridor_complex-A4-20261024T142432Z
+16:24:32 stopping the bridge (it rests the robot)
+16:24:33 reloading the world
+16:24:37 starting a fresh naoqisim
+16:24:42 starting the ground-truth supervisor
+16:24:42 starting a fresh bridge
+16:24:45 starting the agent
+16:24:49 t0: prompt submitted
+16:29:36 end: stop_signal
+16:29:36 grace period: up to 30 s for the harness to finish
+16:29:42 OpenRouter cost: settling in the background (only A4's next run waits for it)
+16:29:43 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A4-20261024T142432Z
+16:29:44 position 46 (block 6), A8, attempt 1
+16:29:44 run corridor_complex-A8-20261024T142944Z
+16:29:44 stopping the bridge (it rests the robot)
+16:29:44 reloading the world
+16:29:48 starting a fresh naoqisim
+16:29:51 starting the ground-truth supervisor
+16:29:51 starting a fresh bridge
+16:29:54 starting the agent
+16:29:57 t0: prompt submitted
+16:40:47 corridor_complex-A4-20261024T142432Z: OpenRouter cost settled after 665 s
+16:54:42 end: stop_signal
+16:54:42 grace period: up to 30 s for the harness to finish
+16:55:02 OpenRouter cost: settling in the background (only A8's next run waits for it)
+16:55:03 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A8-20261024T142944Z
+16:55:03 position 47 (block 6), A5, attempt 1
+16:55:04 run corridor_complex-A5-20261024T145503Z
+16:55:04 stopping the bridge (it rests the robot)
+16:55:04 reloading the world
+16:55:08 starting a fresh naoqisim
+16:55:13 starting the ground-truth supervisor
+16:55:13 starting a fresh bridge
+16:55:16 starting the agent
+16:55:16 t0: prompt submitted
+17:01:09 end: stop_signal
+17:01:09 grace period: up to 30 s for the harness to finish
+17:01:13 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A5-20261024T145503Z
+17:01:14 position 48 (block 6), A2, attempt 1
+17:01:14 run corridor_complex-A2-20261024T150114Z
+17:01:14 stopping the bridge (it rests the robot)
+17:01:15 reloading the world
+17:01:18 starting a fresh naoqisim
+17:01:23 starting the ground-truth supervisor
+17:01:24 starting a fresh bridge
+17:01:27 starting the agent
+17:01:29 t0: prompt submitted
+17:06:07 corridor_complex-A8-20261024T142944Z: OpenRouter cost settled after 664 s
+17:07:02 end: stop_signal
+17:07:02 grace period: up to 30 s for the harness to finish
+17:07:10 OpenRouter cost: settling in the background (only A2's next run waits for it)
+17:07:11 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A2-20261024T150114Z
+17:07:12 position 49 (block 7), A3, attempt 1
+17:07:12 run corridor_complex-A3-20261024T150712Z
+17:07:12 stopping the bridge (it rests the robot)
+17:07:12 reloading the world
+17:07:15 starting a fresh naoqisim
+17:07:20 starting the ground-truth supervisor
+17:07:21 starting a fresh bridge
+17:07:23 starting the agent
+17:07:23 t0: prompt submitted
+17:12:50 end: stop_signal
+17:12:50 grace period: up to 30 s for the harness to finish
+17:12:53 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A3-20261024T150712Z
+17:12:54 position 50 (block 7), A8, attempt 1
+17:12:54 run corridor_complex-A8-20261024T151254Z
+17:12:54 stopping the bridge (it rests the robot)
+17:12:55 reloading the world
+17:12:59 starting a fresh naoqisim
+17:13:04 starting the ground-truth supervisor
+17:13:05 starting a fresh bridge
+17:13:08 starting the agent
+17:13:11 t0: prompt submitted
+17:18:15 corridor_complex-A2-20261024T150114Z: OpenRouter cost settled after 665 s
+17:23:13 end: stop_signal
+17:23:13 grace period: up to 30 s for the harness to finish
+17:23:19 OpenRouter cost: settling in the background (only A8's next run waits for it)
+17:23:20 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A8-20261024T151254Z
+17:23:21 position 51 (block 7), A1, attempt 1
+17:23:21 run corridor_complex-A1-20261024T152321Z
+17:23:21 stopping the bridge (it rests the robot)
+17:23:21 reloading the world
+17:23:25 starting a fresh naoqisim
+17:23:30 starting the ground-truth supervisor
+17:23:31 starting a fresh bridge
+17:23:33 starting the agent
+17:23:34 t0: prompt submitted
+17:30:03 end: stop_signal
+17:30:03 grace period: up to 30 s for the harness to finish
+17:30:07 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A1-20261024T152321Z
+17:30:08 position 52 (block 7), A5, attempt 1
+17:30:08 run corridor_complex-A5-20261024T153008Z
+17:30:08 stopping the bridge (it rests the robot)
+17:30:09 reloading the world
+17:30:13 starting a fresh naoqisim
+17:30:18 starting the ground-truth supervisor
+17:30:18 starting a fresh bridge
+17:30:20 starting the agent
+17:30:21 t0: prompt submitted
+17:34:23 corridor_complex-A8-20261024T151254Z: OpenRouter cost settled after 664 s
+17:39:12 end: stop_signal
+17:39:12 grace period: up to 30 s for the harness to finish
+17:39:15 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A5-20261024T153008Z
+17:39:16 position 53 (block 7), A2, attempt 1
+17:39:16 run corridor_complex-A2-20261024T153916Z
+17:39:16 stopping the bridge (it rests the robot)
+17:39:17 reloading the world
+17:39:21 starting a fresh naoqisim
+17:39:26 starting the ground-truth supervisor
+17:39:26 starting a fresh bridge
+17:39:29 starting the agent
+17:39:32 t0: prompt submitted
+17:44:36 end: stop_signal
+17:44:36 grace period: up to 30 s for the harness to finish
+17:44:44 OpenRouter cost: settling in the background (only A2's next run waits for it)
+17:44:44 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A2-20261024T153916Z
+17:44:45 position 54 (block 7), A6, attempt 1
+17:44:45 run corridor_complex-A6-20261024T154445Z
+17:44:45 stopping the bridge (it rests the robot)
+17:44:46 reloading the world
+17:44:50 starting a fresh naoqisim
+17:44:52 starting the ground-truth supervisor
+17:44:53 starting a fresh bridge
+17:44:56 starting the agent
+17:44:58 t0: prompt submitted
+17:50:51 end: stop_signal
+17:50:51 grace period: up to 30 s for the harness to finish
+17:51:01 OpenRouter cost: settling in the background (only A6's next run waits for it)
+17:51:02 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A6-20261024T154445Z
+17:51:03 position 55 (block 7), A4, attempt 1
+17:51:03 run corridor_complex-A4-20261024T155103Z
+17:51:03 stopping the bridge (it rests the robot)
+17:51:03 reloading the world
+17:51:08 starting a fresh naoqisim
+17:51:12 starting the ground-truth supervisor
+17:51:13 starting a fresh bridge
+17:51:16 starting the agent
+17:51:18 t0: prompt submitted
+17:55:49 corridor_complex-A2-20261024T153916Z: OpenRouter cost settled after 665 s
+17:58:30 end: stop_signal
+17:58:30 grace period: up to 30 s for the harness to finish
+17:58:38 OpenRouter cost: settling in the background (only A4's next run waits for it)
+17:58:38 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A4-20261024T155103Z
+17:58:39 position 56 (block 7), A7, attempt 1
+17:58:39 run corridor_complex-A7-20261024T155839Z
+17:58:44 stopping the bridge (it rests the robot)
+17:58:45 reloading the world
+17:58:49 starting a fresh naoqisim
+17:58:52 starting the ground-truth supervisor
+17:58:52 starting a fresh bridge
+17:58:55 starting the agent
+17:58:55 t0: prompt submitted
+18:02:08 corridor_complex-A6-20261024T154445Z: OpenRouter cost settled after 666 s
+18:09:44 corridor_complex-A4-20261024T155103Z: OpenRouter cost settled after 665 s
+18:15:18 end: stop_signal
+18:15:18 grace period: up to 30 s for the harness to finish
+18:15:24 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A7-20261024T155839Z
+18:15:26 position 57 (block 8), A4, attempt 1
+18:15:26 run corridor_complex-A4-20261024T161526Z
+18:15:26 stopping the bridge (it rests the robot)
+18:15:27 reloading the world
+18:15:30 starting a fresh naoqisim
+18:20:33 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A4-20261024T161526Z
+Traceback (most recent call last):
+  File "~/Documents/GitHub/use_the_naoqi_bridge/pilot/run.py", line 714, in <module>
+    for path in run_next(args.phase, args.task, args.fake_llm, args.count, args.stop_after_invalid):
+                ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/Documents/GitHub/use_the_naoqi_bridge/pilot/run.py", line 671, in run_next
+    run_dir = run(slot["agent"], task, phase, slot, fake_script, defer_cost=True)
+  File "~/Documents/GitHub/use_the_naoqi_bridge/pilot/run.py", line 554, in run
+    supervisor = reset(run_id, world)
+  File "~/Documents/GitHub/use_the_naoqi_bridge/pilot/run.py", line 186, in reset
+    wait_for("NAOqi is ready", lambda: "NAOqi is ready" in compose(NAOQISIM_DIR, "logs", "naoqisim", check=False),
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+             300, period=2)
+             ^^^^^^^^^^^^^^
+  File "~/Documents/GitHub/use_the_naoqi_bridge/pilot/run.py", line 130, in wait_for
+    raise RuntimeError("timed out after %d s waiting for %s" % (timeout, what))
+RuntimeError: timed out after 300 s waiting for NAOqi is ready
+--- restart 18:20:51 after naoqisim exit 139 at position 57 ---
+18:20:52 position 57 (block 8), A4, attempt 2
+18:20:52 run corridor_complex-A4-20261024T162052Z
+18:20:52 stopping the bridge (it rests the robot)
+18:20:52 reloading the world
+18:20:57 starting a fresh naoqisim
+18:21:02 starting the ground-truth supervisor
+18:21:02 starting a fresh bridge
+18:21:05 starting the agent
+18:21:08 t0: prompt submitted
+18:27:55 end: stop_signal
+18:27:55 grace period: up to 30 s for the harness to finish
+18:28:01 OpenRouter cost: settling in the background (only A4's next run waits for it)
+18:28:01 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A4-20261024T162052Z
+18:28:02 position 58 (block 8), A6, attempt 1
+18:28:02 run corridor_complex-A6-20261024T162802Z
+18:28:02 stopping the bridge (it rests the robot)
+18:28:03 reloading the world
+18:28:06 starting a fresh naoqisim
+18:28:09 starting the ground-truth supervisor
+18:28:09 starting a fresh bridge
+18:28:12 starting the agent
+18:28:14 t0: prompt submitted
+10:08:58 OpenRouter usage read failed (URLError(gaierror(8, 'nodename nor servname provided, or not known'))); again in 5 s
+10:09:02 end: wall_clock_cap
+10:09:03 OpenRouter usage read failed (URLError(gaierror(8, 'nodename nor servname provided, or not known'))); again in 15 s
+10:09:03 OpenRouter cost: settling in the background (only A6's next run waits for it)
+10:09:06 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A6-20261024T162802Z
+10:09:06 invalid run (real-time factor 0.005 below 0.90); position 58 stays open
+10:09:10 position 58 (block 8), A6, attempt 2
+10:09:10 waiting for A6's previous run's cost to settle on OpenRouter (corridor_complex-A6-20261024T162802Z)
+10:09:19 corridor_complex-A4-20261024T162052Z: OpenRouter cost settled after 60077 s
+10:09:40 waiting for A6's previous run's cost to settle on OpenRouter (corridor_complex-A6-20261024T162802Z)
+10:10:10 waiting for A6's previous run's cost to settle on OpenRouter (corridor_complex-A6-20261024T162802Z)
+10:10:40 waiting for A6's previous run's cost to settle on OpenRouter (corridor_complex-A6-20261024T162802Z)
+10:11:10 waiting for A6's previous run's cost to settle on OpenRouter (corridor_complex-A6-20261024T162802Z)
+10:11:40 waiting for A6's previous run's cost to settle on OpenRouter (corridor_complex-A6-20261024T162802Z)
+10:12:10 waiting for A6's previous run's cost to settle on OpenRouter (corridor_complex-A6-20261024T162802Z)
+10:12:40 waiting for A6's previous run's cost to settle on OpenRouter (corridor_complex-A6-20261024T162802Z)
+10:13:10 waiting for A6's previous run's cost to settle on OpenRouter (corridor_complex-A6-20261024T162802Z)
+10:13:40 waiting for A6's previous run's cost to settle on OpenRouter (corridor_complex-A6-20261024T162802Z)
+10:14:10 waiting for A6's previous run's cost to settle on OpenRouter (corridor_complex-A6-20261024T162802Z)
+10:14:40 waiting for A6's previous run's cost to settle on OpenRouter (corridor_complex-A6-20261024T162802Z)
+10:15:10 waiting for A6's previous run's cost to settle on OpenRouter (corridor_complex-A6-20261024T162802Z)
+10:15:40 waiting for A6's previous run's cost to settle on OpenRouter (corridor_complex-A6-20261024T162802Z)
+10:16:10 waiting for A6's previous run's cost to settle on OpenRouter (corridor_complex-A6-20261024T162802Z)
+10:16:40 waiting for A6's previous run's cost to settle on OpenRouter (corridor_complex-A6-20261024T162802Z)
+10:17:10 waiting for A6's previous run's cost to settle on OpenRouter (corridor_complex-A6-20261024T162802Z)
+10:17:40 waiting for A6's previous run's cost to settle on OpenRouter (corridor_complex-A6-20261024T162802Z)
+10:18:10 waiting for A6's previous run's cost to settle on OpenRouter (corridor_complex-A6-20261024T162802Z)
+10:18:40 waiting for A6's previous run's cost to settle on OpenRouter (corridor_complex-A6-20261024T162802Z)
+10:19:10 waiting for A6's previous run's cost to settle on OpenRouter (corridor_complex-A6-20261024T162802Z)
+10:19:40 waiting for A6's previous run's cost to settle on OpenRouter (corridor_complex-A6-20261024T162802Z)
+10:20:07 corridor_complex-A6-20261024T162802Z: OpenRouter cost settled after 663 s
+10:20:10 run corridor_complex-A6-20261025T092010Z
+10:20:10 stopping the bridge (it rests the robot)
+10:20:11 reloading the world
+10:20:15 starting a fresh naoqisim
+10:20:20 starting the ground-truth supervisor
+10:20:21 starting a fresh bridge
+10:20:23 starting the agent
+10:20:27 t0: prompt submitted
+10:22:17 end: stop_signal
+10:22:17 grace period: up to 30 s for the harness to finish
+10:22:20 OpenRouter cost: settling in the background (only A6's next run waits for it)
+10:22:21 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A6-20261025T092010Z
+10:22:22 position 59 (block 8), A3, attempt 1
+10:22:22 run corridor_complex-A3-20261025T092222Z
+10:22:22 stopping the bridge (it rests the robot)
+10:22:23 reloading the world
+10:22:27 starting a fresh naoqisim
+10:22:32 starting the ground-truth supervisor
+10:22:33 starting a fresh bridge
+10:22:35 starting the agent
+10:22:35 t0: prompt submitted
+10:25:16 end: stop_signal
+10:25:16 grace period: up to 30 s for the harness to finish
+10:25:22 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A3-20261025T092222Z
+10:25:23 position 60 (block 8), A2, attempt 1
+10:25:24 run corridor_complex-A2-20261025T092523Z
+10:25:24 stopping the bridge (it rests the robot)
+10:25:24 reloading the world
+10:25:28 starting a fresh naoqisim
+10:25:31 starting the ground-truth supervisor
+10:25:31 starting a fresh bridge
+10:25:34 starting the agent
+10:25:36 t0: prompt submitted
+10:30:20 end: stop_signal
+10:30:20 grace period: up to 30 s for the harness to finish
+10:30:25 OpenRouter cost: settling in the background (only A2's next run waits for it)
+10:30:26 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A2-20261025T092523Z
+10:30:27 position 61 (block 8), A8, attempt 1
+10:30:27 run corridor_complex-A8-20261025T093027Z
+10:30:27 stopping the bridge (it rests the robot)
+10:30:28 reloading the world
+10:30:32 starting a fresh naoqisim
+10:30:37 starting the ground-truth supervisor
+10:30:38 starting a fresh bridge
+10:30:40 starting the agent
+10:30:43 t0: prompt submitted
+10:33:23 corridor_complex-A6-20261025T092010Z: OpenRouter cost settled after 662 s
+10:41:29 corridor_complex-A2-20261025T092523Z: OpenRouter cost settled after 663 s
+10:45:32 end: stop_signal
+10:45:32 grace period: up to 30 s for the harness to finish
+10:45:38 OpenRouter cost: settling in the background (only A8's next run waits for it)
+10:45:39 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A8-20261025T093027Z
+10:45:40 position 62 (block 8), A1, attempt 1
+10:45:40 run corridor_complex-A1-20261025T094540Z
+10:45:40 stopping the bridge (it rests the robot)
+10:45:41 reloading the world
+10:45:45 starting a fresh naoqisim
+10:45:50 starting the ground-truth supervisor
+10:45:50 starting a fresh bridge
+10:45:52 starting the agent
+10:45:53 t0: prompt submitted
+10:54:17 end: stop_signal
+10:54:17 grace period: up to 30 s for the harness to finish
+10:54:23 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A1-20261025T094540Z
+10:54:24 position 63 (block 8), A5, attempt 1
+10:54:24 run corridor_complex-A5-20261025T095424Z
+10:54:24 stopping the bridge (it rests the robot)
+10:54:24 reloading the world
+10:54:28 starting a fresh naoqisim
+10:54:33 starting the ground-truth supervisor
+10:54:34 starting a fresh bridge
+10:54:36 starting the agent
+10:54:36 t0: prompt submitted
+10:56:42 corridor_complex-A8-20261025T093027Z: OpenRouter cost settled after 663 s
+11:03:11 end: stop_signal
+11:03:11 grace period: up to 30 s for the harness to finish
+11:03:14 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A5-20261025T095424Z
+11:03:15 position 64 (block 8), A7, attempt 1
+11:03:15 run corridor_complex-A7-20261025T100315Z
+11:03:20 stopping the bridge (it rests the robot)
+11:03:20 reloading the world
+11:03:24 starting a fresh naoqisim
+11:03:29 starting the ground-truth supervisor
+11:03:29 starting a fresh bridge
+11:03:31 starting the agent
+11:03:32 t0: prompt submitted
+11:17:05 end: stop_signal
+11:17:05 grace period: up to 30 s for the harness to finish
+11:17:18 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A7-20261025T100315Z
+11:17:19 position 65 (block 9), A1, attempt 1
+11:17:19 run corridor_complex-A1-20261025T101719Z
+11:17:19 stopping the bridge (it rests the robot)
+11:17:20 reloading the world
+11:17:24 starting a fresh naoqisim
+11:17:29 starting the ground-truth supervisor
+11:17:30 starting a fresh bridge
+11:17:32 starting the agent
+11:17:33 t0: prompt submitted
+11:23:45 end: stop_signal
+11:23:45 grace period: up to 30 s for the harness to finish
+11:23:50 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A1-20261025T101719Z
+11:23:51 position 66 (block 9), A7, attempt 1
+11:23:51 run corridor_complex-A7-20261025T102351Z
+11:23:55 stopping the bridge (it rests the robot)
+11:23:56 reloading the world
+11:24:00 starting a fresh naoqisim
+11:24:04 starting the ground-truth supervisor
+11:24:05 starting a fresh bridge
+11:24:07 starting the agent
+11:24:08 t0: prompt submitted
+11:40:27 end: stop_signal
+11:40:27 grace period: up to 30 s for the harness to finish
+11:40:37 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A7-20261025T102351Z
+11:40:38 position 67 (block 9), A3, attempt 1
+11:40:38 run corridor_complex-A3-20261025T104038Z
+11:40:38 stopping the bridge (it rests the robot)
+11:40:39 reloading the world
+11:40:43 starting a fresh naoqisim
+11:40:48 starting the ground-truth supervisor
+11:40:48 starting a fresh bridge
+11:40:51 starting the agent
+11:40:51 t0: prompt submitted
+11:46:36 end: stop_signal
+11:46:36 grace period: up to 30 s for the harness to finish
+11:46:40 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A3-20261025T104038Z
+11:46:41 position 68 (block 9), A2, attempt 1
+11:46:41 run corridor_complex-A2-20261025T104641Z
+11:46:41 stopping the bridge (it rests the robot)
+11:46:42 reloading the world
+11:46:46 starting a fresh naoqisim
+11:46:50 starting the ground-truth supervisor
+11:46:51 starting a fresh bridge
+11:46:55 starting the agent
+11:46:59 t0: prompt submitted
+11:52:04 end: stop_signal
+11:52:04 grace period: up to 30 s for the harness to finish
+11:52:12 OpenRouter cost: settling in the background (only A2's next run waits for it)
+11:52:12 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A2-20261025T104641Z
+11:52:14 position 69 (block 9), A5, attempt 1
+11:52:14 run corridor_complex-A5-20261025T105214Z
+11:52:14 stopping the bridge (it rests the robot)
+11:52:14 reloading the world
+11:52:18 starting a fresh naoqisim
+11:52:23 starting the ground-truth supervisor
+11:52:24 starting a fresh bridge
+11:52:26 starting the agent
+11:52:26 t0: prompt submitted
+12:00:10 end: stop_signal
+12:00:11 grace period: up to 30 s for the harness to finish
+12:00:15 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A5-20261025T105214Z
+12:00:17 position 70 (block 9), A6, attempt 1
+12:00:17 run corridor_complex-A6-20261025T110017Z
+12:00:17 stopping the bridge (it rests the robot)
+12:00:17 reloading the world
+12:00:21 starting a fresh naoqisim
+12:00:26 starting the ground-truth supervisor
+12:00:27 starting a fresh bridge
+12:00:30 starting the agent
+12:00:32 t0: prompt submitted
+12:01:58 end: stop_signal
+12:01:58 grace period: up to 30 s for the harness to finish
+12:02:03 OpenRouter cost: settling in the background (only A6's next run waits for it)
+12:02:03 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A6-20261025T110017Z
+12:02:05 position 71 (block 9), A8, attempt 1
+12:02:05 run corridor_complex-A8-20261025T110205Z
+12:02:05 stopping the bridge (it rests the robot)
+12:02:06 reloading the world
+12:02:09 starting a fresh naoqisim
+12:02:14 starting the ground-truth supervisor
+12:02:14 starting a fresh bridge
+12:02:17 starting the agent
+12:02:19 t0: prompt submitted
+12:03:16 corridor_complex-A2-20261025T104641Z: OpenRouter cost settled after 663 s
+12:13:08 corridor_complex-A6-20261025T110017Z: OpenRouter cost settled after 664 s
+12:14:16 end: stop_signal
+12:14:16 grace period: up to 30 s for the harness to finish
+12:14:23 OpenRouter cost: settling in the background (only A8's next run waits for it)
+12:14:24 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A8-20261025T110205Z
+12:14:25 position 72 (block 9), A4, attempt 1
+12:14:25 run corridor_complex-A4-20261025T111425Z
+12:14:25 stopping the bridge (it rests the robot)
+12:14:26 reloading the world
+12:14:30 starting a fresh naoqisim
+12:14:35 starting the ground-truth supervisor
+12:14:35 starting a fresh bridge
+12:14:38 starting the agent
+12:14:41 t0: prompt submitted
+12:21:19 end: stop_signal
+12:21:19 grace period: up to 30 s for the harness to finish
+12:21:25 OpenRouter cost: settling in the background (only A4's next run waits for it)
+12:21:25 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A4-20261025T111425Z
+12:21:27 position 73 (block 10), A5, attempt 1
+12:21:27 run corridor_complex-A5-20261025T112127Z
+12:21:27 stopping the bridge (it rests the robot)
+12:21:27 reloading the world
+12:21:31 starting a fresh naoqisim
+12:21:36 starting the ground-truth supervisor
+12:21:37 starting a fresh bridge
+12:21:39 starting the agent
+12:21:39 t0: prompt submitted
+12:25:28 corridor_complex-A8-20261025T110205Z: OpenRouter cost settled after 664 s
+12:28:50 end: stop_signal
+12:28:50 grace period: up to 30 s for the harness to finish
+12:28:53 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A5-20261025T112127Z
+12:28:55 position 74 (block 10), A8, attempt 1
+12:28:55 run corridor_complex-A8-20261025T112855Z
+12:28:55 stopping the bridge (it rests the robot)
+12:28:55 reloading the world
+12:29:00 starting a fresh naoqisim
+12:29:04 starting the ground-truth supervisor
+12:29:05 starting a fresh bridge
+12:29:08 starting the agent
+12:29:10 t0: prompt submitted
+12:32:28 corridor_complex-A4-20261025T111425Z: OpenRouter cost settled after 663 s
+12:36:23 end: stop_signal
+12:36:23 grace period: up to 30 s for the harness to finish
+12:36:28 OpenRouter cost: settling in the background (only A8's next run waits for it)
+12:36:29 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A8-20261025T112855Z
+12:36:30 position 75 (block 10), A4, attempt 1
+12:36:30 run corridor_complex-A4-20261025T113630Z
+12:36:30 stopping the bridge (it rests the robot)
+12:36:31 reloading the world
+12:36:35 starting a fresh naoqisim
+12:36:37 starting the ground-truth supervisor
+12:36:38 starting a fresh bridge
+12:36:41 starting the agent
+12:36:43 t0: prompt submitted
+12:43:01 end: stop_signal
+12:43:01 grace period: up to 30 s for the harness to finish
+12:43:08 OpenRouter cost: settling in the background (only A4's next run waits for it)
+12:43:08 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A4-20261025T113630Z
+12:43:10 position 76 (block 10), A7, attempt 1
+12:43:10 run corridor_complex-A7-20261025T114310Z
+12:43:15 stopping the bridge (it rests the robot)
+12:43:15 reloading the world
+12:43:19 starting a fresh naoqisim
+12:43:24 starting the ground-truth supervisor
+12:43:25 starting a fresh bridge
+12:43:28 starting the agent
+12:43:29 t0: prompt submitted
+12:47:33 corridor_complex-A8-20261025T112855Z: OpenRouter cost settled after 664 s
+12:54:14 corridor_complex-A4-20261025T113630Z: OpenRouter cost settled after 666 s
+12:59:06 end: stop_signal
+12:59:06 grace period: up to 30 s for the harness to finish
+12:59:37 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A7-20261025T114310Z
+12:59:39 position 77 (block 10), A1, attempt 1
+12:59:39 run corridor_complex-A1-20261025T115939Z
+12:59:39 stopping the bridge (it rests the robot)
+12:59:45 reloading the world
+12:59:48 starting a fresh naoqisim
+12:59:53 starting the ground-truth supervisor
+12:59:54 starting a fresh bridge
+12:59:56 starting the agent
+12:59:56 t0: prompt submitted
+13:06:47 end: stop_signal
+13:06:47 grace period: up to 30 s for the harness to finish
+13:06:53 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A1-20261025T115939Z
+13:06:55 position 78 (block 10), A2, attempt 1
+13:06:55 run corridor_complex-A2-20261025T120655Z
+13:06:55 stopping the bridge (it rests the robot)
+13:06:56 reloading the world
+13:07:00 starting a fresh naoqisim
+13:07:05 starting the ground-truth supervisor
+13:07:05 starting a fresh bridge
+13:07:08 starting the agent
+13:07:11 t0: prompt submitted
+13:14:41 end: stop_signal
+13:14:41 grace period: up to 30 s for the harness to finish
+13:15:12 OpenRouter cost: settling in the background (only A2's next run waits for it)
+13:15:12 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A2-20261025T120655Z
+13:15:14 position 79 (block 10), A6, attempt 1
+13:15:14 run corridor_complex-A6-20261025T121514Z
+13:15:14 stopping the bridge (it rests the robot)
+13:15:14 reloading the world
+13:15:18 starting a fresh naoqisim
+13:15:23 starting the ground-truth supervisor
+13:15:23 starting a fresh bridge
+13:15:27 starting the agent
+13:15:31 t0: prompt submitted
+13:17:59 OpenRouter usage read failed (URLError(ConnectionResetError(54, 'Connection reset by peer'))); again in 5 s
+13:21:27 end: stop_signal
+13:21:27 grace period: up to 30 s for the harness to finish
+13:21:37 OpenRouter cost: settling in the background (only A6's next run waits for it)
+13:21:38 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A6-20261025T121514Z
+13:21:39 position 80 (block 10), A3, attempt 1
+13:21:39 run corridor_complex-A3-20261025T122139Z
+13:21:39 stopping the bridge (it rests the robot)
+13:21:40 reloading the world
+13:21:44 starting a fresh naoqisim
+13:21:49 starting the ground-truth supervisor
+13:21:49 starting a fresh bridge
+13:21:52 starting the agent
+13:21:52 t0: prompt submitted
+13:26:43 corridor_complex-A2-20261025T120655Z: OpenRouter cost settled after 689 s
+13:27:47 end: stop_signal
+13:27:47 grace period: up to 30 s for the harness to finish
+13:27:50 run folder: ~/.naoqi-pilot/grid/main/runs/corridor_complex-A3-20261025T122139Z
+13:27:52 every position of the main order for corridor_complex has a valid run
+13:27:52 waiting for A6's previous run's cost to settle on OpenRouter
+13:32:42 corridor_complex-A6-20261025T121514Z: OpenRouter cost settled after 663 s
+~/.naoqi-pilot/grid/main/runs/corridor_complex-A4-20261024T162052Z
+~/.naoqi-pilot/grid/main/runs/corridor_complex-A6-20261024T162802Z
+~/.naoqi-pilot/grid/main/runs/corridor_complex-A6-20261025T092010Z
+~/.naoqi-pilot/grid/main/runs/corridor_complex-A3-20261025T092222Z
+~/.naoqi-pilot/grid/main/runs/corridor_complex-A2-20261025T092523Z
+~/.naoqi-pilot/grid/main/runs/corridor_complex-A8-20261025T093027Z
+~/.naoqi-pilot/grid/main/runs/corridor_complex-A1-20261025T094540Z
+~/.naoqi-pilot/grid/main/runs/corridor_complex-A5-20261025T095424Z
+~/.naoqi-pilot/grid/main/runs/corridor_complex-A7-20261025T100315Z
+~/.naoqi-pilot/grid/main/runs/corridor_complex-A1-20261025T101719Z
+~/.naoqi-pilot/grid/main/runs/corridor_complex-A7-20261025T102351Z
+~/.naoqi-pilot/grid/main/runs/corridor_complex-A3-20261025T104038Z
+~/.naoqi-pilot/grid/main/runs/corridor_complex-A2-20261025T104641Z
+~/.naoqi-pilot/grid/main/runs/corridor_complex-A5-20261025T105214Z
+~/.naoqi-pilot/grid/main/runs/corridor_complex-A6-20261025T110017Z
+~/.naoqi-pilot/grid/main/runs/corridor_complex-A8-20261025T110205Z
+~/.naoqi-pilot/grid/main/runs/corridor_complex-A4-20261025T111425Z
+~/.naoqi-pilot/grid/main/runs/corridor_complex-A5-20261025T112127Z
+~/.naoqi-pilot/grid/main/runs/corridor_complex-A8-20261025T112855Z
+~/.naoqi-pilot/grid/main/runs/corridor_complex-A4-20261025T113630Z
+~/.naoqi-pilot/grid/main/runs/corridor_complex-A7-20261025T114310Z
+~/.naoqi-pilot/grid/main/runs/corridor_complex-A1-20261025T115939Z
+~/.naoqi-pilot/grid/main/runs/corridor_complex-A2-20261025T120655Z
+~/.naoqi-pilot/grid/main/runs/corridor_complex-A6-20261025T121514Z
+~/.naoqi-pilot/grid/main/runs/corridor_complex-A3-20261025T122139Z

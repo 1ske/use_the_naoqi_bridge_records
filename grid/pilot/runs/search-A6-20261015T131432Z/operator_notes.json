@@ -1,0 +1,27 @@
+{
+  "interventions": [],
+  "invalid_reason": null,
+  "verdict": {
+    "distance_to_ball_m": null,
+    "within_distance": false,
+    "ball_visible_in_rest_image": false,
+    "rest_image": "~/.naoqi-pilot/grid/pilot/runs/search-A6-20261015T131432Z/operator_images/08.jpeg",
+    "rest_image_identified": true,
+    "facing_ball": "n",
+    "success": false,
+    "criteria": {
+      "_source": "Section 5.1.1 (Search, Success criteria): judged by the operator at the moment of rest and from the image of rest's tool result. DECIDE: how proximity is measured; DECIDE: keep the visibility condition. Section 5.1.1: a run starts only with the battery at 50 % or more.",
+      "decided": false,
+      "max_distance_m": 1.0,
+      "distance": "from the robot's torso, projected on the floor, to the ball's surface",
+      "require_ball_visible_in_rest_image": true,
+      "min_battery_percent": 50
+    },
+    "notes": "operator: never saw the ball, did not make it around the obstacles; rested because it could not find the ball",
+    "given_via": "chat with the runner's operator",
+    "judged_at": "2026-10-15T13:17:42+00:00"
+  },
+  "verdict_pending": false,
+  "rest_image": "~/.naoqi-pilot/grid/pilot/runs/search-A6-20261015T131432Z/operator_images/08.jpeg",
+  "rest_image_identified": true
+}

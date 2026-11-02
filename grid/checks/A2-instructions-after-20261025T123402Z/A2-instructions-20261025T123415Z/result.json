@@ -1,0 +1,36 @@
+{
+  "check": "instructions",
+  "agent": "A2",
+  "when": "after",
+  "attempt_id": "A2-instructions-20261025T123415Z",
+  "fake_llm": false,
+  "model": "anthropic/claude-opus-5.5",
+  "expected": "basalt-opal",
+  "prompt": "Use the naoqi MCP server. Its instructions contain a verification word. Reply with only that word. Do not call any tool.",
+  "image": {
+    "name": "naoqi-pilot/opencode-verify",
+    "id": "sha256:26264aad208e368d8b3d81ef8cca63e80c8dc546878a79389008556695c8fc12"
+  },
+  "system_commit": "8633fd55652811c1d82f24301eb5597977d51f24",
+  "system_uncommitted_changes": false,
+  "harness_version": "2.0.21",
+  "timed_out": false,
+  "answer": "basalt-opal",
+  "tool_calls": {
+    "agent": "A2",
+    "harness": "opencode",
+    "transcript_files": [
+      "transcript.jsonl"
+    ],
+    "transcript_found": true,
+    "unreadable_lines": 0,
+    "nao_tool_calls": 0,
+    "nao_tool_calls_by_tool": {},
+    "exempt_calls": {},
+    "violating_calls": {},
+    "protocol_violation": false
+  },
+  "cost_usd": null,
+  "cost_source": "missing: OpenRouter's usage did not settle within 0 s",
+  "passed": true
+}

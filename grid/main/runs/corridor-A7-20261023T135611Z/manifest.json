@@ -1,0 +1,107 @@
+{
+  "run_id": "corridor-A7-20261023T135611Z",
+  "phase": "main",
+  "task": "Corridor",
+  "task_key": "corridor",
+  "agent": "A7",
+  "run_order": {
+    "file": "~/.naoqi-pilot/grid/main/orders/corridor.json",
+    "seed": 13428688812018436143,
+    "position": 71,
+    "block": 9,
+    "attempt": 1
+  },
+  "agent_config": {
+    "harness": "agy",
+    "image": "naoqi-pilot/agy",
+    "llm": "Gemini 3.8 Flash",
+    "model": "gemini-3.8-flash-medium",
+    "model_id_confirmed": true,
+    "access_route": "Google account login (template token file), no API key",
+    "reasoning": "model gemini-3.8-flash-medium (agy encodes the effort in the model name)",
+    "proxy_allow": [
+      "^daily-cloudcode-pa\\.googleapis\\.com$",
+      "^oauth2\\.googleapis\\.com$",
+      "^www\\.googleapis\\.com$",
+      "^lh3\\.googleusercontent\\.com$"
+    ],
+    "deviations_ref": "agy",
+    "cost_known_missing": "The title request agy sends to gemini-3.1-flash-lite-preview in every run is not in agy's token counts, so it is not in the cost."
+  },
+  "deviations": [
+    {
+      "what": "agy 1.2.17 instead of 1.2.16, the version on the author's Mac (1.2.16 has no Linux download)",
+      "approved": "2026-10-05"
+    },
+    {
+      "what": "NAO tools set to eager (offered directly as mcp_naoqi_<tool>) instead of agy's default lazy loading through call_mcp_tool",
+      "approved": "2026-10-05"
+    },
+    {
+      "what": "Custom agent 'nao' (agents/nao/agent.md, started with --agent nao): tools: [view_file] and inheritMcp: true, so no built-in tools except view_file (agy shows a tool result's image to the model only when the model opens the offloaded file with it) and manage_task, list_resources and read_resource, which agy cannot remove; its '# identity' section copies agy's default identity text verbatim, so the system prompt equals agy's default except the sections for the removed tools (skills, subagents, conversation transcript, slash commands) and one messaging line",
+      "approved": "2026-10-05; view_file added 2026-10-06"
+    },
+    {
+      "what": "Permission rules deny command, unsandboxed, write_file, read_url, execute_url; read_file allowed only under ~/.gemini/antigravity-cli/brain/ (agy's offloaded tool-result images; a general read_file deny would override the allow); any other read is auto-denied in headless mode, which ends the session; mcp(naoqi/*) allowed; /work trusted",
+      "approved": "2026-10-06"
+    },
+    {
+      "what": "Network: only daily-cloudcode-pa.googleapis.com, oauth2.googleapis.com, www.googleapis.com and lh3.googleusercontent.com reachable; feature flags (antigravity-unleash.goog), logging (play.googleapis.com) and the update server blocked. agy's eligibility check before every prompt needs www.googleapis.com (/oauth2/v2/userinfo) and lh3.googleusercontent.com (the account's profile picture); found with pilot/tools/agy_hosts_check.sh. The proxy filters by host, so these hosts' other Google services are reachable for agy too (not for the agent, which has only the NAO tools)",
+      "approved": "2026-10-05; www.googleapis.com and lh3.googleusercontent.com allowed 2026-10-06"
+    }
+  ],
+  "harness_version": "1.2.17",
+  "system_commit": "8633fd55652811c1d82f24301eb5597977d51f24",
+  "system_uncommitted_changes": false,
+  "runner_code": {
+    "commit_at_start": "8633fd55652811c1d82f24301eb5597977d51f24",
+    "uncommitted_changes_at_start": false,
+    "changed_since_start": []
+  },
+  "world_file": "webots/worlds/corridor.wbt",
+  "world_sha256": "949c6c0ff5c75c2ce9ebda41298192e1f45fa8a70aabaa595d15667571dd5555",
+  "prompt": "Use the naoqi MCP server. You control a robot at the start of a corridor. Follow the corridor to its end, which is marked by a green panel, and stop in front of the panel. When the robot is there, call rest.",
+  "caps": {
+    "wall_clock_s": 1097,
+    "tool_calls": 72
+  },
+  "grace_period_s": 30,
+  "protocol_values_decided": {
+    "prompts": true,
+    "caps": true,
+    "grace_period_s": true,
+    "invalid_if": true,
+    "min_real_time_factor": true,
+    "search": true
+  },
+  "test": null,
+  "price": {
+    "source": "https://ai.google.dev/gemini-api/docs/pricing",
+    "accessed": "2026-10-06",
+    "tier": "Standard (paid tier)",
+    "valid_through": "2026-12-31",
+    "usd_per_million_tokens": {
+      "input": 0.75,
+      "cached_input": 0.075,
+      "output_including_thinking": 3.75
+    },
+    "token_mapping": "agy's result event: input_tokens excludes cached tokens, cache_read_tokens is the cached part, output_tokens includes thinking_tokens (checked with pilot/tools/fake_llm.py, 2026-10-06)",
+    "not_included": "the context-cache storage price (0.50 USD per million tokens per hour), which explicit caches pay; agy reports no cache storage",
+    "model": "gemini-3.8-flash"
+  },
+  "image": {
+    "name": "naoqi-pilot/agy",
+    "id": "sha256:b93e1c2edc385d15c97792f31fa5c5056ea259126ac2cdb6c685870fd7a11517"
+  },
+  "end_condition": "stop_signal",
+  "invalid_reason": null,
+  "harness_exited_in_grace_period": true,
+  "harness_exit_code": "0",
+  "runner_times_mac_clock": {
+    "container_started": "2026-10-23T13:56:27.446+00:00",
+    "t0_seen": "2026-10-23T13:56:27.745+00:00",
+    "end_detected": "2026-10-23T14:02:27.522+00:00",
+    "harness_stopped": "2026-10-23T14:02:33.101+00:00",
+    "runner_started": "2026-10-23T13:56:11.425+00:00"
+  }
+}

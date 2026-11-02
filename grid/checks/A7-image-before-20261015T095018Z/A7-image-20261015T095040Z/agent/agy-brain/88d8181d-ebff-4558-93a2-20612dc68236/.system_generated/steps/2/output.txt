@@ -1,0 +1,34 @@
+{
+  "posture": "Crouch",
+  "posture_family": "Crouch",
+  "awake": false,
+  "fallen": false,
+  "fall_count": 0,
+  "last_fall": null,
+  "odometry": {
+    "x": 0.0,
+    "y": 0.0,
+    "theta": 0.0
+  },
+  "sonar_m": {
+    "left": 2.55,
+    "right": 2.55
+  },
+  "bumpers": {
+    "left_foot": false,
+    "right_foot": false
+  },
+  "busy": null,
+  "warnings": [],
+  "battery": {
+    "percent": 99.0,
+    "charging": false
+  },
+  "images_meta": [
+    {
+      "mime_type": "image/png",
+      "layout": "1 tile of 320x240 px"
+    }
+  ]
+}
+[Resource offloaded to file:///home/agent/.gemini/antigravity-cli/brain/88d8181d-ebff-4558-93a2-20612dc68236/.system_generated/steps/2/media_0.png]

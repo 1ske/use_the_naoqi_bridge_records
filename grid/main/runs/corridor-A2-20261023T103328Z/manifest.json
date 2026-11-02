@@ -1,0 +1,80 @@
+{
+  "run_id": "corridor-A2-20261023T103328Z",
+  "phase": "main",
+  "task": "Corridor",
+  "task_key": "corridor",
+  "agent": "A2",
+  "run_order": {
+    "file": "~/.naoqi-pilot/grid/main/orders/corridor.json",
+    "seed": 13428688812018436143,
+    "position": 21,
+    "block": 3,
+    "attempt": 1
+  },
+  "agent_config": {
+    "harness": "opencode",
+    "image": "naoqi-pilot/opencode",
+    "llm": "Claude Opus 5.5",
+    "model": "anthropic/claude-opus-5.5",
+    "model_id_confirmed": true,
+    "access_route": "OpenRouter, provider 'anthropic' only, allow_fallbacks false",
+    "reasoning": "reasoning.effort = medium in every request body",
+    "proxy_allow": [
+      "^openrouter\\.ai$"
+    ],
+    "deviations_ref": "opencode",
+    "openrouter_key_file": "~/.naoqi-pilot/templates/openrouter/api-key-A2"
+  },
+  "deviations": [
+    {
+      "what": "Built-in tools denied: permissions deny all except naoqi_* (global and build-agent rules) plus a hard-deny policy; denied tools are not offered to the LLM"
+    },
+    {
+      "what": "Code Mode off: codemode false for the naoqi server, and the execute action denied"
+    },
+    {
+      "what": "Prompt submitted only after OpenCode reports the naoqi MCP server as connected (OpenCode 2 connects MCP servers asynchronously); t0 = prompt submission",
+      "approved": "2026-10-05"
+    },
+    {
+      "what": "Title agent uses the run's own model and provider instead of OpenCode's default small model",
+      "approved": "2026-10-05"
+    },
+    {
+      "what": "Provider use limited to OpenRouter by policy; update disabled; sharing disabled"
+    },
+    {
+      "what": "Network: only openrouter.ai reachable; models.opencode.ai (model catalog) blocked"
+    }
+  ],
+  "harness_version": "2.0.21",
+  "system_commit": "8633fd55652811c1d82f24301eb5597977d51f24",
+  "system_uncommitted_changes": false,
+  "runner_code": {
+    "commit_at_start": "8633fd55652811c1d82f24301eb5597977d51f24",
+    "uncommitted_changes_at_start": false,
+    "changed_since_start": []
+  },
+  "world_file": "webots/worlds/corridor.wbt",
+  "world_sha256": "949c6c0ff5c75c2ce9ebda41298192e1f45fa8a70aabaa595d15667571dd5555",
+  "prompt": "Use the naoqi MCP server. You control a robot at the start of a corridor. Follow the corridor to its end, which is marked by a green panel, and stop in front of the panel. When the robot is there, call rest.",
+  "caps": {
+    "wall_clock_s": 1097,
+    "tool_calls": 72
+  },
+  "grace_period_s": 30,
+  "protocol_values_decided": {
+    "prompts": true,
+    "caps": true,
+    "grace_period_s": true,
+    "invalid_if": true,
+    "min_real_time_factor": true,
+    "search": true
+  },
+  "test": null,
+  "end_condition": "runner_error",
+  "invalid_reason": "runner error: RuntimeError('timed out after 300 s waiting for NAOqi is ready')",
+  "runner_times_mac_clock": {
+    "runner_started": "2026-10-23T10:33:28.952+00:00"
+  }
+}

@@ -1,0 +1,423 @@
+{
+  "phase": "main",
+  "task_key": "corridor",
+  "agents": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8"
+  ],
+  "blocks": 10,
+  "seed": 13428688812018436143,
+  "seed_source": "secrets.randbits(64)",
+  "method": "randomized complete blocks: per block, random.Random(seed).sample of the block's agents not yet placed; blocks drawn one after the other from the same generator",
+  "python": "3.13.12",
+  "created": "2026-10-19T09:20:19+00:00",
+  "system_commit": "85efeff5db428f13faf16f0f60508d78bb9f7e0f",
+  "order": [
+    {
+      "position": 1,
+      "block": 1,
+      "agent": "A8"
+    },
+    {
+      "position": 2,
+      "block": 1,
+      "agent": "A5"
+    },
+    {
+      "position": 3,
+      "block": 1,
+      "agent": "A4"
+    },
+    {
+      "position": 4,
+      "block": 1,
+      "agent": "A6"
+    },
+    {
+      "position": 5,
+      "block": 1,
+      "agent": "A2"
+    },
+    {
+      "position": 6,
+      "block": 1,
+      "agent": "A3"
+    },
+    {
+      "position": 7,
+      "block": 1,
+      "agent": "A7"
+    },
+    {
+      "position": 8,
+      "block": 1,
+      "agent": "A1"
+    },
+    {
+      "position": 9,
+      "block": 2,
+      "agent": "A3"
+    },
+    {
+      "position": 10,
+      "block": 2,
+      "agent": "A4"
+    },
+    {
+      "position": 11,
+      "block": 2,
+      "agent": "A7"
+    },
+    {
+      "position": 12,
+      "block": 2,
+      "agent": "A5"
+    },
+    {
+      "position": 13,
+      "block": 2,
+      "agent": "A2"
+    },
+    {
+      "position": 14,
+      "block": 2,
+      "agent": "A8"
+    },
+    {
+      "position": 15,
+      "block": 2,
+      "agent": "A6"
+    },
+    {
+      "position": 16,
+      "block": 2,
+      "agent": "A1"
+    },
+    {
+      "position": 17,
+      "block": 3,
+      "agent": "A6"
+    },
+    {
+      "position": 18,
+      "block": 3,
+      "agent": "A4"
+    },
+    {
+      "position": 19,
+      "block": 3,
+      "agent": "A5"
+    },
+    {
+      "position": 20,
+      "block": 3,
+      "agent": "A3"
+    },
+    {
+      "position": 21,
+      "block": 3,
+      "agent": "A2"
+    },
+    {
+      "position": 22,
+      "block": 3,
+      "agent": "A1"
+    },
+    {
+      "position": 23,
+      "block": 3,
+      "agent": "A8"
+    },
+    {
+      "position": 24,
+      "block": 3,
+      "agent": "A7"
+    },
+    {
+      "position": 25,
+      "block": 4,
+      "agent": "A5"
+    },
+    {
+      "position": 26,
+      "block": 4,
+      "agent": "A6"
+    },
+    {
+      "position": 27,
+      "block": 4,
+      "agent": "A4"
+    },
+    {
+      "position": 28,
+      "block": 4,
+      "agent": "A2"
+    },
+    {
+      "position": 29,
+      "block": 4,
+      "agent": "A1"
+    },
+    {
+      "position": 30,
+      "block": 4,
+      "agent": "A7"
+    },
+    {
+      "position": 31,
+      "block": 4,
+      "agent": "A8"
+    },
+    {
+      "position": 32,
+      "block": 4,
+      "agent": "A3"
+    },
+    {
+      "position": 33,
+      "block": 5,
+      "agent": "A4"
+    },
+    {
+      "position": 34,
+      "block": 5,
+      "agent": "A1"
+    },
+    {
+      "position": 35,
+      "block": 5,
+      "agent": "A3"
+    },
+    {
+      "position": 36,
+      "block": 5,
+      "agent": "A2"
+    },
+    {
+      "position": 37,
+      "block": 5,
+      "agent": "A6"
+    },
+    {
+      "position": 38,
+      "block": 5,
+      "agent": "A5"
+    },
+    {
+      "position": 39,
+      "block": 5,
+      "agent": "A7"
+    },
+    {
+      "position": 40,
+      "block": 5,
+      "agent": "A8"
+    },
+    {
+      "position": 41,
+      "block": 6,
+      "agent": "A8"
+    },
+    {
+      "position": 42,
+      "block": 6,
+      "agent": "A7"
+    },
+    {
+      "position": 43,
+      "block": 6,
+      "agent": "A6"
+    },
+    {
+      "position": 44,
+      "block": 6,
+      "agent": "A1"
+    },
+    {
+      "position": 45,
+      "block": 6,
+      "agent": "A4"
+    },
+    {
+      "position": 46,
+      "block": 6,
+      "agent": "A5"
+    },
+    {
+      "position": 47,
+      "block": 6,
+      "agent": "A2"
+    },
+    {
+      "position": 48,
+      "block": 6,
+      "agent": "A3"
+    },
+    {
+      "position": 49,
+      "block": 7,
+      "agent": "A7"
+    },
+    {
+      "position": 50,
+      "block": 7,
+      "agent": "A3"
+    },
+    {
+      "position": 51,
+      "block": 7,
+      "agent": "A6"
+    },
+    {
+      "position": 52,
+      "block": 7,
+      "agent": "A2"
+    },
+    {
+      "position": 53,
+      "block": 7,
+      "agent": "A8"
+    },
+    {
+      "position": 54,
+      "block": 7,
+      "agent": "A4"
+    },
+    {
+      "position": 55,
+      "block": 7,
+      "agent": "A5"
+    },
+    {
+      "position": 56,
+      "block": 7,
+      "agent": "A1"
+    },
+    {
+      "position": 57,
+      "block": 8,
+      "agent": "A3"
+    },
+    {
+      "position": 58,
+      "block": 8,
+      "agent": "A6"
+    },
+    {
+      "position": 59,
+      "block": 8,
+      "agent": "A5"
+    },
+    {
+      "position": 60,
+      "block": 8,
+      "agent": "A7"
+    },
+    {
+      "position": 61,
+      "block": 8,
+      "agent": "A8"
+    },
+    {
+      "position": 62,
+      "block": 8,
+      "agent": "A4"
+    },
+    {
+      "position": 63,
+      "block": 8,
+      "agent": "A2"
+    },
+    {
+      "position": 64,
+      "block": 8,
+      "agent": "A1"
+    },
+    {
+      "position": 65,
+      "block": 9,
+      "agent": "A6"
+    },
+    {
+      "position": 66,
+      "block": 9,
+      "agent": "A3"
+    },
+    {
+      "position": 67,
+      "block": 9,
+      "agent": "A8"
+    },
+    {
+      "position": 68,
+      "block": 9,
+      "agent": "A5"
+    },
+    {
+      "position": 69,
+      "block": 9,
+      "agent": "A1"
+    },
+    {
+      "position": 70,
+      "block": 9,
+      "agent": "A4"
+    },
+    {
+      "position": 71,
+      "block": 9,
+      "agent": "A7"
+    },
+    {
+      "position": 72,
+      "block": 9,
+      "agent": "A2"
+    },
+    {
+      "position": 73,
+      "block": 10,
+      "agent": "A8"
+    },
+    {
+      "position": 74,
+      "block": 10,
+      "agent": "A2"
+    },
+    {
+      "position": 75,
+      "block": 10,
+      "agent": "A6"
+    },
+    {
+      "position": 76,
+      "block": 10,
+      "agent": "A1"
+    },
+    {
+      "position": 77,
+      "block": 10,
+      "agent": "A7"
+    },
+    {
+      "position": 78,
+      "block": 10,
+      "agent": "A3"
+    },
+    {
+      "position": 79,
+      "block": 10,
+      "agent": "A5"
+    },
+    {
+      "position": 80,
+      "block": 10,
+      "agent": "A4"
+    }
+  ]
+}

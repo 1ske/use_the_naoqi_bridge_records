@@ -1,0 +1,38 @@
+{
+  "check": "image",
+  "agent": "A4",
+  "when": "before",
+  "attempt_id": "A4-image-20261015T095216Z",
+  "fake_llm": false,
+  "model": "anthropic/claude-sonnet-5.5",
+  "expected": "436380",
+  "prompt": "Use the naoqi MCP server. Call get_state once. The image in its result shows a code of six digits. Reply with only that code.",
+  "image": {
+    "name": "naoqi-pilot/opencode-verify",
+    "id": "sha256:26264aad208e368d8b3d81ef8cca63e80c8dc546878a79389008556695c8fc12"
+  },
+  "system_commit": "e904b4c0709625a1de2729d3e856ea54bbe6e3b8",
+  "system_uncommitted_changes": false,
+  "harness_version": "2.0.21",
+  "timed_out": false,
+  "answer": "436380",
+  "tool_calls": {
+    "agent": "A4",
+    "harness": "opencode",
+    "transcript_files": [
+      "transcript.jsonl"
+    ],
+    "transcript_found": true,
+    "unreadable_lines": 0,
+    "nao_tool_calls": 1,
+    "nao_tool_calls_by_tool": {
+      "get_state": 1
+    },
+    "exempt_calls": {},
+    "violating_calls": {},
+    "protocol_violation": false
+  },
+  "cost_usd": null,
+  "cost_source": "missing: OpenRouter's usage did not settle within 0 s",
+  "passed": true
+}

@@ -1,0 +1,2 @@
+{"t": 1792052123.6781056, "label": "main-1", "api": "anthropic", "path": "/v1/messages?beta=true", "user_agent": null, "server_instructions_in_request": true, "image_in_request": false, "usage": {"input": 1000, "output": 10, "thinking": 1}}
+{"t": 1792052123.751455, "label": "main-2", "api": "anthropic", "path": "/v1/messages?beta=true", "user_agent": null, "server_instructions_in_request": true, "image_in_request": true, "usage": {"input": 2000, "output": 20, "thinking": 2}}

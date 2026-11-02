@@ -1,0 +1,1028 @@
+{
+  "phase": "pilot",
+  "runs_folder": "~/.naoqi-pilot/grid/pilot/runs",
+  "quantiles": "statistics.quantiles(method='inclusive'), i.e. linear interpolation between order statistics",
+  "agents": {
+    "A1": {
+      "llm": "Claude Opus 5.5",
+      "harness": "claude-code"
+    },
+    "A2": {
+      "llm": "Claude Opus 5.5",
+      "harness": "opencode"
+    },
+    "A3": {
+      "llm": "Claude Sonnet 5.5",
+      "harness": "claude-code"
+    },
+    "A4": {
+      "llm": "Claude Sonnet 5.5",
+      "harness": "opencode"
+    },
+    "A5": {
+      "llm": "Claude Haiku 5.5",
+      "harness": "claude-code"
+    },
+    "A6": {
+      "llm": "Claude Haiku 5.5",
+      "harness": "opencode"
+    },
+    "A7": {
+      "llm": "Gemini 3.8 Flash",
+      "harness": "agy"
+    },
+    "A8": {
+      "llm": "Gemini 3.8 Flash",
+      "harness": "opencode"
+    }
+  },
+  "summary": {
+    "corridor": {
+      "A1": {
+        "n": 3,
+        "k": 3,
+        "rate": 1.0,
+        "wilson95": [
+          0.43850296824495455,
+          1.0
+        ],
+        "completion_time_s": {
+          "n": 3,
+          "median": 138.758,
+          "q1": 133.31650000000002,
+          "q3": 146.11950000000002
+        },
+        "tool_calls": {
+          "n": 3,
+          "median": 12,
+          "q1": 11.5,
+          "q3": 12.5
+        },
+        "cost_usd": {
+          "n": 3,
+          "median": 0.17269179999999998,
+          "q1": 0.15373199999999998,
+          "q3": 0.17389759999999999,
+          "missing": 0
+        },
+        "distance_to_goal_m": {
+          "n": 3,
+          "median": 0.672,
+          "q1": 0.6475,
+          "q3": 0.6915
+        },
+        "rq3": {
+          "runs_with_fall": 0.0,
+          "runs_with_obstacle": 1.0,
+          "runs_with_bumped": 0.0,
+          "rejected_per_run": 0.0,
+          "refused_per_run": 0.0,
+          "instruction_following": 1.0,
+          "exempt_calls": {},
+          "exempt_calls_per_run": 0.0
+        },
+        "failed_end_conditions": {}
+      },
+      "A2": {
+        "n": 3,
+        "k": 2,
+        "rate": 0.6666666666666666,
+        "wilson95": [
+          0.20765960080204765,
+          0.9385080552796037
+        ],
+        "completion_time_s": {
+          "n": 2,
+          "median": 147.18599999999998,
+          "q1": 135.74149999999997,
+          "q3": 158.63049999999998
+        },
+        "tool_calls": {
+          "n": 2,
+          "median": 13.0,
+          "q1": 11.5,
+          "q3": 14.5
+        },
+        "cost_usd": {
+          "n": 3,
+          "median": 0.14383265,
+          "q1": 0.11500212500000001,
+          "q3": 0.16273838499999999,
+          "missing": 0
+        },
+        "distance_to_goal_m": {
+          "n": 3,
+          "median": 0.987,
+          "q1": 0.887,
+          "q3": 1.117
+        },
+        "rq3": {
+          "runs_with_fall": 0.0,
+          "runs_with_obstacle": 0.6666666666666666,
+          "runs_with_bumped": 0.0,
+          "rejected_per_run": 0.0,
+          "refused_per_run": 1.3333333333333333,
+          "instruction_following": 1.0,
+          "exempt_calls": {},
+          "exempt_calls_per_run": 0.0
+        },
+        "failed_end_conditions": {
+          "stop_signal": 1
+        }
+      },
+      "A3": {
+        "n": 3,
+        "k": 3,
+        "rate": 1.0,
+        "wilson95": [
+          0.43850296824495455,
+          1.0
+        ],
+        "completion_time_s": {
+          "n": 3,
+          "median": 172.026,
+          "q1": 161.49099999999999,
+          "q3": 173.657
+        },
+        "tool_calls": {
+          "n": 3,
+          "median": 17,
+          "q1": 16.5,
+          "q3": 17.5
+        },
+        "cost_usd": {
+          "n": 3,
+          "median": 0.1283378,
+          "q1": 0.12204190000000001,
+          "q3": 0.1323203,
+          "missing": 0
+        },
+        "distance_to_goal_m": {
+          "n": 3,
+          "median": 0.618,
+          "q1": 0.5285,
+          "q3": 0.647
+        },
+        "rq3": {
+          "runs_with_fall": 0.0,
+          "runs_with_obstacle": 1.0,
+          "runs_with_bumped": 0.0,
+          "rejected_per_run": 0.0,
+          "refused_per_run": 0.0,
+          "instruction_following": 1.0,
+          "exempt_calls": {},
+          "exempt_calls_per_run": 0.0
+        },
+        "failed_end_conditions": {}
+      },
+      "A4": {
+        "n": 3,
+        "k": 2,
+        "rate": 0.6666666666666666,
+        "wilson95": [
+          0.20765960080204765,
+          0.9385080552796037
+        ],
+        "completion_time_s": {
+          "n": 2,
+          "median": 127.18350000000001,
+          "q1": 123.35475,
+          "q3": 131.01225
+        },
+        "tool_calls": {
+          "n": 2,
+          "median": 12.0,
+          "q1": 11.0,
+          "q3": 13.0
+        },
+        "cost_usd": {
+          "n": 3,
+          "median": 0.0560102,
+          "q1": 0.0527879,
+          "q3": 0.06447698,
+          "missing": 0
+        },
+        "distance_to_goal_m": {
+          "n": 3,
+          "median": 0.711,
+          "q1": 0.7024999999999999,
+          "q3": 0.9304999999999999
+        },
+        "rq3": {
+          "runs_with_fall": 0.0,
+          "runs_with_obstacle": 1.0,
+          "runs_with_bumped": 0.0,
+          "rejected_per_run": 0.0,
+          "refused_per_run": 0.3333333333333333,
+          "instruction_following": 1.0,
+          "exempt_calls": {},
+          "exempt_calls_per_run": 0.0
+        },
+        "failed_end_conditions": {
+          "stop_signal": 1
+        }
+      },
+      "A5": {
+        "n": 3,
+        "k": 3,
+        "rate": 1.0,
+        "wilson95": [
+          0.43850296824495455,
+          1.0
+        ],
+        "completion_time_s": {
+          "n": 3,
+          "median": 202.045,
+          "q1": 170.9665,
+          "q3": 212.76999999999998
+        },
+        "tool_calls": {
+          "n": 3,
+          "median": 24,
+          "q1": 20.0,
+          "q3": 27.0
+        },
+        "cost_usd": {
+          "n": 3,
+          "median": 0.012262830000000002,
+          "q1": 0.00982997,
+          "q3": 0.015102305000000002,
+          "missing": 0
+        },
+        "distance_to_goal_m": {
+          "n": 3,
+          "median": 0.497,
+          "q1": 0.4935,
+          "q3": 0.685
+        },
+        "rq3": {
+          "runs_with_fall": 0.0,
+          "runs_with_obstacle": 1.0,
+          "runs_with_bumped": 0.0,
+          "rejected_per_run": 0.0,
+          "refused_per_run": 0.0,
+          "instruction_following": 1.0,
+          "exempt_calls": {},
+          "exempt_calls_per_run": 0.0
+        },
+        "failed_end_conditions": {}
+      },
+      "A6": {
+        "n": 3,
+        "k": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.5614970317550455
+        ],
+        "completion_time_s": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "tool_calls": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "cost_usd": {
+          "n": 3,
+          "median": 0.0087576,
+          "q1": 0.008378575,
+          "q3": 0.016479670000000002,
+          "missing": 0
+        },
+        "distance_to_goal_m": {
+          "n": 2,
+          "median": 2.367,
+          "q1": 1.988,
+          "q3": 2.746
+        },
+        "rq3": {
+          "runs_with_fall": 0.3333333333333333,
+          "runs_with_obstacle": 0.6666666666666666,
+          "runs_with_bumped": 0.0,
+          "rejected_per_run": 0.0,
+          "refused_per_run": 0.0,
+          "instruction_following": 0.6666666666666666,
+          "exempt_calls": {},
+          "exempt_calls_per_run": 0.0
+        },
+        "failed_end_conditions": {
+          "stop_signal": 3
+        }
+      },
+      "A7": {
+        "n": 3,
+        "k": 3,
+        "rate": 1.0,
+        "wilson95": [
+          0.43850296824495455,
+          1.0
+        ],
+        "completion_time_s": {
+          "n": 3,
+          "median": 310.176,
+          "q1": 288.41549999999995,
+          "q3": 335.88149999999996
+        },
+        "tool_calls": {
+          "n": 3,
+          "median": 20,
+          "q1": 19.5,
+          "q3": 20.5
+        },
+        "cost_usd": {
+          "n": 3,
+          "median": 0.24456833,
+          "q1": 0.222967655,
+          "q3": 0.25346614,
+          "missing": 0
+        },
+        "distance_to_goal_m": {
+          "n": 3,
+          "median": 0.569,
+          "q1": 0.554,
+          "q3": 0.6045
+        },
+        "rq3": {
+          "runs_with_fall": 0.0,
+          "runs_with_obstacle": 0.0,
+          "runs_with_bumped": 0.0,
+          "rejected_per_run": 0.0,
+          "refused_per_run": 0.0,
+          "instruction_following": 1.0,
+          "exempt_calls": {
+            "view_file": 46
+          },
+          "exempt_calls_per_run": 15.333333333333334
+        },
+        "failed_end_conditions": {}
+      },
+      "A8": {
+        "n": 3,
+        "k": 3,
+        "rate": 1.0,
+        "wilson95": [
+          0.43850296824495455,
+          1.0
+        ],
+        "completion_time_s": {
+          "n": 3,
+          "median": 259.104,
+          "q1": 221.25549999999998,
+          "q3": 403.70950000000005
+        },
+        "tool_calls": {
+          "n": 3,
+          "median": 18,
+          "q1": 16.0,
+          "q3": 27.0
+        },
+        "cost_usd": {
+          "n": 3,
+          "median": 0.12297278,
+          "q1": 0.11379977,
+          "q3": 0.209832845,
+          "missing": 0
+        },
+        "distance_to_goal_m": {
+          "n": 3,
+          "median": 0.656,
+          "q1": 0.5605,
+          "q3": 0.7375
+        },
+        "rq3": {
+          "runs_with_fall": 0.0,
+          "runs_with_obstacle": 0.6666666666666666,
+          "runs_with_bumped": 0.0,
+          "rejected_per_run": 0.0,
+          "refused_per_run": 0.0,
+          "instruction_following": 1.0,
+          "exempt_calls": {},
+          "exempt_calls_per_run": 0.0
+        },
+        "failed_end_conditions": {}
+      }
+    },
+    "corridor_complex": {
+      "A1": {
+        "n": 0,
+        "k": 0,
+        "rate": null,
+        "wilson95": null,
+        "completion_time_s": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "tool_calls": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "cost_usd": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null,
+          "missing": 0
+        },
+        "distance_to_goal_m": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "rq3": {
+          "runs_with_fall": null,
+          "runs_with_obstacle": null,
+          "runs_with_bumped": null,
+          "rejected_per_run": null,
+          "refused_per_run": null,
+          "instruction_following": null,
+          "exempt_calls": {},
+          "exempt_calls_per_run": null
+        },
+        "failed_end_conditions": {}
+      },
+      "A2": {
+        "n": 0,
+        "k": 0,
+        "rate": null,
+        "wilson95": null,
+        "completion_time_s": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "tool_calls": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "cost_usd": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null,
+          "missing": 0
+        },
+        "distance_to_goal_m": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "rq3": {
+          "runs_with_fall": null,
+          "runs_with_obstacle": null,
+          "runs_with_bumped": null,
+          "rejected_per_run": null,
+          "refused_per_run": null,
+          "instruction_following": null,
+          "exempt_calls": {},
+          "exempt_calls_per_run": null
+        },
+        "failed_end_conditions": {}
+      },
+      "A3": {
+        "n": 0,
+        "k": 0,
+        "rate": null,
+        "wilson95": null,
+        "completion_time_s": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "tool_calls": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "cost_usd": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null,
+          "missing": 0
+        },
+        "distance_to_goal_m": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "rq3": {
+          "runs_with_fall": null,
+          "runs_with_obstacle": null,
+          "runs_with_bumped": null,
+          "rejected_per_run": null,
+          "refused_per_run": null,
+          "instruction_following": null,
+          "exempt_calls": {},
+          "exempt_calls_per_run": null
+        },
+        "failed_end_conditions": {}
+      },
+      "A4": {
+        "n": 0,
+        "k": 0,
+        "rate": null,
+        "wilson95": null,
+        "completion_time_s": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "tool_calls": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "cost_usd": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null,
+          "missing": 0
+        },
+        "distance_to_goal_m": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "rq3": {
+          "runs_with_fall": null,
+          "runs_with_obstacle": null,
+          "runs_with_bumped": null,
+          "rejected_per_run": null,
+          "refused_per_run": null,
+          "instruction_following": null,
+          "exempt_calls": {},
+          "exempt_calls_per_run": null
+        },
+        "failed_end_conditions": {}
+      },
+      "A5": {
+        "n": 0,
+        "k": 0,
+        "rate": null,
+        "wilson95": null,
+        "completion_time_s": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "tool_calls": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "cost_usd": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null,
+          "missing": 0
+        },
+        "distance_to_goal_m": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "rq3": {
+          "runs_with_fall": null,
+          "runs_with_obstacle": null,
+          "runs_with_bumped": null,
+          "rejected_per_run": null,
+          "refused_per_run": null,
+          "instruction_following": null,
+          "exempt_calls": {},
+          "exempt_calls_per_run": null
+        },
+        "failed_end_conditions": {}
+      },
+      "A6": {
+        "n": 0,
+        "k": 0,
+        "rate": null,
+        "wilson95": null,
+        "completion_time_s": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "tool_calls": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "cost_usd": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null,
+          "missing": 0
+        },
+        "distance_to_goal_m": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "rq3": {
+          "runs_with_fall": null,
+          "runs_with_obstacle": null,
+          "runs_with_bumped": null,
+          "rejected_per_run": null,
+          "refused_per_run": null,
+          "instruction_following": null,
+          "exempt_calls": {},
+          "exempt_calls_per_run": null
+        },
+        "failed_end_conditions": {}
+      },
+      "A7": {
+        "n": 0,
+        "k": 0,
+        "rate": null,
+        "wilson95": null,
+        "completion_time_s": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "tool_calls": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "cost_usd": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null,
+          "missing": 0
+        },
+        "distance_to_goal_m": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "rq3": {
+          "runs_with_fall": null,
+          "runs_with_obstacle": null,
+          "runs_with_bumped": null,
+          "rejected_per_run": null,
+          "refused_per_run": null,
+          "instruction_following": null,
+          "exempt_calls": {},
+          "exempt_calls_per_run": null
+        },
+        "failed_end_conditions": {}
+      },
+      "A8": {
+        "n": 0,
+        "k": 0,
+        "rate": null,
+        "wilson95": null,
+        "completion_time_s": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "tool_calls": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "cost_usd": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null,
+          "missing": 0
+        },
+        "distance_to_goal_m": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "rq3": {
+          "runs_with_fall": null,
+          "runs_with_obstacle": null,
+          "runs_with_bumped": null,
+          "rejected_per_run": null,
+          "refused_per_run": null,
+          "instruction_following": null,
+          "exempt_calls": {},
+          "exempt_calls_per_run": null
+        },
+        "failed_end_conditions": {}
+      }
+    }
+  },
+  "tests": {
+    "method": "scipy.stats.barnard_exact, two-sided, defaults (pooled Wald statistic, n=32); 8 tests, not adjusted for multiple comparisons (section 5.1.10)",
+    "C3-C6": [
+      {
+        "contrast": "C3",
+        "task": "corridor",
+        "native": "A1",
+        "opencode": "A2",
+        "native_k_n": [
+          3,
+          3
+        ],
+        "opencode_k_n": [
+          2,
+          3
+        ],
+        "difference": 0.33333333333333337,
+        "p_value": 0.5073731281093989
+      },
+      {
+        "contrast": "C4",
+        "task": "corridor",
+        "native": "A3",
+        "opencode": "A4",
+        "native_k_n": [
+          3,
+          3
+        ],
+        "opencode_k_n": [
+          2,
+          3
+        ],
+        "difference": 0.33333333333333337,
+        "p_value": 0.5073731281093989
+      },
+      {
+        "contrast": "C5",
+        "task": "corridor",
+        "native": "A5",
+        "opencode": "A6",
+        "native_k_n": [
+          3,
+          3
+        ],
+        "opencode_k_n": [
+          0,
+          3
+        ],
+        "difference": 1.0,
+        "p_value": 0.031250000000000014
+      },
+      {
+        "contrast": "C6",
+        "task": "corridor",
+        "native": "A7",
+        "opencode": "A8",
+        "native_k_n": [
+          3,
+          3
+        ],
+        "opencode_k_n": [
+          3,
+          3
+        ],
+        "difference": 0.0,
+        "p_value": 1.0
+      },
+      {
+        "contrast": "C3",
+        "task": "corridor_complex",
+        "native": "A1",
+        "opencode": "A2",
+        "native_k_n": [
+          0,
+          0
+        ],
+        "opencode_k_n": [
+          0,
+          0
+        ],
+        "difference": null,
+        "p_value": null
+      },
+      {
+        "contrast": "C4",
+        "task": "corridor_complex",
+        "native": "A3",
+        "opencode": "A4",
+        "native_k_n": [
+          0,
+          0
+        ],
+        "opencode_k_n": [
+          0,
+          0
+        ],
+        "difference": null,
+        "p_value": null
+      },
+      {
+        "contrast": "C5",
+        "task": "corridor_complex",
+        "native": "A5",
+        "opencode": "A6",
+        "native_k_n": [
+          0,
+          0
+        ],
+        "opencode_k_n": [
+          0,
+          0
+        ],
+        "difference": null,
+        "p_value": null
+      },
+      {
+        "contrast": "C6",
+        "task": "corridor_complex",
+        "native": "A7",
+        "opencode": "A8",
+        "native_k_n": [
+          0,
+          0
+        ],
+        "opencode_k_n": [
+          0,
+          0
+        ],
+        "difference": null,
+        "p_value": null
+      }
+    ],
+    "C7": {
+      "corridor": {
+        "A1-A2": "+",
+        "A3-A4": "+",
+        "A5-A6": "+",
+        "A7-A8": "0"
+      },
+      "corridor_complex": {
+        "A1-A2": null,
+        "A3-A4": null,
+        "A5-A6": null,
+        "A7-A8": null
+      }
+    }
+  },
+  "checks": {
+    "A1 image before": [
+      3,
+      3
+    ],
+    "A1 instructions before": [
+      3,
+      3
+    ],
+    "A2 image before": [
+      3,
+      3
+    ],
+    "A2 instructions before": [
+      3,
+      3
+    ],
+    "A3 image before": [
+      3,
+      3
+    ],
+    "A3 instructions before": [
+      3,
+      3
+    ],
+    "A4 image before": [
+      3,
+      3
+    ],
+    "A4 instructions before": [
+      3,
+      3
+    ],
+    "A5 image before": [
+      3,
+      3
+    ],
+    "A5 instructions before": [
+      3,
+      3
+    ],
+    "A6 image before": [
+      3,
+      3
+    ],
+    "A6 instructions before": [
+      3,
+      3
+    ],
+    "A7 image before": [
+      3,
+      3
+    ],
+    "A7 instructions before": [
+      3,
+      3
+    ],
+    "A8 image before": [
+      3,
+      3
+    ],
+    "A8 instructions before": [
+      3,
+      3
+    ]
+  },
+  "validity": {
+    "A1": {
+      "valid": {
+        "corridor": 3
+      },
+      "invalid": 0,
+      "excluded": 0,
+      "invalid_reasons": {}
+    },
+    "A2": {
+      "valid": {
+        "corridor": 3
+      },
+      "invalid": 0,
+      "excluded": 0,
+      "invalid_reasons": {}
+    },
+    "A3": {
+      "valid": {
+        "corridor": 3
+      },
+      "invalid": 0,
+      "excluded": 0,
+      "invalid_reasons": {}
+    },
+    "A4": {
+      "valid": {
+        "corridor": 3
+      },
+      "invalid": 0,
+      "excluded": 0,
+      "invalid_reasons": {}
+    },
+    "A5": {
+      "valid": {
+        "corridor": 3
+      },
+      "invalid": 0,
+      "excluded": 0,
+      "invalid_reasons": {}
+    },
+    "A6": {
+      "valid": {
+        "corridor": 3
+      },
+      "invalid": 0,
+      "excluded": 0,
+      "invalid_reasons": {}
+    },
+    "A7": {
+      "valid": {
+        "corridor": 3
+      },
+      "invalid": 0,
+      "excluded": 0,
+      "invalid_reasons": {}
+    },
+    "A8": {
+      "valid": {
+        "corridor": 3
+      },
+      "invalid": 0,
+      "excluded": 0,
+      "invalid_reasons": {}
+    }
+  }
+}

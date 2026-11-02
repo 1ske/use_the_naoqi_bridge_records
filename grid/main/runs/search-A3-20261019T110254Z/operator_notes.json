@@ -1,0 +1,13 @@
+{
+  "interventions": [],
+  "invalid_reason": "hardware fault (battery): the physical NAO's battery fell from 92 % to 4 % in under 3 min off the charger (5-10 points per call, calls.jsonl); the agent called rest because of it before reaching the ball (its final message). Invalid under evaluation.tex, Invalid runs (the physical NAO has a hardware fault); position 14 is redone",
+  "verdict": null,
+  "verdict_pending": false,
+  "rest_image": "~/.naoqi-pilot/grid/main/runs/search-A3-20261019T110254Z/operator_images/14.jpeg",
+  "rest_image_identified": true,
+  "invalid_given": {
+    "via": "chat with the runner's operator",
+    "operator": "operator in chat: 'lets give this run another go ... we are going to retest this one as a battery failure'",
+    "at": "2026-10-19T11:07:14+00:00"
+  }
+}

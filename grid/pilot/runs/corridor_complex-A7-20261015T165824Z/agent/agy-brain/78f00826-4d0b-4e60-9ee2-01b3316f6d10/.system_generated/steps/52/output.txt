@@ -1,0 +1,78 @@
+{
+  "odometry_before": {
+    "y": 1.286,
+    "x": 2.531,
+    "theta": -0.873
+  },
+  "battery": {
+    "percent": 99.0,
+    "charging": false
+  },
+  "result": "arrived",
+  "commanded": {
+    "bearing_deg": -90.0,
+    "distance_m": 0.0
+  },
+  "odometry_after": {
+    "y": 1.286,
+    "x": 2.53,
+    "theta": -2.443
+  },
+  "clamped": [],
+  "odometry_delta": {
+    "y": -0.0,
+    "x": -0.001,
+    "theta": -1.571
+  },
+  "stopped_by": null,
+  "state": {
+    "odometry": {
+      "y": 1.286,
+      "x": 2.53,
+      "theta": -2.443
+    },
+    "warnings": [],
+    "last_fall": null,
+    "sonar_m": {
+      "right": 2.55,
+      "left": 0.77
+    },
+    "awake": true,
+    "fall_count": 0,
+    "posture_family": "Standing",
+    "posture": "Stand",
+    "busy": null,
+    "bumpers": {
+      "right_foot": false,
+      "left_foot": false
+    },
+    "walk_blocked_by_fall": false,
+    "fallen": false
+  },
+  "duration_s": 5.7,
+  "images_meta": [
+    {
+      "tiles": [
+        {
+          "direction": "ahead",
+          "camera": "top",
+          "head": {
+            "yaw": 0.0,
+            "pitch": -0.0
+          }
+        },
+        {
+          "direction": "ahead",
+          "camera": "bottom",
+          "head": {
+            "yaw": 0.0,
+            "pitch": -0.0
+          }
+        }
+      ],
+      "layout": "2 x 1 tiles of 320x240 px, left to right = left to right",
+      "mime_type": "image/jpeg"
+    }
+  ]
+}
+[Resource offloaded to file:///home/agent/.gemini/antigravity-cli/brain/78f00826-4d0b-4e60-9ee2-01b3316f6d10/.system_generated/steps/52/media_0.jpg]

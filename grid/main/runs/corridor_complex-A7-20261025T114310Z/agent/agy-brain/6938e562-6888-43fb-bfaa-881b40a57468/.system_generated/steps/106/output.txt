@@ -1,0 +1,8 @@
+{
+  "battery": {
+    "percent": 99.0,
+    "charging": false
+  },
+  "text": "Sidestepping right away from the left wall",
+  "result": "speaking"
+}

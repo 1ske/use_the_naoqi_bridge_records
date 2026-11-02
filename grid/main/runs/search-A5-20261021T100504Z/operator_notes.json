@@ -1,0 +1,12 @@
+{
+  "interventions": [
+    {
+      "time": 1792577705.274258,
+      "cause": "battery death: the battery fell from 100 % to 36 % in about 2.5 min while the charging flag flickered (as at position 39), and the robot died during a go while the agent was heading around a panel toward the ball it had seen; the agent's own go call hung. Ended by the operator; the author rules the run a failure, not invalid (the robot should have reached the ball before then)",
+      "via": "chat",
+      "t_since_t0_s": 600.3
+    }
+  ],
+  "invalid_reason": null,
+  "verdict": null
+}

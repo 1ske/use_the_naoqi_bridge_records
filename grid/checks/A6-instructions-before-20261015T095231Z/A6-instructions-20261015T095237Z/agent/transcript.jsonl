@@ -1,0 +1,2 @@
+{"type":"step_start","timestamp":1792057961808,"sessionID":"ses_ec1059893ffevYMVBmE51mDkG0","part":{"id":"prt_13efa6d4f001XPW2ZtTzFYVxfv","sessionID":"ses_ec1059893ffevYMVBmE51mDkG0","messageID":"msg_13efa678f001EGHf55BAl2muLZ","type":"step-start"}}
+{"type":"text","timestamp":1792057961828,"sessionID":"ses_ec1059893ffevYMVBmE51mDkG0","part":{"id":"prt_13efa678f001EGHf55BAl2muLZ_text-0","sessionID":"ses_ec1059893ffevYMVBmE51mDkG0","messageID":"msg_13efa678f001EGHf55BAl2muLZ","type":"text","text":"quartz-ember","time":{"start":1792057960344,"end":1792057961828}}}

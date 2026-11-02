@@ -1,0 +1,34 @@
+{
+  "interventions": [],
+  "invalid_reason": null,
+  "verdict": {
+    "distance_to_ball_m": 0.24,
+    "within_distance": true,
+    "ball_visible_in_rest_image": true,
+    "rest_image": "~/.naoqi-pilot/grid/main/runs/search-A4-20261019T130723Z/operator_images/12.jpeg",
+    "rest_image_identified": true,
+    "facing_ball": "y",
+    "success": true,
+    "criteria": {
+      "_source": "Section 5.1.1 (Search, Success criteria), decided by the author 2026-10-15: the operator judges at the moment of rest whether the torso, projected on the floor, is within max_distance_m of the ball's surface; the ball need not be visible. A run starts only with the battery at 50 % or more; the robot may stay on its charger, and moving the charger cable is not an intervention.",
+      "decided": true,
+      "max_distance_m": 1.0,
+      "distance": "from the robot's torso, projected on the floor, to the ball's surface",
+      "require_ball_visible_in_rest_image": false,
+      "min_battery_percent": 50,
+      "_decided_2026_10_15": "author: the visibility condition is dropped; success is the operator's judgement that the torso, projected on the floor, is within max_distance_m of the ball's surface at rest (proximity only, as ObjectNav's oracle-visibility variant). Charging during runs is allowed (weak battery).",
+      "_decided_2026_10_19": "author, during the main runs (search-A5-20261019T100956Z kicked the ball about 1 m while walking past it): a ball the robot moves is judged where it lies at rest, like any other run; the operator notes the move in the verdict. A clarification of the criterion as written, not a change.",
+      "_decided_2026_10_19_falls": "author, during the main runs (search-A7-20261019T103145Z: NAOqi reported a fall the operator did not see; its fall manager crouched the robot and NAOqi was unreachable about 30 s, then the agent stood up and succeeded): in Search a fall counts only if the operator saw it (pilot/search.py falls; NAOqi's events are kept as falls_reported_by_naoqi), and such a run stays valid, since a run is invalid only when it fails for a reason outside the agent."
+    },
+    "notes": "operator in chat: '24cm all good'; facing not stated; visibility from the rest image (bottom camera); NAO charging at the start",
+    "given_via": "chat with the runner's operator",
+    "judged_at": "2026-10-19T13:11:45+00:00",
+    "facing_clarified": {
+      "operator": "operator in chat: 'it was facing the ball all good means that'",
+      "at": "2026-10-19T13:12:21+00:00"
+    }
+  },
+  "verdict_pending": false,
+  "rest_image": "~/.naoqi-pilot/grid/main/runs/search-A4-20261019T130723Z/operator_images/12.jpeg",
+  "rest_image_identified": true
+}

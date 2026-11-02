@@ -1,0 +1,7 @@
+{
+  "source": "not settled per attempt: each key's usage in the series is settled once at its end (series-cost-*.json in the checks folder); the attempt's own costs as OpenCode logged them",
+  "settled": false,
+  "waited_s": 0,
+  "settle_floor_usd": 0.00373212,
+  "cross_check_step_costs_usd": 0.0041468
+}

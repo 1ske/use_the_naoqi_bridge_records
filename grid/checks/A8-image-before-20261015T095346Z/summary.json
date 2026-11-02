@@ -1,0 +1,8 @@
+{
+  "agent": "A8",
+  "check": "image",
+  "when": "before",
+  "fake_llm": false,
+  "attempts": 3,
+  "passed": true
+}

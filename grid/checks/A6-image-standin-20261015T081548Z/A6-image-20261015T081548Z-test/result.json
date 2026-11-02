@@ -1,0 +1,47 @@
+{
+  "check": "image",
+  "agent": "A6",
+  "when": "standin",
+  "attempt_id": "A6-image-20261015T081548Z-test",
+  "fake_llm": true,
+  "model": "anthropic/claude-haiku-5.5",
+  "expected": "072179",
+  "prompt": "Use the naoqi MCP server. Call get_state once. The image in its result shows a code of six digits. Reply with only that code.",
+  "image": {
+    "name": "naoqi-pilot/opencode-verify",
+    "id": "sha256:25ce1bc364ec9fb171b1b97f21a2c92f7d3b476afc3a63b662e75e57c1c5a27b"
+  },
+  "system_commit": "4a19ca009efa4785ee29c5e39495d9f69528a82c",
+  "system_uncommitted_changes": true,
+  "harness_version": "2.0.21",
+  "timed_out": false,
+  "answer": "No answer (fake LLM).",
+  "tool_calls": {
+    "agent": "A6",
+    "harness": "opencode",
+    "transcript_files": [
+      "transcript.jsonl"
+    ],
+    "transcript_found": true,
+    "unreadable_lines": 0,
+    "nao_tool_calls": 1,
+    "nao_tool_calls_by_tool": {
+      "get_state": 1
+    },
+    "exempt_calls": {},
+    "violating_calls": {},
+    "protocol_violation": false
+  },
+  "reached_model": {
+    "word_in_a_request": true,
+    "code_image_in_a_request": true,
+    "model_requests": 3,
+    "request_settings": [
+      "{\"api\": \"openai\", \"model\": \"anthropic/claude-haiku-5.5\", \"provider\": {\"allow_fallbacks\": false, \"only\": [\"anthropic\"]}, \"reasoning\": {\"effort\": \"medium\"}, \"side_request\": false}",
+      "{\"api\": \"openai\", \"model\": \"anthropic/claude-haiku-5.5\", \"provider\": {\"allow_fallbacks\": false, \"only\": [\"anthropic\"]}, \"reasoning\": {\"effort\": \"medium\"}, \"side_request\": true}"
+    ]
+  },
+  "cost_usd": null,
+  "cost_source": "missing: no cost.json (OpenRouter usage not read)",
+  "passed": null
+}

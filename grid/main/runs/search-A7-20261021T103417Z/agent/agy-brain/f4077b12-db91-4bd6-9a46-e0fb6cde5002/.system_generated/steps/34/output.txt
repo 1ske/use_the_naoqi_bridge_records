@@ -1,0 +1,80 @@
+{
+  "odometry_before": {
+    "y": 0.758,
+    "x": -3.087,
+    "theta": -0.908
+  },
+  "battery": {
+    "percent": 99.0,
+    "charging": true
+  },
+  "result": "obstacle",
+  "commanded": {
+    "bearing_deg": -20.0,
+    "distance_m": 1.0
+  },
+  "odometry_after": {
+    "y": 0.394,
+    "x": -2.971,
+    "theta": -1.259
+  },
+  "clamped": [],
+  "odometry_delta": {
+    "y": -0.132,
+    "x": 0.358,
+    "theta": -0.351
+  },
+  "stopped_by": {
+    "naoqi": "collision protection stopped the walk (obstacle in its security area)"
+  },
+  "state": {
+    "odometry": {
+      "y": 0.394,
+      "x": -2.971,
+      "theta": -1.259
+    },
+    "warnings": [],
+    "last_fall": null,
+    "sonar_m": {
+      "right": 1.05,
+      "left": 1.64
+    },
+    "awake": true,
+    "fall_count": 0,
+    "posture_family": "Standing",
+    "posture": "Stand",
+    "busy": null,
+    "bumpers": {
+      "right_foot": false,
+      "left_foot": false
+    },
+    "walk_blocked_by_fall": false,
+    "fallen": false
+  },
+  "duration_s": 6.4,
+  "images_meta": [
+    {
+      "tiles": [
+        {
+          "direction": "ahead",
+          "camera": "top",
+          "head": {
+            "yaw": -0.008,
+            "pitch": -0.002
+          }
+        },
+        {
+          "direction": "ahead",
+          "camera": "bottom",
+          "head": {
+            "yaw": -0.008,
+            "pitch": -0.002
+          }
+        }
+      ],
+      "layout": "2 x 1 tiles of 320x240 px, left to right = left to right",
+      "mime_type": "image/jpeg"
+    }
+  ]
+}
+[Resource offloaded to file:///home/agent/.gemini/antigravity-cli/brain/f4077b12-db91-4bd6-9a46-e0fb6cde5002/.system_generated/steps/34/media_0.jpg]

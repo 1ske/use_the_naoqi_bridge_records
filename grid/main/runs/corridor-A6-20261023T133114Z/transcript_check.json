@@ -1,0 +1,20 @@
+{
+  "agent": "A6",
+  "harness": "opencode",
+  "transcript_files": [
+    "transcript.jsonl"
+  ],
+  "transcript_found": true,
+  "unreadable_lines": 0,
+  "nao_tool_calls": 13,
+  "nao_tool_calls_by_tool": {
+    "get_state": 1,
+    "stand": 1,
+    "go": 8,
+    "look_around": 2,
+    "rest": 1
+  },
+  "exempt_calls": {},
+  "violating_calls": {},
+  "protocol_violation": false
+}

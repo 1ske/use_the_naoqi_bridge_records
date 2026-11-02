@@ -1,0 +1,38 @@
+{
+  "check": "image",
+  "agent": "A3",
+  "when": "before",
+  "attempt_id": "A3-image-20261015T094737Z",
+  "fake_llm": false,
+  "model": "claude-sonnet-5-5",
+  "expected": "322588",
+  "prompt": "Use the naoqi MCP server. Call get_state once. The image in its result shows a code of six digits. Reply with only that code.",
+  "image": {
+    "name": "naoqi-pilot/claude-verify",
+    "id": "sha256:491c7ff2322b55fcfcf4f180b80942cf2b1bd1d1a9bde6f7cb13274e84bbd6b0"
+  },
+  "system_commit": "b0825ed5a35cdc2e344419f02df5799d921fae59",
+  "system_uncommitted_changes": false,
+  "harness_version": "2.1.295",
+  "timed_out": false,
+  "answer": "322588",
+  "tool_calls": {
+    "agent": "A3",
+    "harness": "claude-code",
+    "transcript_files": [
+      "transcript.jsonl"
+    ],
+    "transcript_found": true,
+    "unreadable_lines": 0,
+    "nao_tool_calls": 1,
+    "nao_tool_calls_by_tool": {
+      "get_state": 1
+    },
+    "exempt_calls": {},
+    "violating_calls": {},
+    "protocol_violation": false
+  },
+  "cost_usd": 0.006673,
+  "cost_source": "Claude Code result event, total_cost_usd",
+  "passed": true
+}

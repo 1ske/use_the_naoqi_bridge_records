@@ -1,0 +1,57 @@
+{
+  "warnings": [
+    "no camera image: naoqisim started with -nocam, or ALVideoDevice unavailable (see the bridge log)"
+  ],
+  "battery": {
+    "percent": 99.0,
+    "charging": false
+  },
+  "interrupted": null,
+  "state": {
+    "odometry": {
+      "y": 0.0,
+      "x": 0.0,
+      "theta": 0.0
+    },
+    "warnings": [
+      "The robot fell: walking is refused until stand succeeds."
+    ],
+    "last_fall": {
+      "reason": "ALMotion/RobotIsFalling",
+      "time": "10:15:48"
+    },
+    "sonar_m": {
+      "right": 2.55,
+      "left": 2.55
+    },
+    "awake": false,
+    "fall_count": 1,
+    "posture_family": "LyingBack",
+    "posture": "Unknown",
+    "busy": null,
+    "bumpers": {
+      "right_foot": false,
+      "left_foot": false
+    },
+    "walk_blocked_by_fall": true,
+    "fallen": true
+  },
+  "result": "resting",
+  "images_meta": [
+    {
+      "tiles": [
+        {
+          "direction": "left 25 deg",
+          "camera": "bottom",
+          "head": {
+            "yaw": 0.439,
+            "pitch": 0.281
+          }
+        }
+      ],
+      "layout": "1 x 1 tiles of 320x240 px, left to right = left to right",
+      "mime_type": "image/jpeg"
+    }
+  ]
+}
+[Resource offloaded to file:///home/agent/.gemini/antigravity-cli/brain/bd0d9cc2-1383-4fe4-a679-d70589693e93/.system_generated/steps/148/media_0.jpg]

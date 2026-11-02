@@ -1,0 +1,7 @@
+server listening on http://127.0.0.1:4096
+[13:41:42.532] INFO (#658): spawning process {
+  command: "/opt/naoqi-mcp/.venv/bin/naoqi-mcp",
+  args: [],
+  cwd: "/work",
+}
+Client.listPrompts() called but server does not advertise prompts capability - returning empty list

@@ -1,0 +1,122 @@
+{"attempt_id": "A1-instructions-20261025T123312Z", "expected": "anchor-cinder", "passed": true, "cost_usd": 0.0065268, "reached_model": {}, "answer": "anchor-cinder"}
+{"attempt_id": "A1-instructions-20261025T123318Z", "expected": "umber-dune", "passed": true, "cost_usd": 0.0055972, "reached_model": {}, "answer": "umber-dune"}
+{"attempt_id": "A1-instructions-20261025T123325Z", "expected": "indigo-delta", "passed": true, "cost_usd": 0.0056252, "reached_model": {}, "answer": "indigo-delta"}
+{"agent": "A1", "check": "instructions", "when": "after", "fake_llm": false, "attempts": 3, "passed": true}
+{"attempt_id": "A1-image-20261025T123336Z", "expected": "463572", "passed": true, "cost_usd": 0.011726, "reached_model": {}, "answer": "463572"}
+{"attempt_id": "A1-image-20261025T123344Z", "expected": "553448", "passed": true, "cost_usd": 0.0108606, "reached_model": {}, "answer": "553448"}
+{"attempt_id": "A1-image-20261025T123354Z", "expected": "359330", "passed": true, "cost_usd": 0.0108286, "reached_model": {}, "answer": "359330"}
+{"agent": "A1", "check": "image", "when": "after", "fake_llm": false, "attempts": 3, "passed": true}
+{"attempt_id": "A2-instructions-20261025T123402Z", "expected": "delta-lantern", "passed": true, "cost_usd": null, "reached_model": {}, "answer": "delta-lantern"}
+{"attempt_id": "A2-instructions-20261025T123408Z", "expected": "kestrel-cinder", "passed": true, "cost_usd": null, "reached_model": {}, "answer": "kestrel-cinder"}
+{"attempt_id": "A2-instructions-20261025T123415Z", "expected": "basalt-opal", "passed": true, "cost_usd": null, "reached_model": {}, "answer": "basalt-opal"}
+{"agent": "A2", "check": "instructions", "when": "after", "fake_llm": false, "attempts": 3, "passed": true}
+{"attempt_id": "A2-image-20261025T123420Z", "expected": "231123", "passed": true, "cost_usd": null, "reached_model": {}, "answer": "231123"}
+{"attempt_id": "A2-image-20261025T123431Z", "expected": "499127", "passed": true, "cost_usd": null, "reached_model": {}, "answer": "499127"}
+{"attempt_id": "A2-image-20261025T123439Z", "expected": "658514", "passed": true, "cost_usd": null, "reached_model": {}, "answer": "658514"}
+{"agent": "A2", "check": "image", "when": "after", "fake_llm": false, "attempts": 3, "passed": true}
+{"attempt_id": "A3-instructions-20261025T123448Z", "expected": "garnet-xenon", "passed": true, "cost_usd": 0.0036408, "reached_model": {}, "answer": "garnet-xenon"}
+{"attempt_id": "A3-instructions-20261025T123454Z", "expected": "anchor-marble", "passed": true, "cost_usd": 0.0032012, "reached_model": {}, "answer": "anchor-marble"}
+{"attempt_id": "A3-instructions-20261025T123500Z", "expected": "cinder-meadow", "passed": true, "cost_usd": 0.0032152, "reached_model": {}, "answer": "cinder-meadow"}
+{"agent": "A3", "check": "instructions", "when": "after", "fake_llm": false, "attempts": 3, "passed": true}
+{"attempt_id": "A3-image-20261025T123529Z", "expected": "587841", "passed": true, "cost_usd": 0.006680800000000001, "reached_model": {}, "answer": "587841"}
+{"attempt_id": "A3-image-20261025T123537Z", "expected": "924778", "passed": true, "cost_usd": 0.0062518, "reached_model": {}, "answer": "924778"}
+{"attempt_id": "A3-image-20261025T123545Z", "expected": "585811", "passed": true, "cost_usd": 0.0062352, "reached_model": {}, "answer": "585811"}
+{"agent": "A3", "check": "image", "when": "after", "fake_llm": false, "attempts": 3, "passed": true}
+{"attempt_id": "A4-instructions-20261025T123554Z", "expected": "meadow-anchor", "passed": true, "cost_usd": null, "reached_model": {}, "answer": "meadow-anchor"}
+{"attempt_id": "A4-instructions-20261025T123601Z", "expected": "glacier-garnet", "passed": true, "cost_usd": null, "reached_model": {}, "answer": "glacier-garnet"}
+{"attempt_id": "A4-instructions-20261025T123607Z", "expected": "iris-yarrow", "passed": true, "cost_usd": null, "reached_model": {}, "answer": "iris-yarrow"}
+{"agent": "A4", "check": "instructions", "when": "after", "fake_llm": false, "attempts": 3, "passed": true}
+{"attempt_id": "A4-image-20261025T123613Z", "expected": "666828", "passed": true, "cost_usd": null, "reached_model": {}, "answer": "666828"}
+{"attempt_id": "A4-image-20261025T123621Z", "expected": "633173", "passed": true, "cost_usd": null, "reached_model": {}, "answer": "633173"}
+{"attempt_id": "A4-image-20261025T123629Z", "expected": "123426", "passed": true, "cost_usd": null, "reached_model": {}, "answer": "123426"}
+{"agent": "A4", "check": "image", "when": "after", "fake_llm": false, "attempts": 3, "passed": true}
+{"attempt_id": "A5-instructions-20261025T123637Z", "expected": "fjord-quartz", "passed": true, "cost_usd": 0.0010243000000000001, "reached_model": {}, "answer": "fjord-quartz"}
+{"attempt_id": "A5-instructions-20261025T123642Z", "expected": "glacier-jasper", "passed": true, "cost_usd": 0.00016816, "reached_model": {}, "answer": "glacier-jasper"}
+{"attempt_id": "A5-instructions-20261025T123648Z", "expected": "garnet-willow", "passed": true, "cost_usd": 0.00016746000000000003, "reached_model": {}, "answer": "garnet-willow"}
+{"agent": "A5", "check": "instructions", "when": "after", "fake_llm": false, "attempts": 3, "passed": true}
+{"attempt_id": "A5-image-20261025T123653Z", "expected": "331351", "passed": true, "cost_usd": 0.00034761000000000004, "reached_model": {}, "answer": "331351"}
+{"attempt_id": "A5-image-20261025T123701Z", "expected": "675504", "passed": true, "cost_usd": 0.00032737, "reached_model": {}, "answer": "675504"}
+{"attempt_id": "A5-image-20261025T123708Z", "expected": "230964", "passed": true, "cost_usd": 0.00032715, "reached_model": {}, "answer": "230964"}
+{"agent": "A5", "check": "image", "when": "after", "fake_llm": false, "attempts": 3, "passed": true}
+{"attempt_id": "A6-instructions-20261025T123716Z", "expected": "iris-fjord", "passed": true, "cost_usd": null, "reached_model": {}, "answer": "iris-fjord"}
+{"attempt_id": "A6-instructions-20261025T123722Z", "expected": "meadow-kestrel", "passed": true, "cost_usd": null, "reached_model": {}, "answer": "meadow-kestrel"}
+{"attempt_id": "A6-instructions-20261025T123728Z", "expected": "juniper-nimbus", "passed": true, "cost_usd": null, "reached_model": {}, "answer": "juniper-nimbus"}
+{"agent": "A6", "check": "instructions", "when": "after", "fake_llm": false, "attempts": 3, "passed": true}
+{"attempt_id": "A6-image-20261025T123734Z", "expected": "028504", "passed": true, "cost_usd": null, "reached_model": {}, "answer": "028504"}
+{"attempt_id": "A6-image-20261025T123742Z", "expected": "850893", "passed": true, "cost_usd": null, "reached_model": {}, "answer": "850893"}
+{"attempt_id": "A6-image-20261025T123750Z", "expected": "478389", "passed": true, "cost_usd": null, "reached_model": {}, "answer": "478389"}
+{"agent": "A6", "check": "image", "when": "after", "fake_llm": false, "attempts": 3, "passed": true}
+{"attempt_id": "A7-instructions-20261025T123759Z", "expected": "meadow-nimbus", "passed": true, "cost_usd": 0.01919925, "reached_model": {}, "answer": "meadow-nimbus\n"}
+{"attempt_id": "A7-instructions-20261025T123837Z", "expected": "falcon-opal", "passed": true, "cost_usd": 0.0207075, "reached_model": {}, "answer": "falcon-opal\n"}
+{"attempt_id": "A7-instructions-20261025T123916Z", "expected": "delta-yarrow", "passed": true, "cost_usd": 0.017403, "reached_model": {}, "answer": "delta-yarrow\n"}
+{"agent": "A7", "check": "instructions", "when": "after", "fake_llm": false, "attempts": 3, "passed": true}
+{"attempt_id": "A7-image-20261025T123946Z", "expected": "700891", "passed": true, "cost_usd": 0.00949425, "reached_model": {}, "answer": "700891\n"}
+{"attempt_id": "A7-image-20261025T124003Z", "expected": "272546", "passed": true, "cost_usd": 0.00875925, "reached_model": {}, "answer": "272546\n"}
+{"attempt_id": "A7-image-20261025T124017Z", "expected": "734000", "passed": true, "cost_usd": 0.0088005, "reached_model": {}, "answer": "734000\n"}
+{"agent": "A7", "check": "image", "when": "after", "fake_llm": false, "attempts": 3, "passed": true}
+{"attempt_id": "A8-instructions-20261025T124031Z", "expected": "meadow-iris", "passed": true, "cost_usd": null, "reached_model": {}, "answer": "meadow-iris"}
+{"attempt_id": "A8-instructions-20261025T124038Z", "expected": "jasper-glacier", "passed": true, "cost_usd": null, "reached_model": {}, "answer": "jasper-glacier"}
+{"attempt_id": "A8-instructions-20261025T124045Z", "expected": "cobalt-iris", "passed": true, "cost_usd": null, "reached_model": {}, "answer": "cobalt-iris"}
+{"agent": "A8", "check": "instructions", "when": "after", "fake_llm": false, "attempts": 3, "passed": true}
+{"attempt_id": "A8-image-20261025T124052Z", "expected": "731223", "passed": true, "cost_usd": null, "reached_model": {}, "answer": "731223"}
+{"attempt_id": "A8-image-20261025T124101Z", "expected": "686254", "passed": true, "cost_usd": null, "reached_model": {}, "answer": "686254"}
+{"attempt_id": "A8-image-20261025T124111Z", "expected": "046421", "passed": true, "cost_usd": null, "reached_model": {}, "answer": "046421"}
+{"agent": "A8", "check": "image", "when": "after", "fake_llm": false, "attempts": 3, "passed": true}
+{
+  "A1 instructions": true,
+  "A1 image": true,
+  "A2 instructions": true,
+  "A2 image": true,
+  "A3 instructions": true,
+  "A3 image": true,
+  "A4 instructions": true,
+  "A4 image": true,
+  "A5 instructions": true,
+  "A5 image": true,
+  "A6 instructions": true,
+  "A6 image": true,
+  "A7 instructions": true,
+  "A7 image": true,
+  "A8 instructions": true,
+  "A8 image": true
+}
+settling A2's OpenRouter usage for the series
+{
+  "agent": "A2",
+  "usage_before_usd": 9.8788904,
+  "usage_after_usd": 9.9244566,
+  "cost_usd": 0.0455662,
+  "settled": true,
+  "waited_s": 664,
+  "settle_floor_usd": 0.01119186
+}
+settling A4's OpenRouter usage for the series
+{
+  "agent": "A4",
+  "usage_before_usd": 4.798646,
+  "usage_after_usd": 4.8216176,
+  "cost_usd": 0.0229716,
+  "settled": true,
+  "waited_s": 664,
+  "settle_floor_usd": 0.00561843
+}
+settling A6's OpenRouter usage for the series
+{
+  "agent": "A6",
+  "usage_before_usd": 0.31426356,
+  "usage_after_usd": 0.315501445,
+  "cost_usd": 0.00123788,
+  "settled": true,
+  "waited_s": 664,
+  "settle_floor_usd": 0.0003055
+}
+settling A8's OpenRouter usage for the series
+{
+  "agent": "A8",
+  "usage_before_usd": 8.088014925,
+  "usage_after_usd": 8.107706925,
+  "cost_usd": 0.019692,
+  "settled": true,
+  "waited_s": 664,
+  "settle_floor_usd": 0.00711687
+}

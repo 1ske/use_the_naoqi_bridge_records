@@ -1,0 +1,8 @@
+{
+  "battery": {
+    "percent": 99.0,
+    "charging": false
+  },
+  "text": "Following corridor forward.",
+  "result": "speaking"
+}

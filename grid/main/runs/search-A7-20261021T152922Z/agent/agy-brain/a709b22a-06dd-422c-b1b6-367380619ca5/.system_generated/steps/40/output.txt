@@ -1,0 +1,120 @@
+{
+  "battery": {
+    "percent": 100.0,
+    "charging": true
+  },
+  "state": {
+    "odometry": {
+      "y": 4.494,
+      "x": -0.536,
+      "theta": 2.73
+    },
+    "warnings": [],
+    "last_fall": null,
+    "sonar_m": {
+      "right": 3.26,
+      "left": 2.46
+    },
+    "awake": true,
+    "fall_count": 0,
+    "posture_family": "Standing",
+    "posture": "Stand",
+    "busy": null,
+    "bumpers": {
+      "right_foot": false,
+      "left_foot": false
+    },
+    "walk_blocked_by_fall": false,
+    "fallen": false
+  },
+  "result": "completed",
+  "images_meta": [
+    {
+      "tiles": [
+        {
+          "direction": "left 91 deg",
+          "camera": "top",
+          "head": {
+            "yaw": 1.585,
+            "pitch": 0.121
+          }
+        },
+        {
+          "direction": "left 47 deg",
+          "camera": "top",
+          "head": {
+            "yaw": 0.816,
+            "pitch": 0.123
+          }
+        },
+        {
+          "direction": "ahead",
+          "camera": "top",
+          "head": {
+            "yaw": 0.015,
+            "pitch": 0.123
+          }
+        },
+        {
+          "direction": "right 45 deg",
+          "camera": "top",
+          "head": {
+            "yaw": -0.784,
+            "pitch": 0.123
+          }
+        },
+        {
+          "direction": "right 91 deg",
+          "camera": "top",
+          "head": {
+            "yaw": -1.58,
+            "pitch": 0.123
+          }
+        },
+        {
+          "direction": "left 91 deg",
+          "camera": "bottom",
+          "head": {
+            "yaw": 1.585,
+            "pitch": 0.123
+          }
+        },
+        {
+          "direction": "left 47 deg",
+          "camera": "bottom",
+          "head": {
+            "yaw": 0.816,
+            "pitch": 0.121
+          }
+        },
+        {
+          "direction": "ahead",
+          "camera": "bottom",
+          "head": {
+            "yaw": 0.015,
+            "pitch": 0.123
+          }
+        },
+        {
+          "direction": "right 45 deg",
+          "camera": "bottom",
+          "head": {
+            "yaw": -0.784,
+            "pitch": 0.123
+          }
+        },
+        {
+          "direction": "right 91 deg",
+          "camera": "bottom",
+          "head": {
+            "yaw": -1.58,
+            "pitch": 0.121
+          }
+        }
+      ],
+      "layout": "2 x 5 tiles of 320x240 px, left to right = left to right",
+      "mime_type": "image/jpeg"
+    }
+  ]
+}
+[Resource offloaded to file:///home/agent/.gemini/antigravity-cli/brain/a709b22a-06dd-422c-b1b6-367380619ca5/.system_generated/steps/40/media_0.jpg]

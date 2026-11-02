@@ -1,0 +1,30 @@
+{
+  "source": "OpenRouter /api/v1/key usage of the shared key (A2, A4, A6, A8), after minus before the run",
+  "usage_before_usd": 6.192638735,
+  "usage_after_usd": 6.21684047,
+  "cost_usd": 0.02420174,
+  "settled": true,
+  "waited_s": 86,
+  "settle_rule": "unchanged for 3 reads 10 s apart, after usage - before reached the floor: 0.9 x the larger of OpenCode's per-request costs and the token counts at OpenRouter's catalogue prices",
+  "settle_floor_usd": 0.00488241,
+  "cross_check_step_costs_usd": 0.0,
+  "cross_check_tokens_at_catalogue_price_usd": 0.0054249,
+  "catalogue_price_per_token": {
+    "prompt": "0.0000001",
+    "completion": "0.0000005",
+    "web_search": "0.01",
+    "input_cache_read": "0.00000001",
+    "input_cache_write": "0.000000125",
+    "input_cache_write_1h": "0.0000002",
+    "overrides": [
+      {
+        "min_prompt_tokens": 100000,
+        "prompt": "0.0000005",
+        "completion": "0.0000025",
+        "input_cache_read": "0.00000005",
+        "input_cache_write": "0.000000625",
+        "input_cache_write_1h": "0.000001"
+      }
+    ]
+  }
+}

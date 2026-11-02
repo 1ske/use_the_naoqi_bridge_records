@@ -1,0 +1,20 @@
+{
+  "interventions": [],
+  "invalid_reason": "setup fault (charger cable): the stretched power cable pulled the robot over during a walk (operator; calls.jsonl: charging True until the go at 14:20:32 local, False after it, then RobotIsFalling and LyingBack); a cause outside the agent (evaluation.tex, Invalid runs); position 14 is redone",
+  "verdict": null,
+  "verdict_pending": false,
+  "rest_image": "~/.naoqi-pilot/grid/main/runs/search-A3-20261019T121922Z/operator_images/13.jpeg",
+  "rest_image_identified": true,
+  "invalid_given": {
+    "via": "chat with the runner's operator",
+    "operator": "operator in chat: 'we gotta do that one again it fell because of the power cable stretching so redo on this one'",
+    "at": "2026-10-19T12:22:13+00:00"
+  },
+  "falls_observed": {
+    "count": 1,
+    "naoqi_fall_events": 3,
+    "notes": "operator: it fell because of the power cable stretching (one fall; NAOqi's two later events came during the stand attempts after it)",
+    "given_via": "chat with the runner's operator",
+    "at": "2026-10-19T12:22:13+00:00"
+  }
+}

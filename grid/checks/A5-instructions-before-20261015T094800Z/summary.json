@@ -1,0 +1,8 @@
+{
+  "agent": "A5",
+  "check": "instructions",
+  "when": "before",
+  "fake_llm": false,
+  "attempts": 3,
+  "passed": true
+}

@@ -1,0 +1,23 @@
+{
+  "run_id": "corridor-A3-20261015T102444Z",
+  "world": "corridor.wbt",
+  "real_time_mode": true,
+  "rest": {
+    "torso": [
+      3.368,
+      2.7319,
+      0.3145
+    ],
+    "tilt_deg": 0.53,
+    "upright": true
+  },
+  "real_time_factor": 0.9624,
+  "t0_mark": {
+    "sim_time": 5.54,
+    "mac_time": 1792059896.625
+  },
+  "end_mark": {
+    "sim_time": 151.04,
+    "mac_time": 1792060047.814
+  }
+}

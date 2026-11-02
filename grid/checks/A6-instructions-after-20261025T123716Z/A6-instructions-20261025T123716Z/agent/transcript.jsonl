@@ -1,0 +1,2 @@
+{"type":"step_start","timestamp":1792931840979,"sessionID":"ses_e8cef4261ffeTEpfFFOA5ENV7H","part":{"id":"prt_17310c3d2001jXJXtorA1L9ShA","sessionID":"ses_e8cef4261ffeTEpfFFOA5ENV7H","messageID":"msg_17310bdc3001KU3afkYtZ5uMaj","type":"step-start"}}
+{"type":"text","timestamp":1792931841024,"sessionID":"ses_e8cef4261ffeTEpfFFOA5ENV7H","part":{"id":"prt_17310bdc3001KU3afkYtZ5uMaj_text-0","sessionID":"ses_e8cef4261ffeTEpfFFOA5ENV7H","messageID":"msg_17310bdc3001KU3afkYtZ5uMaj","type":"text","text":"iris-fjord","time":{"start":1792931839437,"end":1792931841024}}}

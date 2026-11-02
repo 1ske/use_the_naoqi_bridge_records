@@ -1,0 +1,21 @@
+{
+  "agent": "A5",
+  "harness": "claude-code",
+  "transcript_files": [
+    "transcript.jsonl"
+  ],
+  "transcript_found": true,
+  "unreadable_lines": 0,
+  "nao_tool_calls": 24,
+  "nao_tool_calls_by_tool": {
+    "get_state": 1,
+    "look_around": 7,
+    "stand": 1,
+    "go": 12,
+    "look": 2,
+    "rest": 1
+  },
+  "exempt_calls": {},
+  "violating_calls": {},
+  "protocol_violation": false
+}

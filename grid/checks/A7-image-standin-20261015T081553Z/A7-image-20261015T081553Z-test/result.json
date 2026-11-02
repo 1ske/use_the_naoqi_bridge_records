@@ -1,0 +1,52 @@
+{
+  "check": "image",
+  "agent": "A7",
+  "when": "standin",
+  "attempt_id": "A7-image-20261015T081553Z-test",
+  "fake_llm": true,
+  "model": "gemini-3.8-flash-medium",
+  "expected": "542231",
+  "prompt": "Use the naoqi MCP server. Call get_state once. The image in its result shows a code of six digits. Reply with only that code.",
+  "image": {
+    "name": "naoqi-pilot/agy-verify",
+    "id": "sha256:758ff34282dd53ba53dfbef9cbd83189b7e75873f6154c87d905b34687199b2e"
+  },
+  "system_commit": "4a19ca009efa4785ee29c5e39495d9f69528a82c",
+  "system_uncommitted_changes": true,
+  "harness_version": "1.2.17",
+  "timed_out": false,
+  "answer": "No answer (fake LLM).\n",
+  "tool_calls": {
+    "agent": "A7",
+    "harness": "agy",
+    "transcript_files": [
+      "agy-brain/2cf2f7c0-d322-4239-a14c-09be374b54a0/.system_generated/logs/transcript_full.jsonl"
+    ],
+    "transcript_found": true,
+    "unreadable_lines": 0,
+    "nao_tool_calls": 1,
+    "nao_tool_calls_by_tool": {
+      "get_state": 1
+    },
+    "exempt_calls": {
+      "list_resources": 0,
+      "manage_task": 0,
+      "read_resource": 0,
+      "view_file": 1
+    },
+    "violating_calls": {},
+    "protocol_violation": false
+  },
+  "reached_model": {
+    "word_in_a_request": false,
+    "code_image_in_a_request": true,
+    "model_requests": 4,
+    "request_settings": [
+      "{\"api\": \"gemini\", \"model\": \"gemini-3.1-flash-lite-preview\", \"side_request\": true, \"thinkingConfig\": {\"includeThoughts\": true, \"thinkingBudget\": -1}}",
+      "{\"api\": \"gemini\", \"model\": \"gemini-3.8-flash\", \"side_request\": false, \"thinkingConfig\": {\"includeThoughts\": true, \"thinkingBudget\": 4000}}"
+    ]
+  },
+  "cost_usd": 0.0043425,
+  "cost_source": "agy token counts at the gemini-3.8-flash list price (Standard (paid tier), accessed 2026-10-06)",
+  "passed": null
+}

@@ -1,0 +1,29 @@
+{
+  "interventions": [],
+  "invalid_reason": null,
+  "verdict": {
+    "distance_to_ball_m": 0.05,
+    "within_distance": true,
+    "ball_visible_in_rest_image": false,
+    "rest_image": "~/.naoqi-pilot/grid/pilot/runs/search-A4-20261015T133006Z/operator_images/31.jpeg",
+    "rest_image_identified": true,
+    "facing_ball": "",
+    "success": false,
+    "criteria": {
+      "_source": "Section 5.1.1 (Search, Success criteria): judged by the operator at the moment of rest and from the image of rest's tool result. DECIDE: how proximity is measured; DECIDE: keep the visibility condition. Section 5.1.1: a run starts only with the battery at 50 % or more.",
+      "decided": false,
+      "max_distance_m": 1.0,
+      "distance": "from the robot's torso, projected on the floor, to the ball's surface",
+      "require_ball_visible_in_rest_image": true,
+      "min_battery_percent": 50
+    },
+    "notes": "operator: about 5 cm from the ball; the ball is not in the rest image (box and case only; the charger cable is visible on the floor). Relevant to the DECIDE on the visibility condition (section 5.1.1)",
+    "given_via": "chat with the runner's operator",
+    "judged_at": "2026-10-15T13:38:15+00:00",
+    "explanation": "The agent rested because it had reached the ball: its look_around with the head tilted down (pitch 0.5, image 29) shows the ball right at its feet, slightly left; it then sent a small turn (walk_to theta 0.2) and rest in the same turn, and rest interrupted the turn. Its answer: 'I found the red ball and stopped about 20 cm from it.' The image of rest's tool result is taken after the crouch with the head forward, and a ball about 5 cm from the feet is outside the crouched cameras' view. Operator: 'I'd say it succeeded if it saw the ball and then rested.' Failure only under the current rule (visible in rest's image); input for the DECIDE in section 5.1.1.",
+    "ball_visible_in_last_image_before_rest": true
+  },
+  "verdict_pending": false,
+  "rest_image": "~/.naoqi-pilot/grid/pilot/runs/search-A4-20261015T133006Z/operator_images/31.jpeg",
+  "rest_image_identified": true
+}

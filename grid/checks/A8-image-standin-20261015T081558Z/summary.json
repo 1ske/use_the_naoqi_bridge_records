@@ -1,0 +1,17 @@
+{
+  "agent": "A8",
+  "check": "image",
+  "when": "standin",
+  "fake_llm": true,
+  "attempts": 1,
+  "passed": null,
+  "reached_model": {
+    "word_in_a_request": true,
+    "code_image_in_a_request": true,
+    "model_requests": 3,
+    "request_settings": [
+      "{\"api\": \"openai\", \"model\": \"google/gemini-3.8-flash\", \"provider\": {\"allow_fallbacks\": false, \"only\": [\"google-ai-studio\"]}, \"reasoning\": {\"effort\": \"medium\"}, \"side_request\": false}",
+      "{\"api\": \"openai\", \"model\": \"google/gemini-3.8-flash\", \"provider\": {\"allow_fallbacks\": false, \"only\": [\"google-ai-studio\"]}, \"reasoning\": {\"effort\": \"medium\"}, \"side_request\": true}"
+    ]
+  }
+}

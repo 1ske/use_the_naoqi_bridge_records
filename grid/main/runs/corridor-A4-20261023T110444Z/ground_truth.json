@@ -1,0 +1,23 @@
+{
+  "run_id": "corridor-A4-20261023T110444Z",
+  "world": "corridor.wbt",
+  "real_time_mode": true,
+  "rest": {
+    "torso": [
+      3.3136,
+      2.5737,
+      0.3145
+    ],
+    "tilt_deg": 0.33,
+    "upright": true
+  },
+  "real_time_factor": 0.9733,
+  "t0_mark": {
+    "sim_time": 8.16,
+    "mac_time": 1792753497.85
+  },
+  "end_mark": {
+    "sim_time": 165.46,
+    "mac_time": 1792753659.468
+  }
+}

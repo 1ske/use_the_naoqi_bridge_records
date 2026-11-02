@@ -1,0 +1,2 @@
+{"type":"step_start","timestamp":1792058020361,"sessionID":"ses_ec104cdc1ffeOQzyIajpuqjAU3","part":{"id":"prt_13efb5209001CCNR6Uwvdq3Sz7","sessionID":"ses_ec104cdc1ffeOQzyIajpuqjAU3","messageID":"msg_13efb329c001AAMdfiR7pzICBa","type":"step-start"}}
+{"type":"text","timestamp":1792058020417,"sessionID":"ses_ec104cdc1ffeOQzyIajpuqjAU3","part":{"id":"prt_13efb329c001AAMdfiR7pzICBa_text-0","sessionID":"ses_ec104cdc1ffeOQzyIajpuqjAU3","messageID":"msg_13efb329c001AAMdfiR7pzICBa","type":"text","text":"dune-falcon","time":{"start":1792058012331,"end":1792058020417}}}

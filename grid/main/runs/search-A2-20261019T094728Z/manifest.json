@@ -1,0 +1,112 @@
+{
+  "run_id": "search-A2-20261019T094728Z",
+  "phase": "main",
+  "task": "Search",
+  "task_key": "search",
+  "agent": "A2",
+  "robot": "physical NAO",
+  "nao_ip": "<nao-lan-ip>",
+  "run_order": {
+    "file": "~/.naoqi-pilot/grid/main/orders/search.json",
+    "seed": 15217235883956113854,
+    "position": 3,
+    "block": 1,
+    "attempt": 1
+  },
+  "agent_config": {
+    "harness": "opencode",
+    "image": "naoqi-pilot/opencode",
+    "llm": "Claude Opus 5.5",
+    "model": "anthropic/claude-opus-5.5",
+    "model_id_confirmed": true,
+    "access_route": "OpenRouter, provider 'anthropic' only, allow_fallbacks false",
+    "reasoning": "reasoning.effort = medium in every request body",
+    "proxy_allow": [
+      "^openrouter\\.ai$"
+    ],
+    "deviations_ref": "opencode",
+    "openrouter_key_file": "~/.naoqi-pilot/templates/openrouter/api-key-A2"
+  },
+  "deviations": [
+    {
+      "what": "Built-in tools denied: permissions deny all except naoqi_* (global and build-agent rules) plus a hard-deny policy; denied tools are not offered to the LLM"
+    },
+    {
+      "what": "Code Mode off: codemode false for the naoqi server, and the execute action denied"
+    },
+    {
+      "what": "Prompt submitted only after OpenCode reports the naoqi MCP server as connected (OpenCode 2 connects MCP servers asynchronously); t0 = prompt submission",
+      "approved": "2026-10-05"
+    },
+    {
+      "what": "Title agent uses the run's own model and provider instead of OpenCode's default small model",
+      "approved": "2026-10-05"
+    },
+    {
+      "what": "Provider use limited to OpenRouter by policy; update disabled; sharing disabled"
+    },
+    {
+      "what": "Network: only openrouter.ai reachable; models.opencode.ai (model catalog) blocked"
+    }
+  ],
+  "harness_version": "2.0.21",
+  "system_commit": "8ffbf57e626b1e628c241457c7aff2c1bfce964e",
+  "system_uncommitted_changes": false,
+  "runner_code": {
+    "commit_at_start": "8ffbf57e626b1e628c241457c7aff2c1bfce964e",
+    "uncommitted_changes_at_start": false,
+    "changed_since_start": []
+  },
+  "prompt": "Use the naoqi MCP server. You control a robot in a room. Somewhere in the room in front of the robot, not behind it, there is a red ball. Find the ball and stop close to it, facing it. When the robot is there, call rest.",
+  "caps": {
+    "wall_clock_s": 882,
+    "tool_calls": 64
+  },
+  "grace_period_s": 30,
+  "search_criteria": {
+    "_source": "Section 5.1.1 (Search, Success criteria), decided by the author 2026-10-15: the operator judges at the moment of rest whether the torso, projected on the floor, is within max_distance_m of the ball's surface; the ball need not be visible. A run starts only with the battery at 50 % or more; the robot may stay on its charger, and moving the charger cable is not an intervention.",
+    "decided": true,
+    "max_distance_m": 1.0,
+    "distance": "from the robot's torso, projected on the floor, to the ball's surface",
+    "require_ball_visible_in_rest_image": false,
+    "min_battery_percent": 50,
+    "_decided_2026_10_15": "author: the visibility condition is dropped; success is the operator's judgement that the torso, projected on the floor, is within max_distance_m of the ball's surface at rest (proximity only, as ObjectNav's oracle-visibility variant). Charging during runs is allowed (weak battery)."
+  },
+  "protocol_values_decided": {
+    "prompts": true,
+    "caps": true,
+    "grace_period_s": true,
+    "invalid_if": true,
+    "min_real_time_factor": true,
+    "search": true
+  },
+  "test": null,
+  "robot_before": {
+    "battery": {
+      "percent": 96.0,
+      "charging": true
+    },
+    "posture": "Crouch",
+    "fallen": false,
+    "awake": false
+  },
+  "operator_checklist": {
+    "confirmed_by_operator_in_chat": "operator in chat: 'start' (robot and ball back at their marks); room photographed today (earlier this session)"
+  },
+  "image": {
+    "name": "naoqi-pilot/opencode",
+    "id": "sha256:57faea26608cc4100af619449679cd585fd3b8fc3a3f19b391c239950128a621"
+  },
+  "end_condition": "stop_signal",
+  "invalid_reason": null,
+  "harness_exited_in_grace_period": true,
+  "harness_exit_code": "0",
+  "runner_times_mac_clock": {
+    "usage_before_read": "2026-10-19T09:47:28.536+00:00",
+    "container_started": "2026-10-19T09:47:29.686+00:00",
+    "t0_seen": "2026-10-19T09:47:31.888+00:00",
+    "end_detected": "2026-10-19T09:51:15.300+00:00",
+    "harness_stopped": "2026-10-19T09:51:32.654+00:00",
+    "runner_started": "2026-10-19T09:47:28.516+00:00"
+  }
+}

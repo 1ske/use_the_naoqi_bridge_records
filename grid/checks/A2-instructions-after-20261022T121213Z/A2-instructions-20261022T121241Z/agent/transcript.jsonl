@@ -1,0 +1,2 @@
+{"type":"step_start","timestamp":1792671165755,"sessionID":"ses_e9c78d7d0ffe984GCB04gANj8j","part":{"id":"prt_163872d3b001xpuapFLs5qfmP2","sessionID":"ses_e9c78d7d0ffe984GCB04gANj8j","messageID":"msg_16387285b001BwEAn5W4t4xk0f","type":"step-start"}}
+{"type":"text","timestamp":1792671165795,"sessionID":"ses_e9c78d7d0ffe984GCB04gANj8j","part":{"id":"prt_16387285b001BwEAn5W4t4xk0f_text-0","sessionID":"ses_e9c78d7d0ffe984GCB04gANj8j","messageID":"msg_16387285b001BwEAn5W4t4xk0f","type":"text","text":"garnet-nimbus","time":{"start":1792671164520,"end":1792671165795}}}

@@ -1,0 +1,12 @@
+{
+  "interventions": [],
+  "invalid_reason": "hardware fault (motors): stand left the motors off twice, NAOqi reporting active diagnosis errors on 23 joints (calls.jsonl, stand hints); the agent called rest after 10 s without moving. Invalid under evaluation.tex, Invalid runs (the physical NAO has a hardware fault); position 14 is redone after the robot is rebooted and checked",
+  "verdict": null,
+  "verdict_pending": false,
+  "rest_image": "~/.naoqi-pilot/grid/main/runs/search-A3-20261019T121243Z/operator_images/04.jpeg",
+  "rest_image_identified": true,
+  "invalid_given": {
+    "via": "runner's operator in chat (from the run's records; the operator had said to redo position 14 after a hardware fault)",
+    "at": "2026-10-19T12:13:29+00:00"
+  }
+}

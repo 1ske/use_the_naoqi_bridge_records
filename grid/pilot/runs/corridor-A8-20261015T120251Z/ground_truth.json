@@ -1,0 +1,23 @@
+{
+  "run_id": "corridor-A8-20261015T120251Z",
+  "world": "corridor.wbt",
+  "real_time_mode": true,
+  "rest": {
+    "torso": [
+      3.5404,
+      2.8848,
+      0.3144
+    ],
+    "tilt_deg": 0.28,
+    "upright": true
+  },
+  "real_time_factor": 0.9114,
+  "t0_mark": {
+    "sim_time": 190.84,
+    "mac_time": 1792065993.09
+  },
+  "end_mark": {
+    "sim_time": 690.38,
+    "mac_time": 1792066541.221
+  }
+}

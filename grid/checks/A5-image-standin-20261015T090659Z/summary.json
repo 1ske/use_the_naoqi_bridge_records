@@ -1,0 +1,16 @@
+{
+  "agent": "A5",
+  "check": "image",
+  "when": "standin",
+  "fake_llm": true,
+  "attempts": 1,
+  "passed": null,
+  "reached_model": {
+    "word_in_a_request": true,
+    "code_image_in_a_request": true,
+    "model_requests": 2,
+    "request_settings": [
+      "{\"api\": \"anthropic\", \"model\": \"claude-haiku-5-5\", \"output_config\": {\"effort\": \"medium\"}, \"side_request\": false, \"thinking\": {\"display\": \"updates\", \"type\": \"adaptive\"}}"
+    ]
+  }
+}

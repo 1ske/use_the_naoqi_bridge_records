@@ -1,0 +1,11 @@
+{
+  "interventions": [],
+  "invalid_reason": "hardware fault (motors): stand failed twice, wakeUp left the motors off with active motor diagnosis errors on 23 joints, after the battery death in attempt 1 (search-A5-20261020T133608Z); the agent never got the robot up and ended the session after 13 s. Invalid under evaluation.tex, Invalid runs (the physical NAO has a hardware fault); position 39 is redone after a reboot",
+  "verdict": null,
+  "verdict_pending": false,
+  "invalid_given": {
+    "via": "chat with the runner's operator",
+    "operator": "operator in chat: 'yes its invalid ill restart the nao'",
+    "at": "2026-10-20T13:45:22+00:00"
+  }
+}

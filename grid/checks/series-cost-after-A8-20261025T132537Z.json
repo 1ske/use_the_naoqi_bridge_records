@@ -1,0 +1,9 @@
+{
+  "agent": "A8",
+  "usage_before_usd": 8.088014925,
+  "usage_after_usd": 8.107706925,
+  "cost_usd": 0.019692,
+  "settled": true,
+  "waited_s": 664,
+  "settle_floor_usd": 0.00711687
+}

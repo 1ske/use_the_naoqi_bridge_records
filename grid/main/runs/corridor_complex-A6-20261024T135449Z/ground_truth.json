@@ -1,0 +1,23 @@
+{
+  "run_id": "corridor_complex-A6-20261024T135449Z",
+  "world": "corridor_complex.wbt",
+  "real_time_mode": true,
+  "rest": {
+    "torso": [
+      5.7306,
+      5.5889,
+      0.3121
+    ],
+    "tilt_deg": 0.28,
+    "upright": true
+  },
+  "real_time_factor": 0.9705,
+  "t0_mark": {
+    "sim_time": 8.42,
+    "mac_time": 1792850104.267
+  },
+  "end_mark": {
+    "sim_time": 326.1,
+    "mac_time": 1792850431.615
+  }
+}

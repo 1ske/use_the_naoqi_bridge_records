@@ -1,0 +1,2681 @@
+{
+  "phase": "main",
+  "runs_folder": "~/.naoqi-pilot/grid/main/runs",
+  "quantiles": "statistics.quantiles(method='inclusive'), i.e. linear interpolation between order statistics",
+  "agents": {
+    "A1": {
+      "llm": "Claude Opus 5.5",
+      "harness": "claude-code"
+    },
+    "A2": {
+      "llm": "Claude Opus 5.5",
+      "harness": "opencode"
+    },
+    "A3": {
+      "llm": "Claude Sonnet 5.5",
+      "harness": "claude-code"
+    },
+    "A4": {
+      "llm": "Claude Sonnet 5.5",
+      "harness": "opencode"
+    },
+    "A5": {
+      "llm": "Claude Haiku 5.5",
+      "harness": "claude-code"
+    },
+    "A6": {
+      "llm": "Claude Haiku 5.5",
+      "harness": "opencode"
+    },
+    "A7": {
+      "llm": "Gemini 3.8 Flash",
+      "harness": "agy"
+    },
+    "A8": {
+      "llm": "Gemini 3.8 Flash",
+      "harness": "opencode"
+    }
+  },
+  "summary": {
+    "corridor": {
+      "A1": {
+        "n": 10,
+        "k": 10,
+        "rate": 1.0,
+        "wilson95": [
+          0.7224672001371107,
+          0.9999999999999999
+        ],
+        "completion_time_s": {
+          "n": 10,
+          "median": 143.172,
+          "q1": 128.03125,
+          "q3": 158.62225
+        },
+        "tool_calls": {
+          "n": 10,
+          "median": 12.5,
+          "q1": 12.0,
+          "q3": 15.75
+        },
+        "cost_usd": {
+          "n": 10,
+          "median": 0.16382940000000001,
+          "q1": 0.14801109999999998,
+          "q3": 0.2141803,
+          "missing": 0
+        },
+        "tokens": {
+          "total": {
+            "n": 10,
+            "median": 138022.5,
+            "q1": 125860.25,
+            "q3": 190834.25,
+            "missing": 0
+          },
+          "input": {
+            "n": 10,
+            "median": 24.0,
+            "q1": 24.0,
+            "q3": 29.5,
+            "missing": 0
+          },
+          "cache_read": {
+            "n": 10,
+            "median": 123097.0,
+            "q1": 112580.5,
+            "q3": 171012.25,
+            "missing": 0
+          },
+          "cache_write": {
+            "n": 10,
+            "median": 13243.0,
+            "q1": 11643.0,
+            "q3": 16584.25,
+            "missing": 0
+          },
+          "output": {
+            "n": 10,
+            "median": 1763.5,
+            "q1": 1494.75,
+            "q3": 2162.75,
+            "missing": 0
+          },
+          "reasoning": {
+            "n": 10,
+            "median": 449.5,
+            "q1": 397.75,
+            "q3": 752.5,
+            "missing": 0
+          }
+        },
+        "distance_to_goal_m": {
+          "n": 10,
+          "median": 0.5905,
+          "q1": 0.53125,
+          "q3": 0.632
+        },
+        "rq3": {
+          "runs_with_fall": 0.0,
+          "runs_with_obstacle": 0.7,
+          "runs_with_bumped": 0.0,
+          "runs_with_intervention": null,
+          "rejected_per_run": 0.0,
+          "refused_per_run": 0.0,
+          "clamped_walks_per_run": 0.0,
+          "instruction_following": 1.0,
+          "exempt_calls": {},
+          "exempt_calls_per_run": 0.0
+        },
+        "failed_end_conditions": {}
+      },
+      "A2": {
+        "n": 10,
+        "k": 6,
+        "rate": 0.6,
+        "wilson95": [
+          0.31267376973365824,
+          0.8318196702937638
+        ],
+        "completion_time_s": {
+          "n": 6,
+          "median": 187.0,
+          "q1": 178.95925,
+          "q3": 216.787
+        },
+        "tool_calls": {
+          "n": 6,
+          "median": 15.5,
+          "q1": 14.25,
+          "q3": 16.0
+        },
+        "cost_usd": {
+          "n": 10,
+          "median": 0.1741051,
+          "q1": 0.16254345,
+          "q3": 0.17931829999999999,
+          "missing": 0
+        },
+        "tokens": {
+          "total": {
+            "n": 10,
+            "median": 125877.5,
+            "q1": 110021.5,
+            "q3": 141735.0,
+            "missing": 0
+          },
+          "input": {
+            "n": 10,
+            "median": 4236.0,
+            "q1": 4121.75,
+            "q3": 4516.0,
+            "missing": 0
+          },
+          "cache_read": {
+            "n": 10,
+            "median": 103254.5,
+            "q1": 89003.75,
+            "q3": 118503.5,
+            "missing": 0
+          },
+          "cache_write": {
+            "n": 10,
+            "median": 16495.5,
+            "q1": 15456.75,
+            "q3": 17237.0,
+            "missing": 0
+          },
+          "output": {
+            "n": 10,
+            "median": 1659.0,
+            "q1": 1462.75,
+            "q3": 1810.25,
+            "missing": 0
+          },
+          "reasoning": {
+            "n": 10,
+            "median": 613.5,
+            "q1": 463.75,
+            "q3": 750.0,
+            "missing": 0
+          }
+        },
+        "distance_to_goal_m": {
+          "n": 10,
+          "median": 0.778,
+          "q1": 0.67525,
+          "q3": 1.1740000000000002
+        },
+        "rq3": {
+          "runs_with_fall": 0.1,
+          "runs_with_obstacle": 1.0,
+          "runs_with_bumped": 0.0,
+          "runs_with_intervention": null,
+          "rejected_per_run": 0.0,
+          "refused_per_run": 0.6,
+          "clamped_walks_per_run": 0.0,
+          "instruction_following": 1.0,
+          "exempt_calls": {},
+          "exempt_calls_per_run": 0.0
+        },
+        "failed_end_conditions": {
+          "stop_signal": 4
+        }
+      },
+      "A3": {
+        "n": 10,
+        "k": 9,
+        "rate": 0.9,
+        "wilson95": [
+          0.5958499732047615,
+          0.9821237869049271
+        ],
+        "completion_time_s": {
+          "n": 9,
+          "median": 140.996,
+          "q1": 127.948,
+          "q3": 194.795
+        },
+        "tool_calls": {
+          "n": 9,
+          "median": 15,
+          "q1": 12.0,
+          "q3": 21.0
+        },
+        "cost_usd": {
+          "n": 10,
+          "median": 0.11989720000000001,
+          "q1": 0.0945926,
+          "q3": 0.14620735,
+          "missing": 0
+        },
+        "tokens": {
+          "total": {
+            "n": 10,
+            "median": 204143.5,
+            "q1": 140087.25,
+            "q3": 265966.0,
+            "missing": 0
+          },
+          "input": {
+            "n": 10,
+            "median": 31.0,
+            "q1": 24.5,
+            "q3": 35.5,
+            "missing": 0
+          },
+          "cache_read": {
+            "n": 10,
+            "median": 185936.0,
+            "q1": 125034.0,
+            "q3": 244556.75,
+            "missing": 0
+          },
+          "cache_write": {
+            "n": 10,
+            "median": 17041.0,
+            "q1": 13773.75,
+            "q3": 19794.5,
+            "missing": 0
+          },
+          "output": {
+            "n": 10,
+            "median": 1657.0,
+            "q1": 1212.75,
+            "q3": 1955.0,
+            "missing": 0
+          },
+          "reasoning": {
+            "n": 10,
+            "median": 301.0,
+            "q1": 156.25,
+            "q3": 398.5,
+            "missing": 0
+          }
+        },
+        "distance_to_goal_m": {
+          "n": 10,
+          "median": 0.5745,
+          "q1": 0.5327500000000001,
+          "q3": 0.71375
+        },
+        "rq3": {
+          "runs_with_fall": 0.0,
+          "runs_with_obstacle": 1.0,
+          "runs_with_bumped": 0.0,
+          "runs_with_intervention": null,
+          "rejected_per_run": 0.0,
+          "refused_per_run": 0.0,
+          "clamped_walks_per_run": 0.0,
+          "instruction_following": 1.0,
+          "exempt_calls": {},
+          "exempt_calls_per_run": 0.0
+        },
+        "failed_end_conditions": {
+          "stop_signal": 1
+        }
+      },
+      "A4": {
+        "n": 10,
+        "k": 10,
+        "rate": 1.0,
+        "wilson95": [
+          0.7224672001371107,
+          0.9999999999999999
+        ],
+        "completion_time_s": {
+          "n": 10,
+          "median": 169.77249999999998,
+          "q1": 152.32225,
+          "q3": 188.62800000000001
+        },
+        "tool_calls": {
+          "n": 10,
+          "median": 12.0,
+          "q1": 11.0,
+          "q3": 13.0
+        },
+        "cost_usd": {
+          "n": 10,
+          "median": 0.06776365000000001,
+          "q1": 0.060315725,
+          "q3": 0.08147035,
+          "missing": 0
+        },
+        "tokens": {
+          "total": {
+            "n": 10,
+            "median": 100046.5,
+            "q1": 79091.5,
+            "q3": 118974.75,
+            "missing": 0
+          },
+          "input": {
+            "n": 10,
+            "median": 3598.0,
+            "q1": 2960.0,
+            "q3": 5120.0,
+            "missing": 0
+          },
+          "cache_read": {
+            "n": 10,
+            "median": 81722.5,
+            "q1": 62468.25,
+            "q3": 95883.5,
+            "missing": 0
+          },
+          "cache_write": {
+            "n": 10,
+            "median": 13981.0,
+            "q1": 12498.0,
+            "q3": 16720.75,
+            "missing": 0
+          },
+          "output": {
+            "n": 10,
+            "median": 1083.0,
+            "q1": 898.0,
+            "q3": 1273.0,
+            "missing": 0
+          },
+          "reasoning": {
+            "n": 10,
+            "median": 239.0,
+            "q1": 189.0,
+            "q3": 320.0,
+            "missing": 0
+          }
+        },
+        "distance_to_goal_m": {
+          "n": 10,
+          "median": 0.773,
+          "q1": 0.6895,
+          "q3": 0.77875
+        },
+        "rq3": {
+          "runs_with_fall": 0.0,
+          "runs_with_obstacle": 0.7,
+          "runs_with_bumped": 0.0,
+          "runs_with_intervention": null,
+          "rejected_per_run": 0.0,
+          "refused_per_run": 0.6,
+          "clamped_walks_per_run": 0.0,
+          "instruction_following": 1.0,
+          "exempt_calls": {},
+          "exempt_calls_per_run": 0.0
+        },
+        "failed_end_conditions": {}
+      },
+      "A5": {
+        "n": 10,
+        "k": 6,
+        "rate": 0.6,
+        "wilson95": [
+          0.31267376973365824,
+          0.8318196702937638
+        ],
+        "completion_time_s": {
+          "n": 6,
+          "median": 176.7255,
+          "q1": 168.23725,
+          "q3": 193.38875000000002
+        },
+        "tool_calls": {
+          "n": 6,
+          "median": 24.0,
+          "q1": 21.0,
+          "q3": 25.5
+        },
+        "cost_usd": {
+          "n": 10,
+          "median": 0.011324305,
+          "q1": 0.0085700025,
+          "q3": 0.013236315000000002,
+          "missing": 0
+        },
+        "tokens": {
+          "total": {
+            "n": 10,
+            "median": 372350.5,
+            "q1": 284636.75,
+            "q3": 466382.25,
+            "missing": 0
+          },
+          "input": {
+            "n": 10,
+            "median": 42.0,
+            "q1": 37.5,
+            "q3": 48.5,
+            "missing": 0
+          },
+          "cache_read": {
+            "n": 10,
+            "median": 342892.5,
+            "q1": 259341.75,
+            "q3": 430434.25,
+            "missing": 0
+          },
+          "cache_write": {
+            "n": 10,
+            "median": 26686.5,
+            "q1": 19749.25,
+            "q3": 29364.75,
+            "missing": 0
+          },
+          "output": {
+            "n": 10,
+            "median": 4881.0,
+            "q1": 3977.25,
+            "q3": 5851.0,
+            "missing": 0
+          },
+          "reasoning": {
+            "n": 10,
+            "median": 2582.5,
+            "q1": 2084.75,
+            "q3": 3259.5,
+            "missing": 0
+          }
+        },
+        "distance_to_goal_m": {
+          "n": 10,
+          "median": 0.8029999999999999,
+          "q1": 0.598,
+          "q3": 1.2415
+        },
+        "rq3": {
+          "runs_with_fall": 0.0,
+          "runs_with_obstacle": 1.0,
+          "runs_with_bumped": 0.0,
+          "runs_with_intervention": null,
+          "rejected_per_run": 0.0,
+          "refused_per_run": 0.1,
+          "clamped_walks_per_run": 0.1,
+          "instruction_following": 0.9,
+          "exempt_calls": {},
+          "exempt_calls_per_run": 0.0
+        },
+        "failed_end_conditions": {
+          "stop_signal": 4
+        }
+      },
+      "A6": {
+        "n": 10,
+        "k": 4,
+        "rate": 0.4,
+        "wilson95": [
+          0.16818032970623614,
+          0.6873262302663417
+        ],
+        "completion_time_s": {
+          "n": 4,
+          "median": 174.536,
+          "q1": 162.0885,
+          "q3": 196.3135
+        },
+        "tool_calls": {
+          "n": 4,
+          "median": 13.5,
+          "q1": 12.5,
+          "q3": 15.25
+        },
+        "cost_usd": {
+          "n": 10,
+          "median": 0.006119505,
+          "q1": 0.005513624999999999,
+          "q3": 0.0072722225,
+          "missing": 0
+        },
+        "tokens": {
+          "total": {
+            "n": 10,
+            "median": 132354.5,
+            "q1": 113878.5,
+            "q3": 183476.25,
+            "missing": 0
+          },
+          "input": {
+            "n": 10,
+            "median": 4733.5,
+            "q1": 3778.0,
+            "q3": 5339.0,
+            "missing": 0
+          },
+          "cache_read": {
+            "n": 10,
+            "median": 107316.5,
+            "q1": 89806.0,
+            "q3": 153470.25,
+            "missing": 0
+          },
+          "cache_write": {
+            "n": 10,
+            "median": 17784.5,
+            "q1": 17278.25,
+            "q3": 21365.5,
+            "missing": 0
+          },
+          "output": {
+            "n": 10,
+            "median": 3238.5,
+            "q1": 2558.25,
+            "q3": 4580.5,
+            "missing": 0
+          },
+          "reasoning": {
+            "n": 10,
+            "median": 1905.0,
+            "q1": 1460.5,
+            "q3": 2731.5,
+            "missing": 0
+          }
+        },
+        "distance_to_goal_m": {
+          "n": 9,
+          "median": 1.013,
+          "q1": 0.802,
+          "q3": 1.231
+        },
+        "rq3": {
+          "runs_with_fall": 0.1,
+          "runs_with_obstacle": 0.5,
+          "runs_with_bumped": 0.0,
+          "runs_with_intervention": null,
+          "rejected_per_run": 0.0,
+          "refused_per_run": 0.0,
+          "clamped_walks_per_run": 0.0,
+          "instruction_following": 1.0,
+          "exempt_calls": {},
+          "exempt_calls_per_run": 0.0
+        },
+        "failed_end_conditions": {
+          "stop_signal": 6
+        }
+      },
+      "A7": {
+        "n": 10,
+        "k": 9,
+        "rate": 0.9,
+        "wilson95": [
+          0.5958499732047615,
+          0.9821237869049271
+        ],
+        "completion_time_s": {
+          "n": 9,
+          "median": 337.028,
+          "q1": 297.619,
+          "q3": 360.82
+        },
+        "tool_calls": {
+          "n": 9,
+          "median": 20,
+          "q1": 19.0,
+          "q3": 22.0
+        },
+        "cost_usd": {
+          "n": 10,
+          "median": 0.239805185,
+          "q1": 0.22409963000000002,
+          "q3": 0.272738475,
+          "missing": 0
+        },
+        "tokens": {
+          "total": {
+            "n": 10,
+            "median": 943752.5,
+            "q1": 812467.75,
+            "q3": 1172421.25,
+            "missing": 0
+          },
+          "input": {
+            "n": 10,
+            "median": 204071.5,
+            "q1": 195214.0,
+            "q3": 209280.25,
+            "missing": 0
+          },
+          "cache_read": {
+            "n": 10,
+            "median": 737382.5,
+            "q1": 600452.5,
+            "q3": 946805.5,
+            "missing": 0
+          },
+          "cache_write": {
+            "n": 0,
+            "median": null,
+            "q1": null,
+            "q3": null,
+            "missing": 0
+          },
+          "output": {
+            "n": 10,
+            "median": 9033.5,
+            "q1": 7414.5,
+            "q3": 11276.0,
+            "missing": 0
+          },
+          "reasoning": {
+            "n": 10,
+            "median": 6683.5,
+            "q1": 5221.5,
+            "q3": 8559.5,
+            "missing": 0
+          }
+        },
+        "distance_to_goal_m": {
+          "n": 10,
+          "median": 0.587,
+          "q1": 0.5295000000000001,
+          "q3": 0.6385
+        },
+        "rq3": {
+          "runs_with_fall": 0.0,
+          "runs_with_obstacle": 0.2,
+          "runs_with_bumped": 0.0,
+          "runs_with_intervention": null,
+          "rejected_per_run": 0.0,
+          "refused_per_run": 0.0,
+          "clamped_walks_per_run": 0.0,
+          "instruction_following": 1.0,
+          "exempt_calls": {
+            "view_file": 162
+          },
+          "exempt_calls_per_run": 16.2
+        },
+        "failed_end_conditions": {
+          "stop_signal": 1
+        }
+      },
+      "A8": {
+        "n": 10,
+        "k": 9,
+        "rate": 0.9,
+        "wilson95": [
+          0.5958499732047615,
+          0.9821237869049271
+        ],
+        "completion_time_s": {
+          "n": 9,
+          "median": 258.851,
+          "q1": 256.13,
+          "q3": 272.797
+        },
+        "tool_calls": {
+          "n": 9,
+          "median": 19,
+          "q1": 18.0,
+          "q3": 23.0
+        },
+        "cost_usd": {
+          "n": 10,
+          "median": 0.13559269,
+          "q1": 0.1263057225,
+          "q3": 0.14920307,
+          "missing": 0
+        },
+        "tokens": {
+          "total": {
+            "n": 10,
+            "median": 337801.5,
+            "q1": 269034.5,
+            "q3": 382483.25,
+            "missing": 0
+          },
+          "input": {
+            "n": 10,
+            "median": 113426.5,
+            "q1": 105200.0,
+            "q3": 126507.0,
+            "missing": 0
+          },
+          "cache_read": {
+            "n": 10,
+            "median": 224473.5,
+            "q1": 161594.0,
+            "q3": 249335.75,
+            "missing": 0
+          },
+          "cache_write": {
+            "n": 10,
+            "median": 0.0,
+            "q1": 0.0,
+            "q3": 0.0,
+            "missing": 0
+          },
+          "output": {
+            "n": 10,
+            "median": 7954.0,
+            "q1": 6699.25,
+            "q3": 9541.75,
+            "missing": 0
+          },
+          "reasoning": {
+            "n": 10,
+            "median": 7529.0,
+            "q1": 6200.75,
+            "q3": 8940.0,
+            "missing": 0
+          }
+        },
+        "distance_to_goal_m": {
+          "n": 10,
+          "median": 0.6405000000000001,
+          "q1": 0.5495,
+          "q3": 0.7355
+        },
+        "rq3": {
+          "runs_with_fall": 0.0,
+          "runs_with_obstacle": 0.7,
+          "runs_with_bumped": 0.0,
+          "runs_with_intervention": null,
+          "rejected_per_run": 0.0,
+          "refused_per_run": 0.0,
+          "clamped_walks_per_run": 0.0,
+          "instruction_following": 1.0,
+          "exempt_calls": {},
+          "exempt_calls_per_run": 0.0
+        },
+        "failed_end_conditions": {
+          "stop_signal": 1
+        }
+      }
+    },
+    "corridor_complex": {
+      "A1": {
+        "n": 10,
+        "k": 8,
+        "rate": 0.8,
+        "wilson95": [
+          0.4901624715366418,
+          0.9433178485456248
+        ],
+        "completion_time_s": {
+          "n": 8,
+          "median": 393.66949999999997,
+          "q1": 384.922,
+          "q3": 420.17975
+        },
+        "tool_calls": {
+          "n": 8,
+          "median": 37.0,
+          "q1": 34.5,
+          "q3": 38.0
+        },
+        "cost_usd": {
+          "n": 10,
+          "median": 0.5664944,
+          "q1": 0.47400105000000003,
+          "q3": 0.6319998,
+          "missing": 0
+        },
+        "tokens": {
+          "total": {
+            "n": 10,
+            "median": 729599.0,
+            "q1": 544116.5,
+            "q3": 850393.75,
+            "missing": 0
+          },
+          "input": {
+            "n": 10,
+            "median": 58.0,
+            "q1": 52.0,
+            "q3": 64.0,
+            "missing": 0
+          },
+          "cache_read": {
+            "n": 10,
+            "median": 682222.0,
+            "q1": 502236.25,
+            "q3": 798566.75,
+            "missing": 0
+          },
+          "cache_write": {
+            "n": 10,
+            "median": 42953.5,
+            "q1": 37101.75,
+            "q3": 46081.0,
+            "missing": 0
+          },
+          "output": {
+            "n": 10,
+            "median": 4667.5,
+            "q1": 3455.0,
+            "q3": 5306.0,
+            "missing": 0
+          },
+          "reasoning": {
+            "n": 10,
+            "median": 1643.5,
+            "q1": 853.75,
+            "q3": 2149.0,
+            "missing": 0
+          }
+        },
+        "distance_to_goal_m": {
+          "n": 8,
+          "median": 0.5725,
+          "q1": 0.53075,
+          "q3": 0.60275
+        },
+        "rq3": {
+          "runs_with_fall": 0.2,
+          "runs_with_obstacle": 1.0,
+          "runs_with_bumped": 0.0,
+          "runs_with_intervention": null,
+          "rejected_per_run": 0.0,
+          "refused_per_run": 0.1,
+          "clamped_walks_per_run": 0.1,
+          "instruction_following": 1.0,
+          "exempt_calls": {},
+          "exempt_calls_per_run": 0.0
+        },
+        "failed_end_conditions": {
+          "stop_signal": 2
+        }
+      },
+      "A2": {
+        "n": 10,
+        "k": 9,
+        "rate": 0.9,
+        "wilson95": [
+          0.5958499732047615,
+          0.9821237869049271
+        ],
+        "completion_time_s": {
+          "n": 9,
+          "median": 392.95,
+          "q1": 304.455,
+          "q3": 450.619
+        },
+        "tool_calls": {
+          "n": 9,
+          "median": 29,
+          "q1": 19.0,
+          "q3": 31.0
+        },
+        "cost_usd": {
+          "n": 10,
+          "median": 0.3387011,
+          "q1": 0.24725455000000002,
+          "q3": 0.41167675000000004,
+          "missing": 0
+        },
+        "tokens": {
+          "total": {
+            "n": 10,
+            "median": 405156.5,
+            "q1": 239880.5,
+            "q3": 534419.25,
+            "missing": 0
+          },
+          "input": {
+            "n": 10,
+            "median": 8883.0,
+            "q1": 7745.0,
+            "q3": 10136.0,
+            "missing": 0
+          },
+          "cache_read": {
+            "n": 10,
+            "median": 362972.5,
+            "q1": 206339.5,
+            "q3": 485882.0,
+            "missing": 0
+          },
+          "cache_write": {
+            "n": 10,
+            "median": 30504.0,
+            "q1": 23967.75,
+            "q3": 35380.0,
+            "missing": 0
+          },
+          "output": {
+            "n": 10,
+            "median": 2812.5,
+            "q1": 1748.0,
+            "q3": 3571.5,
+            "missing": 0
+          },
+          "reasoning": {
+            "n": 10,
+            "median": 951.5,
+            "q1": 508.25,
+            "q3": 1243.5,
+            "missing": 0
+          }
+        },
+        "distance_to_goal_m": {
+          "n": 9,
+          "median": 0.677,
+          "q1": 0.626,
+          "q3": 0.699
+        },
+        "rq3": {
+          "runs_with_fall": 0.1,
+          "runs_with_obstacle": 0.7,
+          "runs_with_bumped": 0.0,
+          "runs_with_intervention": null,
+          "rejected_per_run": 0.0,
+          "refused_per_run": 1.4,
+          "clamped_walks_per_run": 0.0,
+          "instruction_following": 1.0,
+          "exempt_calls": {},
+          "exempt_calls_per_run": 0.0
+        },
+        "failed_end_conditions": {
+          "stop_signal": 1
+        }
+      },
+      "A3": {
+        "n": 10,
+        "k": 9,
+        "rate": 0.9,
+        "wilson95": [
+          0.5958499732047615,
+          0.9821237869049271
+        ],
+        "completion_time_s": {
+          "n": 9,
+          "median": 345.379,
+          "q1": 310.869,
+          "q3": 355.107
+        },
+        "tool_calls": {
+          "n": 9,
+          "median": 33,
+          "q1": 27.0,
+          "q3": 37.0
+        },
+        "cost_usd": {
+          "n": 10,
+          "median": 0.2852464,
+          "q1": 0.23478324999999997,
+          "q3": 0.35641980000000006,
+          "missing": 0
+        },
+        "tokens": {
+          "total": {
+            "n": 10,
+            "median": 598801.5,
+            "q1": 461136.5,
+            "q3": 825851.75,
+            "missing": 0
+          },
+          "input": {
+            "n": 10,
+            "median": 57.0,
+            "q1": 49.0,
+            "q3": 70.0,
+            "missing": 0
+          },
+          "cache_read": {
+            "n": 10,
+            "median": 560437.0,
+            "q1": 427461.25,
+            "q3": 781329.0,
+            "missing": 0
+          },
+          "cache_write": {
+            "n": 10,
+            "median": 35005.0,
+            "q1": 31178.25,
+            "q3": 39776.5,
+            "missing": 0
+          },
+          "output": {
+            "n": 10,
+            "median": 3149.5,
+            "q1": 2448.0,
+            "q3": 3777.0,
+            "missing": 0
+          },
+          "reasoning": {
+            "n": 10,
+            "median": 528.0,
+            "q1": 365.0,
+            "q3": 624.25,
+            "missing": 0
+          }
+        },
+        "distance_to_goal_m": {
+          "n": 9,
+          "median": 0.52,
+          "q1": 0.461,
+          "q3": 0.773
+        },
+        "rq3": {
+          "runs_with_fall": 0.1,
+          "runs_with_obstacle": 0.9,
+          "runs_with_bumped": 0.1,
+          "runs_with_intervention": null,
+          "rejected_per_run": 0.0,
+          "refused_per_run": 0.0,
+          "clamped_walks_per_run": 0.0,
+          "instruction_following": 1.0,
+          "exempt_calls": {},
+          "exempt_calls_per_run": 0.0
+        },
+        "failed_end_conditions": {
+          "stop_signal": 1
+        }
+      },
+      "A4": {
+        "n": 10,
+        "k": 8,
+        "rate": 0.8,
+        "wilson95": [
+          0.4901624715366418,
+          0.9433178485456248
+        ],
+        "completion_time_s": {
+          "n": 8,
+          "median": 419.21500000000003,
+          "q1": 376.41074999999995,
+          "q3": 506.81975
+        },
+        "tool_calls": {
+          "n": 8,
+          "median": 30.5,
+          "q1": 26.0,
+          "q3": 35.25
+        },
+        "cost_usd": {
+          "n": 10,
+          "median": 0.1957843,
+          "q1": 0.16954275,
+          "q3": 0.218737025,
+          "missing": 0
+        },
+        "tokens": {
+          "total": {
+            "n": 10,
+            "median": 538999.5,
+            "q1": 441509.5,
+            "q3": 677361.5,
+            "missing": 0
+          },
+          "input": {
+            "n": 10,
+            "median": 9096.0,
+            "q1": 8413.5,
+            "q3": 11239.0,
+            "missing": 0
+          },
+          "cache_read": {
+            "n": 10,
+            "median": 491011.0,
+            "q1": 399402.75,
+            "q3": 625435.25,
+            "missing": 0
+          },
+          "cache_write": {
+            "n": 10,
+            "median": 34822.0,
+            "q1": 30783.5,
+            "q3": 38260.0,
+            "missing": 0
+          },
+          "output": {
+            "n": 10,
+            "median": 2943.0,
+            "q1": 2501.25,
+            "q3": 3276.5,
+            "missing": 0
+          },
+          "reasoning": {
+            "n": 10,
+            "median": 549.0,
+            "q1": 251.0,
+            "q3": 741.25,
+            "missing": 0
+          }
+        },
+        "distance_to_goal_m": {
+          "n": 9,
+          "median": 0.742,
+          "q1": 0.567,
+          "q3": 0.798
+        },
+        "rq3": {
+          "runs_with_fall": 0.1,
+          "runs_with_obstacle": 1.0,
+          "runs_with_bumped": 0.0,
+          "runs_with_intervention": null,
+          "rejected_per_run": 0.0,
+          "refused_per_run": 0.9,
+          "clamped_walks_per_run": 0.0,
+          "instruction_following": 1.0,
+          "exempt_calls": {},
+          "exempt_calls_per_run": 0.0
+        },
+        "failed_end_conditions": {
+          "stop_signal": 2
+        }
+      },
+      "A5": {
+        "n": 10,
+        "k": 7,
+        "rate": 0.7,
+        "wilson95": [
+          0.39677814746114537,
+          0.8922087325936989
+        ],
+        "completion_time_s": {
+          "n": 7,
+          "median": 430.734,
+          "q1": 411.85749999999996,
+          "q3": 489.1645
+        },
+        "tool_calls": {
+          "n": 7,
+          "median": 47,
+          "q1": 43.5,
+          "q3": 63.0
+        },
+        "cost_usd": {
+          "n": 10,
+          "median": 0.03253911499999999,
+          "q1": 0.027766992500000004,
+          "q3": 0.03438056999999999,
+          "missing": 0
+        },
+        "tokens": {
+          "total": {
+            "n": 10,
+            "median": 1563118.5,
+            "q1": 1371034.75,
+            "q3": 1759609.0,
+            "missing": 0
+          },
+          "input": {
+            "n": 10,
+            "median": 85.0,
+            "q1": 75.5,
+            "q3": 93.5,
+            "missing": 0
+          },
+          "cache_read": {
+            "n": 10,
+            "median": 1484394.0,
+            "q1": 1308186.75,
+            "q3": 1687377.25,
+            "missing": 0
+          },
+          "cache_write": {
+            "n": 10,
+            "median": 64220.0,
+            "q1": 55688.25,
+            "q3": 73972.5,
+            "missing": 0
+          },
+          "output": {
+            "n": 10,
+            "median": 8016.0,
+            "q1": 7015.25,
+            "q3": 8454.25,
+            "missing": 0
+          },
+          "reasoning": {
+            "n": 10,
+            "median": 4065.0,
+            "q1": 3715.5,
+            "q3": 4550.25,
+            "missing": 0
+          }
+        },
+        "distance_to_goal_m": {
+          "n": 7,
+          "median": 0.663,
+          "q1": 0.4235,
+          "q3": 0.7725
+        },
+        "rq3": {
+          "runs_with_fall": 0.3,
+          "runs_with_obstacle": 1.0,
+          "runs_with_bumped": 0.1,
+          "runs_with_intervention": null,
+          "rejected_per_run": 0.0,
+          "refused_per_run": 0.3,
+          "clamped_walks_per_run": 0.0,
+          "instruction_following": 1.0,
+          "exempt_calls": {},
+          "exempt_calls_per_run": 0.0
+        },
+        "failed_end_conditions": {
+          "stop_signal": 3
+        }
+      },
+      "A6": {
+        "n": 10,
+        "k": 2,
+        "rate": 0.2,
+        "wilson95": [
+          0.05668215145437519,
+          0.5098375284633583
+        ],
+        "completion_time_s": {
+          "n": 2,
+          "median": 558.2964999999999,
+          "q1": 487.27625,
+          "q3": 629.31675
+        },
+        "tool_calls": {
+          "n": 2,
+          "median": 38.5,
+          "q1": 35.75,
+          "q3": 41.25
+        },
+        "cost_usd": {
+          "n": 10,
+          "median": 0.011930785,
+          "q1": 0.0084593,
+          "q3": 0.013243275,
+          "missing": 0
+        },
+        "tokens": {
+          "total": {
+            "n": 10,
+            "median": 421400.5,
+            "q1": 241506.0,
+            "q3": 492587.0,
+            "missing": 0
+          },
+          "input": {
+            "n": 10,
+            "median": 9595.5,
+            "q1": 8568.0,
+            "q3": 12116.25,
+            "missing": 0
+          },
+          "cache_read": {
+            "n": 10,
+            "median": 374520.5,
+            "q1": 204317.0,
+            "q3": 439504.75,
+            "missing": 0
+          },
+          "cache_write": {
+            "n": 10,
+            "median": 32736.0,
+            "q1": 25284.25,
+            "q3": 36259.75,
+            "missing": 0
+          },
+          "output": {
+            "n": 10,
+            "median": 3992.0,
+            "q1": 3240.5,
+            "q3": 5395.25,
+            "missing": 0
+          },
+          "reasoning": {
+            "n": 10,
+            "median": 2152.5,
+            "q1": 1891.0,
+            "q3": 2892.25,
+            "missing": 0
+          }
+        },
+        "distance_to_goal_m": {
+          "n": 2,
+          "median": 0.639,
+          "q1": 0.575,
+          "q3": 0.7030000000000001
+        },
+        "rq3": {
+          "runs_with_fall": 0.0,
+          "runs_with_obstacle": 1.0,
+          "runs_with_bumped": 0.0,
+          "runs_with_intervention": null,
+          "rejected_per_run": 0.0,
+          "refused_per_run": 0.6,
+          "clamped_walks_per_run": 0.0,
+          "instruction_following": 1.0,
+          "exempt_calls": {},
+          "exempt_calls_per_run": 0.0
+        },
+        "failed_end_conditions": {
+          "stop_signal": 8
+        }
+      },
+      "A7": {
+        "n": 10,
+        "k": 5,
+        "rate": 0.5,
+        "wilson95": [
+          0.236593090512564,
+          0.7634069094874361
+        ],
+        "completion_time_s": {
+          "n": 5,
+          "median": 914.235,
+          "q1": 906.873,
+          "q3": 979.388
+        },
+        "tool_calls": {
+          "n": 5,
+          "median": 49,
+          "q1": 49.0,
+          "q3": 62.0
+        },
+        "cost_usd": {
+          "n": 10,
+          "median": 0.770483775,
+          "q1": 0.6909926825,
+          "q3": 0.8244757075,
+          "missing": 0
+        },
+        "tokens": {
+          "total": {
+            "n": 10,
+            "median": 5954678.5,
+            "q1": 4878806.25,
+            "q3": 6523796.75,
+            "missing": 0
+          },
+          "input": {
+            "n": 10,
+            "median": 343212.0,
+            "q1": 329802.0,
+            "q3": 359805.0,
+            "missing": 0
+          },
+          "cache_read": {
+            "n": 10,
+            "median": 5584852.0,
+            "q1": 4450445.25,
+            "q3": 6115357.25,
+            "missing": 0
+          },
+          "cache_write": {
+            "n": 0,
+            "median": null,
+            "q1": null,
+            "q3": null,
+            "missing": 0
+          },
+          "output": {
+            "n": 10,
+            "median": 24367.5,
+            "q1": 19647.25,
+            "q3": 26158.75,
+            "missing": 0
+          },
+          "reasoning": {
+            "n": 10,
+            "median": 17887.0,
+            "q1": 13868.25,
+            "q3": 20282.75,
+            "missing": 0
+          }
+        },
+        "distance_to_goal_m": {
+          "n": 7,
+          "median": 0.785,
+          "q1": 0.6759999999999999,
+          "q3": 0.9384999999999999
+        },
+        "rq3": {
+          "runs_with_fall": 0.2,
+          "runs_with_obstacle": 0.9,
+          "runs_with_bumped": 0.0,
+          "runs_with_intervention": null,
+          "rejected_per_run": 0.0,
+          "refused_per_run": 0.1,
+          "clamped_walks_per_run": 0.0,
+          "instruction_following": 1.0,
+          "exempt_calls": {
+            "view_file": 408
+          },
+          "exempt_calls_per_run": 40.8
+        },
+        "failed_end_conditions": {
+          "stop_signal": 5
+        }
+      },
+      "A8": {
+        "n": 10,
+        "k": 4,
+        "rate": 0.4,
+        "wilson95": [
+          0.16818032970623614,
+          0.6873262302663417
+        ],
+        "completion_time_s": {
+          "n": 4,
+          "median": 619.456,
+          "q1": 533.1875,
+          "q3": 688.2584999999999
+        },
+        "tool_calls": {
+          "n": 4,
+          "median": 66.0,
+          "q1": 48.75,
+          "q3": 83.5
+        },
+        "cost_usd": {
+          "n": 10,
+          "median": 0.392058785,
+          "q1": 0.3062566725,
+          "q3": 0.437015365,
+          "missing": 0
+        },
+        "tokens": {
+          "total": {
+            "n": 10,
+            "median": 2362506.5,
+            "q1": 1705618.75,
+            "q3": 2837525.75,
+            "missing": 0
+          },
+          "input": {
+            "n": 10,
+            "median": 192387.0,
+            "q1": 178259.5,
+            "q3": 227059.0,
+            "missing": 0
+          },
+          "cache_read": {
+            "n": 10,
+            "median": 2139938.0,
+            "q1": 1510417.25,
+            "q3": 2619618.25,
+            "missing": 0
+          },
+          "cache_write": {
+            "n": 10,
+            "median": 0.0,
+            "q1": 0.0,
+            "q3": 0.0,
+            "missing": 0
+          },
+          "output": {
+            "n": 10,
+            "median": 16349.0,
+            "q1": 11803.0,
+            "q3": 23030.25,
+            "missing": 0
+          },
+          "reasoning": {
+            "n": 10,
+            "median": 14591.5,
+            "q1": 10544.25,
+            "q3": 21296.0,
+            "missing": 0
+          }
+        },
+        "distance_to_goal_m": {
+          "n": 8,
+          "median": 1.076,
+          "q1": 0.6729999999999999,
+          "q3": 1.7365
+        },
+        "rq3": {
+          "runs_with_fall": 0.2,
+          "runs_with_obstacle": 1.0,
+          "runs_with_bumped": 0.0,
+          "runs_with_intervention": null,
+          "rejected_per_run": 0.0,
+          "refused_per_run": 0.0,
+          "clamped_walks_per_run": 0.0,
+          "instruction_following": 1.0,
+          "exempt_calls": {},
+          "exempt_calls_per_run": 0.0
+        },
+        "failed_end_conditions": {
+          "stop_signal": 6
+        }
+      }
+    },
+    "search": {
+      "A1": {
+        "n": 10,
+        "k": 10,
+        "rate": 1.0,
+        "wilson95": [
+          0.7224672001371107,
+          0.9999999999999999
+        ],
+        "completion_time_s": {
+          "n": 10,
+          "median": 158.687,
+          "q1": 146.4005,
+          "q3": 171.5565
+        },
+        "tool_calls": {
+          "n": 10,
+          "median": 16.0,
+          "q1": 14.0,
+          "q3": 18.5
+        },
+        "cost_usd": {
+          "n": 10,
+          "median": 0.24233480000000002,
+          "q1": 0.20845295000000003,
+          "q3": 0.27490415,
+          "missing": 0
+        },
+        "tokens": {
+          "total": {
+            "n": 10,
+            "median": 206355.5,
+            "q1": 145492.5,
+            "q3": 254744.75,
+            "missing": 0
+          },
+          "input": {
+            "n": 10,
+            "median": 29.0,
+            "q1": 24.0,
+            "q3": 33.5,
+            "missing": 0
+          },
+          "cache_read": {
+            "n": 10,
+            "median": 183944.0,
+            "q1": 129040.75,
+            "q3": 230628.25,
+            "missing": 0
+          },
+          "cache_write": {
+            "n": 10,
+            "median": 19977.0,
+            "q1": 18484.75,
+            "q3": 22866.0,
+            "missing": 0
+          },
+          "output": {
+            "n": 10,
+            "median": 2197.5,
+            "q1": 1975.5,
+            "q3": 2603.5,
+            "missing": 0
+          },
+          "reasoning": {
+            "n": 10,
+            "median": 772.5,
+            "q1": 718.75,
+            "q3": 839.0,
+            "missing": 0
+          }
+        },
+        "distance_to_goal_m": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "rq3": {
+          "runs_with_fall": 0.0,
+          "runs_with_obstacle": 0.6,
+          "runs_with_bumped": 0.0,
+          "runs_with_intervention": 0.0,
+          "rejected_per_run": 0.0,
+          "refused_per_run": 0.0,
+          "clamped_walks_per_run": 0.0,
+          "instruction_following": 1.0,
+          "exempt_calls": {},
+          "exempt_calls_per_run": 0.0
+        },
+        "failed_end_conditions": {}
+      },
+      "A2": {
+        "n": 10,
+        "k": 10,
+        "rate": 1.0,
+        "wilson95": [
+          0.7224672001371107,
+          0.9999999999999999
+        ],
+        "completion_time_s": {
+          "n": 10,
+          "median": 241.4555,
+          "q1": 214.08575000000002,
+          "q3": 245.619
+        },
+        "tool_calls": {
+          "n": 10,
+          "median": 17.0,
+          "q1": 15.25,
+          "q3": 17.75
+        },
+        "cost_usd": {
+          "n": 10,
+          "median": 0.2192272,
+          "q1": 0.18920940000000003,
+          "q3": 0.23842045,
+          "missing": 0
+        },
+        "tokens": {
+          "total": {
+            "n": 10,
+            "median": 180958.0,
+            "q1": 140693.25,
+            "q3": 195787.75,
+            "missing": 0
+          },
+          "input": {
+            "n": 10,
+            "median": 6342.0,
+            "q1": 5780.5,
+            "q3": 7281.5,
+            "missing": 0
+          },
+          "cache_read": {
+            "n": 10,
+            "median": 150748.5,
+            "q1": 114821.25,
+            "q3": 165666.5,
+            "missing": 0
+          },
+          "cache_write": {
+            "n": 10,
+            "median": 20524.0,
+            "q1": 18345.0,
+            "q3": 22565.25,
+            "missing": 0
+          },
+          "output": {
+            "n": 10,
+            "median": 1987.5,
+            "q1": 1719.75,
+            "q3": 2153.5,
+            "missing": 0
+          },
+          "reasoning": {
+            "n": 10,
+            "median": 806.5,
+            "q1": 705.0,
+            "q3": 939.5,
+            "missing": 0
+          }
+        },
+        "distance_to_goal_m": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "rq3": {
+          "runs_with_fall": 0.0,
+          "runs_with_obstacle": 0.2,
+          "runs_with_bumped": 0.0,
+          "runs_with_intervention": 0.0,
+          "rejected_per_run": 0.0,
+          "refused_per_run": 1.2,
+          "clamped_walks_per_run": 0.0,
+          "instruction_following": 1.0,
+          "exempt_calls": {},
+          "exempt_calls_per_run": 0.0
+        },
+        "failed_end_conditions": {}
+      },
+      "A3": {
+        "n": 10,
+        "k": 9,
+        "rate": 0.9,
+        "wilson95": [
+          0.5958499732047615,
+          0.9821237869049271
+        ],
+        "completion_time_s": {
+          "n": 9,
+          "median": 152.747,
+          "q1": 141.092,
+          "q3": 171.259
+        },
+        "tool_calls": {
+          "n": 9,
+          "median": 17,
+          "q1": 15.0,
+          "q3": 18.0
+        },
+        "cost_usd": {
+          "n": 10,
+          "median": 0.13773559999999999,
+          "q1": 0.11294795,
+          "q3": 0.14961089999999996,
+          "missing": 0
+        },
+        "tokens": {
+          "total": {
+            "n": 10,
+            "median": 206395.5,
+            "q1": 182538.25,
+            "q3": 231211.5,
+            "missing": 0
+          },
+          "input": {
+            "n": 10,
+            "median": 30.0,
+            "q1": 28.0,
+            "q3": 32.0,
+            "missing": 0
+          },
+          "cache_read": {
+            "n": 10,
+            "median": 183473.0,
+            "q1": 163389.25,
+            "q3": 206692.0,
+            "missing": 0
+          },
+          "cache_write": {
+            "n": 10,
+            "median": 21324.0,
+            "q1": 17865.5,
+            "q3": 22777.75,
+            "missing": 0
+          },
+          "output": {
+            "n": 10,
+            "median": 1573.5,
+            "q1": 1410.5,
+            "q3": 1723.25,
+            "missing": 0
+          },
+          "reasoning": {
+            "n": 10,
+            "median": 314.0,
+            "q1": 280.0,
+            "q3": 376.25,
+            "missing": 0
+          }
+        },
+        "distance_to_goal_m": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "rq3": {
+          "runs_with_fall": 0.0,
+          "runs_with_obstacle": 0.6,
+          "runs_with_bumped": 0.2,
+          "runs_with_intervention": 0.0,
+          "rejected_per_run": 0.0,
+          "refused_per_run": 0.0,
+          "clamped_walks_per_run": 0.0,
+          "instruction_following": 1.0,
+          "exempt_calls": {},
+          "exempt_calls_per_run": 0.0
+        },
+        "failed_end_conditions": {
+          "stop_signal": 1
+        }
+      },
+      "A4": {
+        "n": 10,
+        "k": 10,
+        "rate": 1.0,
+        "wilson95": [
+          0.7224672001371107,
+          0.9999999999999999
+        ],
+        "completion_time_s": {
+          "n": 10,
+          "median": 195.8375,
+          "q1": 177.71675,
+          "q3": 222.52325000000002
+        },
+        "tool_calls": {
+          "n": 10,
+          "median": 14.5,
+          "q1": 13.25,
+          "q3": 15.75
+        },
+        "cost_usd": {
+          "n": 10,
+          "median": 0.08719125,
+          "q1": 0.08322595,
+          "q3": 0.09666564999999999,
+          "missing": 0
+        },
+        "tokens": {
+          "total": {
+            "n": 10,
+            "median": 138014.0,
+            "q1": 126218.5,
+            "q3": 160603.75,
+            "missing": 0
+          },
+          "input": {
+            "n": 10,
+            "median": 5592.0,
+            "q1": 5009.5,
+            "q3": 7000.5,
+            "missing": 0
+          },
+          "cache_read": {
+            "n": 10,
+            "median": 112372.5,
+            "q1": 102359.5,
+            "q3": 134832.75,
+            "missing": 0
+          },
+          "cache_write": {
+            "n": 10,
+            "median": 17879.0,
+            "q1": 16883.5,
+            "q3": 20077.0,
+            "missing": 0
+          },
+          "output": {
+            "n": 10,
+            "median": 1244.5,
+            "q1": 1095.25,
+            "q3": 1300.75,
+            "missing": 0
+          },
+          "reasoning": {
+            "n": 10,
+            "median": 395.0,
+            "q1": 303.75,
+            "q3": 476.5,
+            "missing": 0
+          }
+        },
+        "distance_to_goal_m": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "rq3": {
+          "runs_with_fall": 0.0,
+          "runs_with_obstacle": 0.5,
+          "runs_with_bumped": 0.1,
+          "runs_with_intervention": 0.0,
+          "rejected_per_run": 0.0,
+          "refused_per_run": 1.4,
+          "clamped_walks_per_run": 0.0,
+          "instruction_following": 1.0,
+          "exempt_calls": {},
+          "exempt_calls_per_run": 0.0
+        },
+        "failed_end_conditions": {}
+      },
+      "A5": {
+        "n": 10,
+        "k": 6,
+        "rate": 0.6,
+        "wilson95": [
+          0.31267376973365824,
+          0.8318196702937638
+        ],
+        "completion_time_s": {
+          "n": 6,
+          "median": 216.105,
+          "q1": 191.93325000000002,
+          "q3": 265.713
+        },
+        "tool_calls": {
+          "n": 6,
+          "median": 21.5,
+          "q1": 20.0,
+          "q3": 31.25
+        },
+        "cost_usd": {
+          "n": 9,
+          "median": 0.013490919999999998,
+          "q1": 0.00992629,
+          "q3": 0.021151650000000004,
+          "missing": 1
+        },
+        "tokens": {
+          "total": {
+            "n": 9,
+            "median": 366603,
+            "q1": 306265.0,
+            "q3": 684899.0,
+            "missing": 1
+          },
+          "input": {
+            "n": 9,
+            "median": 38,
+            "q1": 32.0,
+            "q3": 48.0,
+            "missing": 1
+          },
+          "cache_read": {
+            "n": 9,
+            "median": 327741,
+            "q1": 277470.0,
+            "q3": 624775.0,
+            "missing": 1
+          },
+          "cache_write": {
+            "n": 9,
+            "median": 35900,
+            "q1": 27314.0,
+            "q3": 50463.0,
+            "missing": 1
+          },
+          "output": {
+            "n": 9,
+            "median": 6589,
+            "q1": 4404.0,
+            "q3": 9576.0,
+            "missing": 1
+          },
+          "reasoning": {
+            "n": 9,
+            "median": 4306,
+            "q1": 2584.0,
+            "q3": 5807.0,
+            "missing": 1
+          }
+        },
+        "distance_to_goal_m": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "rq3": {
+          "runs_with_fall": 0.1,
+          "runs_with_obstacle": 0.9,
+          "runs_with_bumped": 0.0,
+          "runs_with_intervention": 0.1,
+          "rejected_per_run": 0.0,
+          "refused_per_run": 0.4,
+          "clamped_walks_per_run": 0.0,
+          "instruction_following": 0.8,
+          "exempt_calls": {},
+          "exempt_calls_per_run": 0.0
+        },
+        "failed_end_conditions": {
+          "session_ended": 1,
+          "stop_signal": 2,
+          "intervention": 1
+        }
+      },
+      "A6": {
+        "n": 10,
+        "k": 4,
+        "rate": 0.4,
+        "wilson95": [
+          0.16818032970623614,
+          0.6873262302663417
+        ],
+        "completion_time_s": {
+          "n": 4,
+          "median": 243.055,
+          "q1": 205.90099999999998,
+          "q3": 313.51824999999997
+        },
+        "tool_calls": {
+          "n": 4,
+          "median": 17.0,
+          "q1": 17.0,
+          "q3": 18.5
+        },
+        "cost_usd": {
+          "n": 10,
+          "median": 0.005591925,
+          "q1": 0.00398819,
+          "q3": 0.007647025,
+          "missing": 0
+        },
+        "tokens": {
+          "total": {
+            "n": 10,
+            "median": 123893.5,
+            "q1": 68679.75,
+            "q3": 200444.75,
+            "missing": 0
+          },
+          "input": {
+            "n": 10,
+            "median": 5112.0,
+            "q1": 3822.0,
+            "q3": 6434.75,
+            "missing": 0
+          },
+          "cache_read": {
+            "n": 10,
+            "median": 98882.5,
+            "q1": 49173.5,
+            "q3": 167609.25,
+            "missing": 0
+          },
+          "cache_write": {
+            "n": 10,
+            "median": 17329.0,
+            "q1": 13628.0,
+            "q3": 22989.5,
+            "missing": 0
+          },
+          "output": {
+            "n": 10,
+            "median": 2735.5,
+            "q1": 1666.25,
+            "q3": 3872.75,
+            "missing": 0
+          },
+          "reasoning": {
+            "n": 10,
+            "median": 1662.5,
+            "q1": 962.5,
+            "q3": 2325.5,
+            "missing": 0
+          }
+        },
+        "distance_to_goal_m": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "rq3": {
+          "runs_with_fall": 0.1,
+          "runs_with_obstacle": 0.9,
+          "runs_with_bumped": 0.0,
+          "runs_with_intervention": 0.0,
+          "rejected_per_run": 0.0,
+          "refused_per_run": 0.2,
+          "clamped_walks_per_run": 0.0,
+          "instruction_following": 1.0,
+          "exempt_calls": {},
+          "exempt_calls_per_run": 0.0
+        },
+        "failed_end_conditions": {
+          "stop_signal": 6
+        }
+      },
+      "A7": {
+        "n": 10,
+        "k": 9,
+        "rate": 0.9,
+        "wilson95": [
+          0.5958499732047615,
+          0.9821237869049271
+        ],
+        "completion_time_s": {
+          "n": 9,
+          "median": 299.403,
+          "q1": 287.284,
+          "q3": 383.776
+        },
+        "tool_calls": {
+          "n": 9,
+          "median": 17,
+          "q1": 16.0,
+          "q3": 25.0
+        },
+        "cost_usd": {
+          "n": 10,
+          "median": 0.22565944,
+          "q1": 0.203308895,
+          "q3": 0.2760278975,
+          "missing": 0
+        },
+        "tokens": {
+          "total": {
+            "n": 10,
+            "median": 848717.5,
+            "q1": 636169.5,
+            "q3": 1177484.25,
+            "missing": 0
+          },
+          "input": {
+            "n": 10,
+            "median": 204650.0,
+            "q1": 187924.75,
+            "q3": 226724.25,
+            "missing": 0
+          },
+          "cache_read": {
+            "n": 10,
+            "median": 641482.5,
+            "q1": 438467.75,
+            "q3": 937744.5,
+            "missing": 0
+          },
+          "cache_write": {
+            "n": 0,
+            "median": null,
+            "q1": null,
+            "q3": null,
+            "missing": 0
+          },
+          "output": {
+            "n": 10,
+            "median": 8417.0,
+            "q1": 7013.5,
+            "q3": 9058.75,
+            "missing": 0
+          },
+          "reasoning": {
+            "n": 10,
+            "median": 5791.0,
+            "q1": 4954.0,
+            "q3": 6718.25,
+            "missing": 0
+          }
+        },
+        "distance_to_goal_m": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "rq3": {
+          "runs_with_fall": 0.0,
+          "runs_with_obstacle": 0.5,
+          "runs_with_bumped": 0.0,
+          "runs_with_intervention": 0.0,
+          "rejected_per_run": 0.0,
+          "refused_per_run": 0.0,
+          "clamped_walks_per_run": 0.0,
+          "instruction_following": 1.0,
+          "exempt_calls": {
+            "view_file": 168
+          },
+          "exempt_calls_per_run": 16.8
+        },
+        "failed_end_conditions": {
+          "stop_signal": 1
+        }
+      },
+      "A8": {
+        "n": 10,
+        "k": 10,
+        "rate": 1.0,
+        "wilson95": [
+          0.7224672001371107,
+          0.9999999999999999
+        ],
+        "completion_time_s": {
+          "n": 10,
+          "median": 261.7345,
+          "q1": 231.52925,
+          "q3": 305.416
+        },
+        "tool_calls": {
+          "n": 10,
+          "median": 21.0,
+          "q1": 20.0,
+          "q3": 22.0
+        },
+        "cost_usd": {
+          "n": 10,
+          "median": 0.146328,
+          "q1": 0.12961065,
+          "q3": 0.16767058499999998,
+          "missing": 0
+        },
+        "tokens": {
+          "total": {
+            "n": 10,
+            "median": 361140.0,
+            "q1": 279909.5,
+            "q3": 466886.5,
+            "missing": 0
+          },
+          "input": {
+            "n": 10,
+            "median": 122443.5,
+            "q1": 108968.25,
+            "q3": 127940.25,
+            "missing": 0
+          },
+          "cache_read": {
+            "n": 10,
+            "median": 220415.5,
+            "q1": 163033.25,
+            "q3": 321135.5,
+            "missing": 0
+          },
+          "cache_write": {
+            "n": 10,
+            "median": 0.0,
+            "q1": 0.0,
+            "q3": 0.0,
+            "missing": 0
+          },
+          "output": {
+            "n": 10,
+            "median": 7363.0,
+            "q1": 5823.25,
+            "q3": 8745.25,
+            "missing": 0
+          },
+          "reasoning": {
+            "n": 10,
+            "median": 6927.0,
+            "q1": 5414.75,
+            "q3": 8242.5,
+            "missing": 0
+          }
+        },
+        "distance_to_goal_m": {
+          "n": 0,
+          "median": null,
+          "q1": null,
+          "q3": null
+        },
+        "rq3": {
+          "runs_with_fall": 0.0,
+          "runs_with_obstacle": 0.7,
+          "runs_with_bumped": 0.0,
+          "runs_with_intervention": 0.0,
+          "rejected_per_run": 0.0,
+          "refused_per_run": 0.0,
+          "clamped_walks_per_run": 0.0,
+          "instruction_following": 1.0,
+          "exempt_calls": {},
+          "exempt_calls_per_run": 0.0
+        },
+        "failed_end_conditions": {}
+      }
+    }
+  },
+  "tests": {
+    "method": "scipy.stats.barnard_exact, two-sided, defaults (pooled Wald statistic, n=32); 8 tests, not adjusted for multiple comparisons (section 5.1.10)",
+    "C3-C6": [
+      {
+        "contrast": "C3",
+        "task": "corridor",
+        "native": "A1",
+        "opencode": "A2",
+        "native_k_n": [
+          10,
+          10
+        ],
+        "opencode_k_n": [
+          6,
+          10
+        ],
+        "difference": 0.4,
+        "p_value": 0.04186410068816854
+      },
+      {
+        "contrast": "C4",
+        "task": "corridor",
+        "native": "A3",
+        "opencode": "A4",
+        "native_k_n": [
+          9,
+          10
+        ],
+        "opencode_k_n": [
+          10,
+          10
+        ],
+        "difference": -0.09999999999999998,
+        "p_value": 0.5220857964344374
+      },
+      {
+        "contrast": "C5",
+        "task": "corridor",
+        "native": "A5",
+        "opencode": "A6",
+        "native_k_n": [
+          6,
+          10
+        ],
+        "opencode_k_n": [
+          4,
+          10
+        ],
+        "difference": 0.19999999999999996,
+        "p_value": 0.5234746615076156
+      },
+      {
+        "contrast": "C6",
+        "task": "corridor",
+        "native": "A7",
+        "opencode": "A8",
+        "native_k_n": [
+          9,
+          10
+        ],
+        "opencode_k_n": [
+          9,
+          10
+        ],
+        "difference": 0.0,
+        "p_value": 1.0
+      },
+      {
+        "contrast": "C3",
+        "task": "corridor_complex",
+        "native": "A1",
+        "opencode": "A2",
+        "native_k_n": [
+          8,
+          10
+        ],
+        "opencode_k_n": [
+          9,
+          10
+        ],
+        "difference": -0.09999999999999998,
+        "p_value": 0.6733545592316781
+      },
+      {
+        "contrast": "C4",
+        "task": "corridor_complex",
+        "native": "A3",
+        "opencode": "A4",
+        "native_k_n": [
+          9,
+          10
+        ],
+        "opencode_k_n": [
+          8,
+          10
+        ],
+        "difference": 0.09999999999999998,
+        "p_value": 0.6733545592316781
+      },
+      {
+        "contrast": "C5",
+        "task": "corridor_complex",
+        "native": "A5",
+        "opencode": "A6",
+        "native_k_n": [
+          7,
+          10
+        ],
+        "opencode_k_n": [
+          2,
+          10
+        ],
+        "difference": 0.49999999999999994,
+        "p_value": 0.0413894653320313
+      },
+      {
+        "contrast": "C6",
+        "task": "corridor_complex",
+        "native": "A7",
+        "opencode": "A8",
+        "native_k_n": [
+          5,
+          10
+        ],
+        "opencode_k_n": [
+          4,
+          10
+        ],
+        "difference": 0.09999999999999998,
+        "p_value": 0.8238029479980479
+      }
+    ],
+    "C7": {
+      "corridor": {
+        "A1-A2": "+",
+        "A3-A4": "-",
+        "A5-A6": "+",
+        "A7-A8": "0"
+      },
+      "corridor_complex": {
+        "A1-A2": "-",
+        "A3-A4": "+",
+        "A5-A6": "+",
+        "A7-A8": "+"
+      }
+    }
+  },
+  "checks": {
+    "A1 image after": [
+      3,
+      3
+    ],
+    "A1 image before": [
+      3,
+      3
+    ],
+    "A1 instructions after": [
+      3,
+      3
+    ],
+    "A1 instructions before": [
+      3,
+      3
+    ],
+    "A2 image after": [
+      3,
+      3
+    ],
+    "A2 image before": [
+      3,
+      3
+    ],
+    "A2 instructions after": [
+      3,
+      3
+    ],
+    "A2 instructions before": [
+      3,
+      3
+    ],
+    "A3 image after": [
+      3,
+      3
+    ],
+    "A3 image before": [
+      3,
+      3
+    ],
+    "A3 instructions after": [
+      3,
+      3
+    ],
+    "A3 instructions before": [
+      3,
+      3
+    ],
+    "A4 image after": [
+      3,
+      3
+    ],
+    "A4 image before": [
+      3,
+      3
+    ],
+    "A4 instructions after": [
+      3,
+      3
+    ],
+    "A4 instructions before": [
+      3,
+      3
+    ],
+    "A5 image after": [
+      3,
+      3
+    ],
+    "A5 image before": [
+      3,
+      3
+    ],
+    "A5 instructions after": [
+      3,
+      3
+    ],
+    "A5 instructions before": [
+      3,
+      3
+    ],
+    "A6 image after": [
+      3,
+      3
+    ],
+    "A6 image before": [
+      3,
+      3
+    ],
+    "A6 instructions after": [
+      3,
+      3
+    ],
+    "A6 instructions before": [
+      3,
+      3
+    ],
+    "A7 image after": [
+      3,
+      3
+    ],
+    "A7 image before": [
+      3,
+      3
+    ],
+    "A7 instructions after": [
+      3,
+      3
+    ],
+    "A7 instructions before": [
+      3,
+      3
+    ],
+    "A8 image after": [
+      3,
+      3
+    ],
+    "A8 image before": [
+      3,
+      3
+    ],
+    "A8 instructions after": [
+      3,
+      3
+    ],
+    "A8 instructions before": [
+      3,
+      3
+    ]
+  },
+  "validity": {
+    "A1": {
+      "valid": {
+        "corridor": 10,
+        "corridor_complex": 10,
+        "search": 10
+      },
+      "invalid": 2,
+      "invalid_by_task": {
+        "search": 2
+      },
+      "excluded": 0,
+      "invalid_reasons": {
+        "operator: hardware fault (motors): stand failed twice, the motors stayed off with active motor diagnosis errors on 23 joints, after the battery death in position 42 (search-A5-20261021T100504Z); the agent never got the robot up and rested after 16 s. Invalid under evaluation.tex, Invalid runs (the physical NAO has a hardware fault); position 43 is redone after a reboot": 1,
+        "operator: hardware fault (fall detection): the robot was marked fallen before t0 and NAOqi logged a new fall (ALMotion/RobotIsFalling) within seconds of each of four stands while the robot stood still, blocking movement; the agent rested after 25 s without a step. After the real fall in position 72 (search-A5-20261021T151758Z); the operator restarted the NAO, whose motor test failed. Invalid under evaluation.tex, Invalid runs (the physical NAO has a hardware fault); position 73 is redone after a reboot": 1
+      }
+    },
+    "A2": {
+      "valid": {
+        "corridor": 10,
+        "corridor_complex": 10,
+        "search": 10
+      },
+      "invalid": 4,
+      "invalid_by_task": {
+        "corridor": 2,
+        "corridor_complex": 2
+      },
+      "excluded": 0,
+      "invalid_reasons": {
+        "runner error: RuntimeError('timed out after 300 s waiting for NAOqi is ready')": 4,
+        "no real-time factor recorded": 4
+      }
+    },
+    "A3": {
+      "valid": {
+        "corridor": 10,
+        "corridor_complex": 10,
+        "search": 10
+      },
+      "invalid": 3,
+      "invalid_by_task": {
+        "search": 3
+      },
+      "excluded": 0,
+      "invalid_reasons": {
+        "operator: hardware fault (battery): the physical NAO's battery fell from 92 % to 4 % in under 3 min off the charger (5-10 points per call, calls.jsonl); the agent called rest because of it before reaching the ball (its final message). Invalid under evaluation.tex, Invalid runs (the physical NAO has a hardware fault); position 14 is redone": 1,
+        "operator: hardware fault (motors): stand left the motors off twice, NAOqi reporting active diagnosis errors on 23 joints (calls.jsonl, stand hints); the agent called rest after 10 s without moving. Invalid under evaluation.tex, Invalid runs (the physical NAO has a hardware fault); position 14 is redone after the robot is rebooted and checked": 1,
+        "operator: setup fault (charger cable): the stretched power cable pulled the robot over during a walk (operator; calls.jsonl: charging True until the go at 14:20:32 local, False after it, then RobotIsFalling and LyingBack); a cause outside the agent (evaluation.tex, Invalid runs); position 14 is redone": 1
+      }
+    },
+    "A4": {
+      "valid": {
+        "corridor": 10,
+        "corridor_complex": 10,
+        "search": 10
+      },
+      "invalid": 1,
+      "invalid_by_task": {
+        "corridor_complex": 1
+      },
+      "excluded": 0,
+      "invalid_reasons": {
+        "runner error: RuntimeError('timed out after 300 s waiting for NAOqi is ready')": 1,
+        "no real-time factor recorded": 1
+      }
+    },
+    "A5": {
+      "valid": {
+        "corridor": 10,
+        "corridor_complex": 10,
+        "search": 10
+      },
+      "invalid": 3,
+      "invalid_by_task": {
+        "search": 3
+      },
+      "excluded": 0,
+      "invalid_reasons": {
+        "operator: hardware fault (battery): the operator reports the robot died; the battery fell from 99.0 % to 0.0 % during the run once the charger stopped reading as connected at 15:37 local (calls.jsonl: [99.0, 99.0, 99.0, 99.0, 99.0, 100.0, 99.0, 99.0, 92.0, 84.0, 77.0, 77.0, 59.0, 59.0, 55.0, 46.0, 26.0, 18.0, 6.0, 6.0, 0.0]); the agent rested because of the battery (its final message: 'Battery is at 6% and not charging ... I'm stopping here and resting it'). Invalid under evaluation.tex, Invalid runs (the physical NAO has a hardware fault); position 39 is redone": 1,
+        "operator: hardware fault (motors): stand failed twice, wakeUp left the motors off with active motor diagnosis errors on 23 joints, after the battery death in attempt 1 (search-A5-20261020T133608Z); the agent never got the robot up and ended the session after 13 s. Invalid under evaluation.tex, Invalid runs (the physical NAO has a hardware fault); position 39 is redone after a reboot": 1,
+        "operator: hang: the agent's go (bearing -90, distance 0, a turn in place) sent at 17:13:56 local never returned (bridge busy 'go' for over 2 min, no result); the robot stood still, NAOqi reachable. Outside the agent: the operator saw the robot standing, not turning; the run is redone (operator in chat: 'standing, rest it, and we restart this run')": 1
+      }
+    },
+    "A6": {
+      "valid": {
+        "corridor": 10,
+        "corridor_complex": 10,
+        "search": 10
+      },
+      "invalid": 3,
+      "invalid_by_task": {
+        "corridor_complex": 1,
+        "search": 2
+      },
+      "excluded": 0,
+      "invalid_reasons": {
+        "real-time factor 0.005 below 0.90": 1,
+        "operator: hardware fault (battery): the operator reports the robot died; the battery fell from 99.0 % to 6.0 % during the run (started off the charger; calls.jsonl: [99.0, 99.0, 99.0, 99.0, 100.0, 97.0, 89.0, 83.0, 77.0, 73.0, 68.0, 61.0, 54.0, 44.0, 6.0, 13.0]). Invalid under evaluation.tex, Invalid runs (the physical NAO has a hardware fault); position 34 is redone": 1,
+        "operator: provider stall outside the agent (same as search-A8-20261019T141747Z): OpenCode stuck mid-step with no model output since 14:33:54 local (last event: a text part inside a step that never finished; last tool call 14:33:34); no further output for almost 4 min. Ended by the operator under the author's ruling of 2026-10-19 (provider stalls are invalid and redone)": 1
+      }
+    },
+    "A7": {
+      "valid": {
+        "corridor": 10,
+        "corridor_complex": 10,
+        "search": 10
+      },
+      "invalid": 0,
+      "invalid_by_task": {},
+      "excluded": 0,
+      "invalid_reasons": {}
+    },
+    "A8": {
+      "valid": {
+        "corridor": 10,
+        "corridor_complex": 10,
+        "search": 10
+      },
+      "invalid": 1,
+      "invalid_by_task": {
+        "search": 1
+      },
+      "excluded": 0,
+      "invalid_reasons": {
+        "operator: provider stall outside the agent: OpenCode stuck mid-step with no model output since 16:19:43 local (last event: naoqi_say completed inside a step that never finished); the proxy logged the connection being reset by the peer at 16:22:51 and OpenCode did not retry. Ended by the operator (author) at about 16:25 rather than at the wall-clock cap": 1
+      }
+    }
+  }
+}

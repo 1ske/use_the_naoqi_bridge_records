@@ -1,0 +1,2 @@
+{"type":"step_start","timestamp":1792058007494,"sessionID":"ses_ec104ea9affe6162eZLj0GH4Li","part":{"id":"prt_13efb1fc6001qaFffylL0RltWL","sessionID":"ses_ec104ea9affe6162eZLj0GH4Li","messageID":"msg_13efb158f001KH7z2FjwNIXeWs","type":"step-start"}}
+{"type":"text","timestamp":1792058008123,"sessionID":"ses_ec104ea9affe6162eZLj0GH4Li","part":{"id":"prt_13efb158f001KH7z2FjwNIXeWs_text-0","sessionID":"ses_ec104ea9affe6162eZLj0GH4Li","messageID":"msg_13efb158f001KH7z2FjwNIXeWs","type":"text","text":"opal-quartz","time":{"start":1792058004889,"end":1792058008123}}}

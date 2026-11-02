@@ -1,0 +1,13 @@
+{
+  "interventions": [],
+  "invalid_reason": "hardware fault (motors): stand failed twice, the motors stayed off with active motor diagnosis errors on 23 joints, after the battery death in position 42 (search-A5-20261021T100504Z); the agent never got the robot up and rested after 16 s. Invalid under evaluation.tex, Invalid runs (the physical NAO has a hardware fault); position 43 is redone after a reboot",
+  "verdict": null,
+  "verdict_pending": false,
+  "rest_image": "~/.naoqi-pilot/grid/main/runs/search-A1-20261021T101802Z/operator_images/04.jpeg",
+  "rest_image_identified": true,
+  "invalid_given": {
+    "via": "chat with the runner's operator",
+    "operator": "operator in chat: 'invalid ill restart the nao'",
+    "at": "2026-10-21T10:19:04+00:00"
+  }
+}

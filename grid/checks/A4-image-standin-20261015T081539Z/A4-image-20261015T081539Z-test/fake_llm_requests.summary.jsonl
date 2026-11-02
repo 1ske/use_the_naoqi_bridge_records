@@ -1,0 +1,3 @@
+{"t": 1792052143.1945856, "label": "side", "api": "openai", "path": "/api/v1/chat/completions", "user_agent": null, "server_instructions_in_request": false, "image_in_request": false, "usage": {"input": 100000, "output": 7, "thinking": 0}}
+{"t": 1792052143.1963167, "label": "main-1", "api": "openai", "path": "/api/v1/chat/completions", "user_agent": null, "server_instructions_in_request": true, "image_in_request": false, "usage": {"input": 1000, "output": 10, "thinking": 1}}
+{"t": 1792052143.5128627, "label": "main-2", "api": "openai", "path": "/api/v1/chat/completions", "user_agent": null, "server_instructions_in_request": true, "image_in_request": true, "usage": {"input": 2000, "output": 20, "thinking": 2}}

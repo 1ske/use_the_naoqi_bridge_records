@@ -1,0 +1,13 @@
+{
+  "interventions": [],
+  "invalid_reason": "hardware fault (battery): the operator reports the robot died; the battery fell from 99.0 % to 6.0 % during the run (started off the charger; calls.jsonl: [99.0, 99.0, 99.0, 99.0, 100.0, 97.0, 89.0, 83.0, 77.0, 73.0, 68.0, 61.0, 54.0, 44.0, 6.0, 13.0]). Invalid under evaluation.tex, Invalid runs (the physical NAO has a hardware fault); position 34 is redone",
+  "verdict": null,
+  "verdict_pending": false,
+  "rest_image": "~/.naoqi-pilot/grid/main/runs/search-A6-20261020T120140Z/operator_images/16.jpeg",
+  "rest_image_identified": true,
+  "invalid_given": {
+    "via": "chat with the runner's operator",
+    "operator": "operator in chat: 'yo it died so lets redo this one give it another go'",
+    "at": "2026-10-20T12:06:38+00:00"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "battery": {
+    "percent": 99.0,
+    "charging": false
+  },
+  "text": "I have reached the end of the corridor at the red wall. Resting now.",
+  "result": "speaking"
+}

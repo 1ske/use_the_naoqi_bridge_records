@@ -1,0 +1,86 @@
+{
+  "run_id": "corridor_complex-A8-20261015T150803Z",
+  "phase": "pilot",
+  "task": "Complex corridor",
+  "task_key": "corridor_complex",
+  "agent": "A8",
+  "run_order": {
+    "file": "~/.naoqi-pilot/grid/pilot/orders/corridor_complex.json",
+    "seed": 7322798994304117747,
+    "position": 4,
+    "block": 1,
+    "attempt": 1
+  },
+  "agent_config": {
+    "harness": "opencode",
+    "image": "naoqi-pilot/opencode",
+    "llm": "Gemini 3.8 Flash",
+    "model": "google/gemini-3.8-flash",
+    "model_id_confirmed": true,
+    "access_route": "OpenRouter, provider 'google-ai-studio' only, allow_fallbacks false",
+    "reasoning": "reasoning.effort = medium in every request body",
+    "proxy_allow": [
+      "^openrouter\\.ai$"
+    ],
+    "deviations_ref": "opencode",
+    "openrouter_key_file": "~/.naoqi-pilot/templates/openrouter/api-key-A8"
+  },
+  "deviations": [
+    {
+      "what": "Built-in tools denied: permissions deny all except naoqi_* (global and build-agent rules) plus a hard-deny policy; denied tools are not offered to the LLM"
+    },
+    {
+      "what": "Code Mode off: codemode false for the naoqi server, and the execute action denied"
+    },
+    {
+      "what": "Prompt submitted only after OpenCode reports the naoqi MCP server as connected (OpenCode 2 connects MCP servers asynchronously); t0 = prompt submission",
+      "approved": "2026-10-05"
+    },
+    {
+      "what": "Title agent uses the run's own model and provider instead of OpenCode's default small model",
+      "approved": "2026-10-05"
+    },
+    {
+      "what": "Provider use limited to OpenRouter by policy; update disabled; sharing disabled"
+    },
+    {
+      "what": "Network: only openrouter.ai reachable; models.opencode.ai (model catalog) blocked"
+    }
+  ],
+  "harness_version": "2.0.21",
+  "system_commit": "8eafc32bf9055aafe5d201ed5ea91b05dc9d2144",
+  "system_uncommitted_changes": true,
+  "world_file": "webots/worlds/corridor_complex.wbt",
+  "world_sha256": "e7e5734d4b9a492c3cdd6b45f36efdc675943823cac42387992b6aedf5229d66",
+  "prompt": "Use the naoqi MCP server. You control a robot at the start of a corridor with several corners. Follow the corridor to its end, which is marked by a red wall, and stop in front of the wall. When the robot is there, call rest.",
+  "caps": {
+    "wall_clock_s": 1800,
+    "tool_calls": 100
+  },
+  "grace_period_s": 30,
+  "protocol_values_decided": {
+    "prompts": false,
+    "caps": false,
+    "grace_period_s": false,
+    "invalid_if": false,
+    "min_real_time_factor": false,
+    "search": false
+  },
+  "test": null,
+  "image": {
+    "name": "naoqi-pilot/opencode",
+    "id": "sha256:57faea26608cc4100af619449679cd585fd3b8fc3a3f19b391c239950128a621"
+  },
+  "end_condition": "stop_signal",
+  "invalid_reason": null,
+  "harness_exited_in_grace_period": true,
+  "harness_exit_code": "0",
+  "runner_times_mac_clock": {
+    "usage_before_read": "2026-10-15T15:08:16.040+00:00",
+    "container_started": "2026-10-15T15:08:17.459+00:00",
+    "t0_seen": "2026-10-15T15:08:22.514+00:00",
+    "end_detected": "2026-10-15T15:19:39.741+00:00",
+    "harness_stopped": "2026-10-15T15:19:46.997+00:00",
+    "runner_started": "2026-10-15T15:08:03.818+00:00"
+  }
+}

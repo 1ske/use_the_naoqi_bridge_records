@@ -1,0 +1,8 @@
+{
+  "battery": {
+    "percent": 99.0,
+    "charging": false
+  },
+  "text": "Walking forward another 0.8m",
+  "result": "speaking"
+}

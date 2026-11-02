@@ -1,0 +1,62 @@
+{
+  "battery": {
+    "percent": 99.0,
+    "charging": false
+  },
+  "state": {
+    "odometry": {
+      "y": 0.0,
+      "x": 0.0,
+      "theta": 0.0
+    },
+    "warnings": [
+      "The robot fell: walking is refused until stand succeeds."
+    ],
+    "last_fall": {
+      "reason": "ALMotion/RobotIsFalling",
+      "time": "09:47:43"
+    },
+    "sonar_m": {
+      "right": 2.55,
+      "left": 2.55
+    },
+    "awake": true,
+    "fall_count": 1,
+    "posture_family": "LyingBack",
+    "posture": "Unknown",
+    "busy": null,
+    "bumpers": {
+      "right_foot": false,
+      "left_foot": false
+    },
+    "walk_blocked_by_fall": true,
+    "fallen": true
+  },
+  "result": "timeout",
+  "hint": "Getting up after a fall is unreliable (naoqisim: only from the back and only at speed 1.0, above the 0.5 cap). Call rest and ask a human to reset the robot.",
+  "images_meta": [
+    {
+      "tiles": [
+        {
+          "direction": "left 5 deg",
+          "camera": "top",
+          "head": {
+            "yaw": 0.091,
+            "pitch": 0.323
+          }
+        },
+        {
+          "direction": "left 5 deg",
+          "camera": "bottom",
+          "head": {
+            "yaw": 0.091,
+            "pitch": 0.323
+          }
+        }
+      ],
+      "layout": "2 x 1 tiles of 320x240 px, left to right = left to right",
+      "mime_type": "image/jpeg"
+    }
+  ]
+}
+[Resource offloaded to file:///home/agent/.gemini/antigravity-cli/brain/c9f79e1b-da47-4cf4-97c8-3be7472ce059/.system_generated/steps/136/media_0.jpg]

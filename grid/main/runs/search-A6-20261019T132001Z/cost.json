@@ -1,0 +1,30 @@
+{
+  "source": "OpenRouter /api/v1/key usage of the agent's own key (agents.json openrouter_key_file), after minus before the run",
+  "usage_before_usd": 0.050567055,
+  "usage_after_usd": 0.06320904,
+  "cost_usd": 0.01264198,
+  "settled": true,
+  "waited_s": 667,
+  "settle_rule": "unchanged for 600 s (reads 30 s apart), after usage - before reached the floor: 0.9 x the token counts at OpenRouter's catalogue prices",
+  "settle_floor_usd": 0.00925493,
+  "cross_check_step_costs_usd": 0.0,
+  "cross_check_tokens_at_catalogue_price_usd": 0.01028326,
+  "catalogue_price_per_token": {
+    "prompt": "0.0000001",
+    "completion": "0.0000005",
+    "web_search": "0.01",
+    "input_cache_read": "0.00000001",
+    "input_cache_write": "0.000000125",
+    "input_cache_write_1h": "0.0000002",
+    "overrides": [
+      {
+        "min_prompt_tokens": 100000,
+        "prompt": "0.0000005",
+        "completion": "0.0000025",
+        "input_cache_read": "0.00000005",
+        "input_cache_write": "0.000000625",
+        "input_cache_write_1h": "0.000001"
+      }
+    ]
+  }
+}

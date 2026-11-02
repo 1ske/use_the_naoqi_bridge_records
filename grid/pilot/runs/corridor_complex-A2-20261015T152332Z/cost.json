@@ -1,0 +1,13 @@
+{
+  "source": "OpenRouter /api/v1/key usage of the agent's own key, after minus before the run (reconstructed)",
+  "usage_before_usd": 0.3769656,
+  "usage_after_usd": 1.0223876,
+  "cost_usd": 0.645422,
+  "settled": true,
+  "reads": [
+    1.0223876,
+    1.0223876,
+    1.0223876
+  ],
+  "reconstructed": "the runner was stopped (author left) while this cost was settling; usage before = the previous A2 run's settled usage after (this run waited for it), and A2's key was not used since"
+}

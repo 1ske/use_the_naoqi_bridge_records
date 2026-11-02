@@ -1,0 +1,20 @@
+{
+  "interventions": [],
+  "invalid_reason": "hardware fault (fall detection): the robot was marked fallen before t0 and NAOqi logged a new fall (ALMotion/RobotIsFalling) within seconds of each of four stands while the robot stood still, blocking movement; the agent rested after 25 s without a step. After the real fall in position 72 (search-A5-20261021T151758Z); the operator restarted the NAO, whose motor test failed. Invalid under evaluation.tex, Invalid runs (the physical NAO has a hardware fault); position 73 is redone after a reboot",
+  "verdict": null,
+  "verdict_pending": false,
+  "rest_image": "~/.naoqi-pilot/grid/main/runs/search-A1-20261021T152101Z/operator_images/06.jpeg",
+  "rest_image_identified": true,
+  "falls_observed": {
+    "count": 0,
+    "naoqi_fall_events": 3,
+    "notes": "operator in chat: 'ok' to recording 0 falls seen (the robot stood still; NAOqi's 3 falls were false detections while standing)",
+    "given_via": "chat with the runner's operator",
+    "at": "2026-10-21T15:22:17+00:00"
+  },
+  "invalid_given": {
+    "via": "chat with the runner's operator",
+    "operator": "operator in chat: 'ok had to restart it failed the motor test whatever so lets wait until it restarts' (reply to the proposal to record the run invalid)",
+    "at": "2026-10-21T15:22:17+00:00"
+  }
+}

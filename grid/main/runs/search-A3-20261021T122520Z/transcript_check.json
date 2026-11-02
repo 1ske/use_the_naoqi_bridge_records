@@ -1,0 +1,22 @@
+{
+  "agent": "A3",
+  "harness": "claude-code",
+  "transcript_files": [
+    "transcript.jsonl"
+  ],
+  "transcript_found": true,
+  "unreadable_lines": 0,
+  "nao_tool_calls": 18,
+  "nao_tool_calls_by_tool": {
+    "get_state": 1,
+    "stand": 1,
+    "look_around": 4,
+    "go": 8,
+    "say": 2,
+    "walk_to": 1,
+    "rest": 1
+  },
+  "exempt_calls": {},
+  "violating_calls": {},
+  "protocol_violation": false
+}

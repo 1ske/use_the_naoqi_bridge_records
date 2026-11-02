@@ -1,0 +1,8 @@
+{
+  "agent": "A3",
+  "check": "image",
+  "when": "after",
+  "fake_llm": false,
+  "attempts": 3,
+  "passed": true
+}

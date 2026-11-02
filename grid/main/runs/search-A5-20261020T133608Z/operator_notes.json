@@ -1,0 +1,13 @@
+{
+  "interventions": [],
+  "invalid_reason": "hardware fault (battery): the operator reports the robot died; the battery fell from 99.0 % to 0.0 % during the run once the charger stopped reading as connected at 15:37 local (calls.jsonl: [99.0, 99.0, 99.0, 99.0, 99.0, 100.0, 99.0, 99.0, 92.0, 84.0, 77.0, 77.0, 59.0, 59.0, 55.0, 46.0, 26.0, 18.0, 6.0, 6.0, 0.0]); the agent rested because of the battery (its final message: 'Battery is at 6% and not charging ... I'm stopping here and resting it'). Invalid under evaluation.tex, Invalid runs (the physical NAO has a hardware fault); position 39 is redone",
+  "verdict": null,
+  "verdict_pending": false,
+  "rest_image": "~/.naoqi-pilot/grid/main/runs/search-A5-20261020T133608Z/operator_images/21.jpeg",
+  "rest_image_identified": true,
+  "invalid_given": {
+    "via": "chat with the runner's operator",
+    "operator": "operator in chat: 'redo, it died'",
+    "at": "2026-10-20T13:40:18+00:00"
+  }
+}

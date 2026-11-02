@@ -1,0 +1,46 @@
+{
+  "check": "image",
+  "agent": "A3",
+  "when": "standin",
+  "attempt_id": "A3-image-20261015T090655Z-test",
+  "fake_llm": true,
+  "model": "claude-sonnet-5-5",
+  "expected": "304103",
+  "prompt": "Use the naoqi MCP server. Call get_state once. The image in its result shows a code of six digits. Reply with only that code.",
+  "image": {
+    "name": "naoqi-pilot/claude-verify",
+    "id": "sha256:491c7ff2322b55fcfcf4f180b80942cf2b1bd1d1a9bde6f7cb13274e84bbd6b0"
+  },
+  "system_commit": "ac19fa8b9fc3de2f7594632a24075324e3faf778",
+  "system_uncommitted_changes": false,
+  "harness_version": "2.1.295",
+  "timed_out": false,
+  "answer": "No answer (fake LLM).",
+  "tool_calls": {
+    "agent": "A3",
+    "harness": "claude-code",
+    "transcript_files": [
+      "transcript.jsonl"
+    ],
+    "transcript_found": true,
+    "unreadable_lines": 0,
+    "nao_tool_calls": 1,
+    "nao_tool_calls_by_tool": {
+      "get_state": 1
+    },
+    "exempt_calls": {},
+    "violating_calls": {},
+    "protocol_violation": false
+  },
+  "reached_model": {
+    "word_in_a_request": true,
+    "code_image_in_a_request": true,
+    "model_requests": 2,
+    "request_settings": [
+      "{\"api\": \"anthropic\", \"model\": \"claude-sonnet-5-5\", \"output_config\": {\"effort\": \"medium\"}, \"side_request\": false, \"thinking\": {\"display\": \"updates\", \"type\": \"adaptive\"}}"
+    ]
+  },
+  "cost_usd": 0.0063,
+  "cost_source": "Claude Code result event, total_cost_usd",
+  "passed": null
+}

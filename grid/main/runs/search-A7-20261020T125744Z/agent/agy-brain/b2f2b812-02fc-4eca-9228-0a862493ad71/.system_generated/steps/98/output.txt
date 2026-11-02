@@ -1,0 +1,59 @@
+{
+  "battery": {
+    "percent": 99.0,
+    "charging": false
+  },
+  "state": {
+    "odometry": {
+      "y": 6.324,
+      "x": 1.353,
+      "theta": 2.348
+    },
+    "warnings": [],
+    "last_fall": {
+      "reason": "robotHasFallen raised",
+      "time": "13:06:13"
+    },
+    "sonar_m": {
+      "right": 4.01,
+      "left": 4.56
+    },
+    "awake": true,
+    "fall_count": 1,
+    "posture_family": "Standing",
+    "posture": "StandInit",
+    "busy": null,
+    "bumpers": {
+      "right_foot": false,
+      "left_foot": false
+    },
+    "walk_blocked_by_fall": false,
+    "fallen": false
+  },
+  "result": "completed",
+  "images_meta": [
+    {
+      "tiles": [
+        {
+          "direction": "ahead",
+          "camera": "top",
+          "head": {
+            "yaw": -0.006,
+            "pitch": -0.014
+          }
+        },
+        {
+          "direction": "ahead",
+          "camera": "bottom",
+          "head": {
+            "yaw": -0.006,
+            "pitch": -0.014
+          }
+        }
+      ],
+      "layout": "2 x 1 tiles of 320x240 px, left to right = left to right",
+      "mime_type": "image/jpeg"
+    }
+  ]
+}
+[Resource offloaded to file:///home/agent/.gemini/antigravity-cli/brain/b2f2b812-02fc-4eca-9228-0a862493ad71/.system_generated/steps/98/media_0.jpg]

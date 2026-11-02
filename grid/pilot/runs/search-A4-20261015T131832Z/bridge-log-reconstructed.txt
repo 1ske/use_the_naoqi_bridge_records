@@ -1,0 +1,302 @@
+bridge-1  | 13:18:30 172.20.0.1 "GET /health HTTP/1.1" 200 -
+bridge-1  | 13:18:30 172.20.0.1 "GET /health HTTP/1.1" 200 -
+bridge-1  | 13:18:30 call get_state {}
+bridge-1  | 13:18:30 camera top subscribed (use_the_naoqi_bridge_camera_top_0)
+bridge-1  | 13:18:31 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:32 camera bottom subscribed (use_the_naoqi_bridge_camera_bottom_0)
+bridge-1  | 13:18:32 172.20.0.1 "POST /call/get_state HTTP/1.1" 200 -
+bridge-1  | 13:18:33 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:33 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:33 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:33 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:33 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:36 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:38 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:38 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -13:18:38 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -13:18:38 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 
+bridge-1  | 13:18:38 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:38 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 
+bridge-1  | 13:18:41 call get_state {}
+bridge-1  | 13:18:41 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:42 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /call/get_state HTTP/1.1" 200 -
+bridge-1  | 13:18:43 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:43 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:43 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:43 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:43 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:43 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:44 call stand {}
+bridge-1  | 13:18:46 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:48 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:48 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:48 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:48 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:48 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:48 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:49 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /call/stand HTTP/1.1" 200 -
+bridge-1  | 13:18:51 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:52 call look_around {}
+bridge-1  | 13:18:53 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:53 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:53 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:53 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:53 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:53 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:56 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:58 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:58 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:58 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:58 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:58 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:18:58 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:01 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:03 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:03 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:03 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:03 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:03 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:03 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:04 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /call/look_around HTTP/1.1" 200 -
+bridge-1  | 13:19:06 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:08 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:08 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:08 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:08 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:08 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:08 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:10 call go {"bearing_deg": -80.0, "distance_m": 0.0}
+bridge-1  | 13:19:10 NAOqi's obstacle protection isn't running, restarting it
+bridge-1  | 13:19:12 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:13 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:14 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:14 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:14 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -13:19:14 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 
+bridge-1  | 13:19:14 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:16 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /call/go HTTP/1.1" 200 -
+bridge-1  | 13:19:17 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:18 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:19 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:19 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:19 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:19 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:19 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:22 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:22 call go {"bearing_deg": 80.0, "distance_m": 1.5}
+bridge-1  | 13:19:23 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:24 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:24 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:24 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:24 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -13:19:24 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 
+bridge-1  | 13:19:27 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:28 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:29 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -13:19:29 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 
+bridge-1  | 13:19:29 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:29 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:29 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:32 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:33 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:34 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -13:19:34 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 
+bridge-1  | 13:19:34 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:34 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:34 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:34 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /call/go HTTP/1.1" 200 -
+bridge-1  | 13:19:37 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:37 call go {"bearing_deg": 20.0, "distance_m": 1.5}
+bridge-1  | 13:19:38 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:39 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:39 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:39 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:39 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:39 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:42 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:43 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:43 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /call/go HTTP/1.1" 200 -
+bridge-1  | 13:19:44 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:44 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:44 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:44 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:44 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:47 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:48 call walk_to {"y": -0.8, "x": -0.2, "theta": 0.0}
+bridge-1  | 13:19:48 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:49 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -13:19:49 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:49 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:49 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:49 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 
+bridge-1  | 13:19:50 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /call/walk_to HTTP/1.1" 200 -
+bridge-1  | 13:19:52 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:53 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:54 call walk_to {"y": 0.0, "x": -0.4, "theta": 0.0}
+bridge-1  | 13:19:54 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:54 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:54 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:54 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:54 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:56 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /call/walk_to HTTP/1.1" 200 -
+bridge-1  | 13:19:57 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:58 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:59 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:59 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:59 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -13:19:59 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:19:59 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 
+bridge-1  | 13:20:00 call go {"bearing_deg": -70.0, "distance_m": 0.6}
+bridge-1  | 13:20:01 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /call/go HTTP/1.1" 200 -
+bridge-1  | 13:20:02 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:03 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:04 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -13:20:04 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 
+bridge-1  | 13:20:04 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:04 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:04 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:07 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:07 call go {"bearing_deg": -90.0, "distance_m": 0.0}
+bridge-1  | 13:20:08 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:09 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /call/go HTTP/1.1" 200 -
+bridge-1  | 13:20:09 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:09 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:09 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:09 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:09 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:12 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:13 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:13 call go {"bearing_deg": -60.0, "distance_m": 0.0}
+bridge-1  | 13:20:14 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:14 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:14 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:14 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -13:20:14 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 
+bridge-1  | 13:20:14 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /call/go HTTP/1.1" 200 -
+bridge-1  | 13:20:17 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:18 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:19 call walk_to {"y": 0.0, "x": 0.0, "theta": -1.0}
+bridge-1  | 13:20:19 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:19 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -13:20:19 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -13:20:19 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 
+bridge-1  | 13:20:19 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 
+bridge-1  | 13:20:21 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /call/walk_to HTTP/1.1" 200 -
+bridge-1  | 13:20:22 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:23 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:24 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:24 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:24 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:24 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:24 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:26 call walk_to {"y": -0.3, "x": 0.0, "theta": 0.0}
+bridge-1  | 13:20:27 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:28 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:29 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /call/walk_to HTTP/1.1" 200 -
+bridge-1  | 13:20:29 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:29 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:29 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:29 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -13:20:29 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 
+bridge-1  | 13:20:32 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:33 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:34 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:34 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:34 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:34 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:34 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:35 call go {"bearing_deg": -30.0, "distance_m": 0.8}
+bridge-1  | 13:20:36 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /call/go HTTP/1.1" 200 -
+bridge-1  | 13:20:37 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:38 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:39 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:39 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:39 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -13:20:39 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 
+bridge-1  | 13:20:39 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:42 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:43 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:44 call walk_to {"y": -0.15, "x": 0.0, "theta": -0.4}
+bridge-1  | 13:20:44 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -13:20:44 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 
+bridge-1  | 13:20:44 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:44 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:44 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:46 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /call/walk_to HTTP/1.1" 200 -
+bridge-1  | 13:20:47 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:48 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:50 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -13:20:50 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:50 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:50 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -13:20:50 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 
+bridge-1  | 
+bridge-1  | 13:20:51 call look_around {}
+bridge-1  | 13:20:52 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:53 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:55 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:55 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:55 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:55 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:55 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:57 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:20:58 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:00 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:00 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:00 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:00 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:00 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:00 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /call/look_around HTTP/1.1" 200 -
+bridge-1  | 13:21:02 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:03 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:05 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -13:21:05 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 
+bridge-1  | 13:21:05 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:05 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:05 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:07 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:08 call walk_to {"y": -0.3, "x": -0.3, "theta": 0.0}
+bridge-1  | 13:21:08 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:10 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:10 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -13:21:10 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -13:21:10 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 
+bridge-1  | 13:21:10 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 
+bridge-1  | 13:21:10 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /call/walk_to HTTP/1.1" 200 -
+bridge-1  | 13:21:12 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:13 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:15 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -13:21:15 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:15 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:15 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:15 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 
+bridge-1  | 13:21:15 call rest {}
+bridge-1  | 13:21:15 stop and rest (rest requested)
+bridge-1  | rest()
+bridge-1  | 13:21:17 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:18 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:20 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /call/rest HTTP/1.1" 200 -
+bridge-1  | 13:21:20 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:20 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:20 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:20 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:20 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:22 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:23 pilot-search-A4-20261015T131832Z-agent.pilot-search-A4-20261015T131832Z "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:25 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -13:21:25 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 
+bridge-1  | 13:21:25 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:25 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:25 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:27 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:30 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:30 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:30 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:30 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:30 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:32 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:35 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:35 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:35 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 13:21:35 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -13:21:35 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
+bridge-1  | 
+bridge-1  | 13:21:37 172.20.0.1 "POST /heartbeat HTTP/1.1" 200 -
